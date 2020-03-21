@@ -4,6 +4,8 @@ Flair embeddings(https://github.com/zalandoresearch/flair/blob/master/resources/
 
 import re
 import warnings
+from typing import Text, Optional, List
+
 warnings.filterwarnings("ignore")
 
 from flair.data import Sentence
@@ -40,15 +42,18 @@ class FlairEmbeddingModels:
 
     @classmethod
     def en_lang_crawls(cls):
+        """ English FastText embeddings trained over crawls """
         return cls(WordEmbeddings('en-crawl'))
 
-    def get_word_embeddings(self, text, clean=False):
+    def get_word_embeddings(self, text: Text, clean: Optional[bool] = False):
         """
-        get the glove word embedding representation of one or multiple words
+        Returns the glove word embedding representation of one or multiple words.
+        If multiple words are given, it sums up the word embeddings of each word.
         :param text: text as string
+        :param clean: use a RegEx to remove two ore more consecutive white spaces
         :return: sum of word embeddings inside text
         """
-        if clean:  # remove two ore more consecutive white spaces
+        if clean:
             text = re.sub(r'\s{2,}', ' ', text)
 
         sentence = Sentence(text)
@@ -60,11 +65,11 @@ class FlairEmbeddingModels:
 
         return sum(words_embeddings)
 
-    def n_similarity(self, words1, words2):
+    def n_similarity(self, words1: List, words2: List):
         """
         Returns cosine similarity between words1 and words2 as a float (i.e. '100.0' means identical)
-        :param sentence1: array of words as strings
-        :param sentence2: array of words as strings
+        :param words2: array of words as strings
+        :param words1: array of words as strings
         :return: cosine similarity between the two word arrays
         """
         if type(words1) == list:
@@ -89,4 +94,3 @@ class FlairEmbeddingModels:
         result = cos(words1_embeddings, words2_embeddings)
 
         return result
-

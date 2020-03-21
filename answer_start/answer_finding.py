@@ -1,3 +1,5 @@
+from typing import Text
+
 from .flair_embeddings import FlairEmbeddingModels
 from nltk.tokenize import word_tokenize
 
@@ -6,7 +8,7 @@ class AnswerFinding:
     def __init__(self):
         self.fem = FlairEmbeddingModels().de_lang()
 
-    def find_answer_in_context(self, answer_text, context):
+    def find_answer_in_context(self, answer_text: Text, context: Text):
         """
         Finds a string inside a context using word embeddings
         :param answer_text:
