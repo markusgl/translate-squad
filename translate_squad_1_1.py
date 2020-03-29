@@ -87,7 +87,7 @@ class SquadTranslation:
     def find_sentence_number(self, answer_start, context):
         """
         find in which sentence the original answer was
-        :param answer_start: original answer start
+        :param answer_start: original answer start number
         :param context: original context (english)
         :return: sentence number of the sentenized context
         """
