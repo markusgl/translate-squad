@@ -116,8 +116,8 @@ class SquadTranslation:
 
         return answer_start_in_sentence + context_len_bef_answer
 
-    def translate_squad_dataset(self, input_file_path, output_dir, threshold=0.5, mock=True, character_limit=-1):
-        if args.verbose:
+    def translate_squad_dataset(self, input_file_path, output_dir, threshold=0.5, mock=True, character_limit=-1, verbose=False):
+        if verbose:
             logger.setLevel(logging.DEBUG)
             fh.setLevel(logging.DEBUG)
         else:
@@ -201,7 +201,7 @@ class SquadTranslation:
 
                                 # Sentence array of translated context is longer than in of the original context.
                                 # This mostly comes from a different sentence splitting in original and
-                                # translated context
+                                # translated context. If longer search in whole context.
                                 if sentence_number >= len(sentenized_translated_context):
                                     logger.warning("could not find sentence of answer - using whole context for search")
                                     answer_pos, p_result, substring = answer_finding.find_answer_in_context(
@@ -214,6 +214,8 @@ class SquadTranslation:
                                         translated_answer,
                                         sentence_to_search)
 
+                                    # Search again in whole context if the answer was not found in the specific sentence
+                                    # This is because the sentence tokenizing does not split always properly
                                     if p_result < threshold:
                                         logger.warning(
                                             "could not find answer in sentence   - using whole context for search")
@@ -221,8 +223,10 @@ class SquadTranslation:
                                             translated_answer,
                                             translated_context)
 
-                                # use answer_start and answer found in translated context if word embedding matching
+                                # Use answer_start and answer found in translated context if word embedding matching
                                 # probability is higher than 0.5 - otherwise use original answer_start
+                                # TODO otherwise delete the whole question and answer as it is not helpful for
+                                #  training a neural net
                                 if p_result > threshold:
                                     answer_start = self.get_answer_start_in_context(sentence_number=sentence_number,
                                                                                     answer_start_in_sentence=answer_pos,
@@ -342,4 +346,5 @@ if __name__ == '__main__':
                                                output_dir=args.outputdir,
                                                mock=args.mock,
                                                threshold=args.threshold,
-                                               character_limit=args.character_limit)
+                                               character_limit=args.character_limit,
+                                               verbose=args.verbose)

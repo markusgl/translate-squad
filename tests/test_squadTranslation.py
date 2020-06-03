@@ -9,6 +9,10 @@ class TestSquadTranslation(TestCase):
                   'Hauptgebäude und gegenüber befindet sich eine kupferne Christusstatue mit Waffen, die mit der ' \
                   'Legende "Venite Ad Me Omnes" emporgehoben sind.'
         answer_start = 70
-        translate_squad = SquadTranslation()
-        result = translate_squad.find_sentence_number(answer_start, context)
+        squad_translation = SquadTranslation()
+        result = squad_translation.find_sentence_number(answer_start, context)
         self.assertEqual(result, 1)
+
+    def test_translate_squad_dataset(self):
+        squad_translation = SquadTranslation()
+        squad_translation.translate_squad_dataset('data/train-v1.1_mock.json', 'data/translated', character_limit=1000)
