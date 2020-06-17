@@ -1,0 +1,120 @@
+{
+  "data": [
+    {
+      "title": "University_of_Notre_Dame",
+      "paragraphs": [
+        {
+          "context": "Architektonisch hat die Schule einen katholischen Charakter. Auf der goldenen Kuppel des Hauptgebäudes befindet sich eine goldene Statue der Jungfrau Maria. Unmittelbar vor dem Hauptgebäude und gegenüber befindet sich eine kupferne Christusstatue mit Waffen, die mit der Legende &quot;Venite Ad Me Omnes&quot; emporgehoben sind. Neben dem Hauptgebäude befindet sich die Basilika des Heiligen Herzens. Unmittelbar hinter der Basilika befindet sich die Grotte, ein marianischer Ort des Gebets und der Besinnung. Es ist eine Replik der Grotte in Lourdes, Frankreich, wo die Jungfrau Maria angeblich der Heiligen Bernadette Soubirous im Jahr 1858 erschien einfache, moderne steinerne Marienstatue.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 600,
+                  "text": "Heilige Bernadette Soubirous"
+                }
+              ],
+              "question": "Wem ist die Jungfrau Maria angeblich 1858 in Lourdes Frankreich erschienen?",
+              "id": "5733be284776f41900661182"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 188,
+                  "text": "eine Kupferstatue von Christus"
+                }
+              ],
+              "question": "Was ist vor dem Notre Dame-Hauptgebäude?",
+              "id": "5733be284776f4190066117f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 335,
+                  "text": "das Hauptgebäude"
+                }
+              ],
+              "question": "Neben welchem Bauwerk befindet sich die Basilika des Heiligen Herzens in Notre Dame?",
+              "id": "5733be284776f41900661180"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 459,
+                  "text": "ein marianischer Ort des Gebets und der Besinnung"
+                }
+              ],
+              "question": "Was ist die Grotte in Notre Dame?",
+              "id": "5733be284776f41900661181"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 117,
+                  "text": "eine goldene Statue der Jungfrau Maria"
+                }
+              ],
+              "question": "Was steht auf dem Hauptgebäude in Notre Dame?",
+              "id": "5733be284776f4190066117e"
+            }
+          ]
+        },
+        {
+          "context": "Wie an den meisten anderen Universitäten betreiben die Studenten von Notre Dame eine Reihe von Nachrichtenmedien. Zu den neun von Studenten betriebenen Verkaufsstellen gehören drei Zeitungen, ein Radio- und ein Fernsehsender sowie mehrere Zeitschriften und Journale. Das im September 1876 als einseitige Zeitschrift begonnene Scholastic-Magazin erscheint zweimal monatlich und gilt als die älteste fortlaufende College-Veröffentlichung in den Vereinigten Staaten. Die andere Zeitschrift, The Juggler, erscheint zweimal im Jahr und konzentriert sich auf studentische Literatur und Kunstwerke. Das Dome-Jahrbuch erscheint jährlich. Die Zeitungen haben unterschiedliche Publikationsinteressen. The Observer wird täglich veröffentlicht und berichtet hauptsächlich über Neuigkeiten aus der Universität und anderen Bereichen. Das Team besteht aus Studenten von Notre Dame und dem Saint Mary&#39;s College. Im Gegensatz zu Scholastic und The Dome ist The Observer eine unabhängige Veröffentlichung und verfügt weder über einen Fakultätsberater noch über eine redaktionelle Aufsicht der Universität. 1987, als einige Studenten glaubten, dass The Observer eine konservative Tendenz zeigte, wurde eine liberale Zeitung namens Common Sense veröffentlicht. Ebenfalls im Jahr 2003, als andere Studenten glaubten, dass das Papier eine liberale Tendenz aufweist, ging das konservative Papier Irish Rover in Produktion. Kein Artikel wird so oft veröffentlicht wie The Observer; Alle drei werden jedoch an alle Schüler verteilt. Im Frühjahr 2008 gab Beyond Politics, eine Zeitschrift für Politikwissenschaftler, ihr Debüt.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 274,
+                  "text": "September 1876"
+                }
+              ],
+              "question": "Wann begann die Veröffentlichung des Scholastic Magazine of Notre Dame?",
+              "id": "5733bf84d058e614000b61be"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 355,
+                  "text": "zweimal"
+                }
+              ],
+              "question": "Wie oft erscheint Notre Dame&#39;s the Juggler?",
+              "id": "5733bf84d058e614000b61bf"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 598,
+                  "text": "Der Beobachter"
+                }
+              ],
+              "question": "Wie heißt die tägliche Schülerzeitung in Notre Dame?",
+              "id": "5733bf84d058e614000b61c0"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 176,
+                  "text": "drei"
+                }
+              ],
+              "question": "Wie viele studentische Zeitungen gibt es in Notre Dame?",
+              "id": "5733bf84d058e614000b61bd"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1092,
+                  "text": "1987"
+                }
+              ],
+              "question": "In welchem Jahr begann die Studentenzeitung Common Sense mit der Veröffentlichung bei Notre Dame?",
+              "id": "5733bf84d058e614000b61c1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.1"
+}

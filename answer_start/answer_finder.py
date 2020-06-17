@@ -4,7 +4,7 @@ from .flair_embeddings import FlairEmbeddingModels
 from nltk.tokenize import word_tokenize
 
 
-class AnswerFinding:
+class AnswerFinder:
     def __init__(self):
         self.fem = FlairEmbeddingModels().de_lang()
 

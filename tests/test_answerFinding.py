@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from answer_start.answer_finding import AnswerFinding
+from answer_start.answer_finder import AnswerFinder
 
 
 class TestAnswerFinding(TestCase):
@@ -10,7 +10,7 @@ class TestAnswerFinding(TestCase):
                   'Hauptgebäudes befindet sich eine goldene Statue der Jungfrau Maria. Unmittelbar vor dem ' \
                   'Hauptgebäude und gegenüber befindet sich eine kupferne Christusstatue mit Waffen, die mit der ' \
                   'Legende "Venite Ad Me Omnes" emporgehoben sind.'
-        result = AnswerFinding().find_answer_in_context(answer_text, context)
+        result = AnswerFinder().find_answer_in_context(answer_text, context)
 
         self.assertEqual(result[0], 214)
         self.assertEqual(result[2], 'sich eine kupferne Christusstatue')

@@ -27,5 +27,5 @@ class SentenceTokenizer:
         for abbr in self.abbreviations:
             self.tokenizer._params.abbrev_types.add(abbr)
 
-    def sentenize_text(self, text):
+    def tokenize_sentence(self, text):
         return self.tokenizer.tokenize(text)
