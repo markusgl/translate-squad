@@ -225,15 +225,11 @@ class SquadTranslation:
         answer_texts = []
         for answer in answers:
             translated_answer = self.translate_text(answer['text'])
-
-            if self.mock:  # use original answer_start to save time
-                answer_start = answer['answer_start']
-            else:
-                answer_start, translated_answer = self.answer_start_probability(answer,
-                                                                                orig_context,
-                                                                                threshold,
-                                                                                translated_answer,
-                                                                                translated_context)
+            answer_start, translated_answer = self.answer_start_probability(answer,
+                                                                            orig_context,
+                                                                            threshold,
+                                                                            translated_answer,
+                                                                            translated_context)
             self.translated_characters += len(translated_answer)
             if not answer_start == -1:
                 answer_texts.append({'answer_start': answer_start, 'text': translated_answer})

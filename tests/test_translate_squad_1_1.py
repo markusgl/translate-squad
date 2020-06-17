@@ -1,4 +1,3 @@
-import json
 from unittest import TestCase
 from translate_squad_1_1 import SquadTranslation
 
@@ -13,8 +12,14 @@ class TestSquadTranslation(TestCase):
                           "is a golden statue of the Virgin Mary. Immediately in front of the Main Building and " \
                           "facing it, is a copper statue of Christ with arms upraised with the legend \"Venite Ad " \
                           "Me Omnes\"."
-        self.orig_answer = "a copper statue of Christ"
-        self.translated_answer = "eine Kupferstatue von Christus"
+        self.orig_answers = [{
+                  "answer_start": 188,
+                  "text": "a copper statue of Christ"
+                }]
+        self.translated_answer = [{
+                  "answer_start": 188,
+                  "text": "eine Kupferstatue von Christus"
+                }]
 
     def test_find_sentence_number(self):
         answer_start = 70
@@ -29,7 +34,7 @@ class TestSquadTranslation(TestCase):
     def test_iterate_answers(self):
         squad_translation = SquadTranslation()
         threshold = 0.5
-        result = squad_translation.iterate_answers(answers=self.orig_answer, orig_context=self.context_en,
+        result = squad_translation.iterate_answers(answers=self.translated_answer, orig_context=self.context_en,
                                                    threshold=threshold, translated_context=self.context_de)
 
-        self.assertEquals(result, [])
+        self.assertEquals(result, [{'answer_start': 214, 'text': 'sich eine kupferne Christusstatue'}])
