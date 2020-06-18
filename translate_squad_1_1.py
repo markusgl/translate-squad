@@ -3,6 +3,7 @@ import os
 import ntpath
 import logging
 import argparse
+from typing import Text
 
 if __package__ is None or __package__ == '':
     from answer_start.answer_finder import AnswerFinder
@@ -28,6 +29,8 @@ class SquadTranslation:
         self.answer_start_not_found_count = 0
         self.mock = True
         self.translated_characters = 0
+        self.question_count = 0
+        self.threshold = 0.5
 
     def safe_json_to_file(self, file_path, json_data):
         self.create_directory_for_file(file_path)
@@ -40,7 +43,7 @@ class SquadTranslation:
         with open(filename, 'r', encoding='utf-8') as f:
             return json.loads(f.read())
 
-    def translate_text(self, text, target_lang = "de") -> object:
+    def translate_text(self, text, target_lang="de") -> Text:
         if self.mock:
             logger.debug('mocking translation...')
             return text
@@ -124,7 +127,7 @@ class SquadTranslation:
 
         return answer_start_in_sentence + context_len_bef_answer
 
-    def translate_squad_dataset(self, input_file_path, output_dir, threshold=0.5, mock=True, character_limit=-1,
+    def translate_squad_dataset(self, input_file_path, output_dir, threshold, mock, character_limit=-1,
                                 verbose=False):
         self.mock = mock
         if verbose:
@@ -139,6 +142,7 @@ class SquadTranslation:
         input_file_name = ntpath.basename(input_file_path)
         output_filename = input_file_name.replace('.json', '_translated.json')
         output_filepath = f'{output_dir}/{output_filename}'
+        self.threshold = threshold
 
         if mock:
             logger.info('Mocking translation... Text will not be send to Translate API')
@@ -164,11 +168,10 @@ class SquadTranslation:
                 translated_data = {'title': squad_data['title']}
                 translated_paragraphs = []
 
-                qas_count, question_count= self.iterate_paragraphs(character_limit,
+                qas_count, question_count = self.iterate_paragraphs(character_limit,
                                                                    qas_count,
                                                                    question_count,
                                                                    squad_data,
-                                                                   threshold,
                                                                    translated_paragraphs)
                 translated_data['paragraphs'] = translated_paragraphs
                 self.store_paragraph_to_file(out_file=f'{output_filepath}_chkp{count_paragraphs}',
@@ -186,48 +189,44 @@ class SquadTranslation:
                         f'Final chkp-file: {output_filepath}_chkp{count_paragraphs-1}\n'
                         f'Out file: {output_filepath}\n')
 
-    def iterate_paragraphs(self, character_limit, qas_count, question_count, squad_data, threshold,
-                           translated_paragraphs):
+    def iterate_paragraphs(self, character_limit, qas_count, question_count, squad_data, translated_paragraphs):
         for paragraph in squad_data['paragraphs']:
             if self.translated_characters >= character_limit > 0:
                 logger.info(f'Character limit of {self.translated_characters} exceeced ')
                 break
 
-            qas_data = []
             orig_context = paragraph['context']
             translated_context = self.translate_text(paragraph['context'])
             self.translated_characters += len(translated_context)
             qas_count += 1
-            question_count, translated_characters = self.iterate_qas(orig_context,
-                                                                     paragraph,
-                                                                     qas_data,
-                                                                     question_count,
-                                                                     threshold,
-                                                                     translated_context)
+            qas_data = self.iterate_qas(orig_context, paragraph, translated_context)
             translated_paragraphs.append({'context': translated_context, 'qas': qas_data})
 
         return qas_count, question_count
 
-    def iterate_qas(self, orig_context, paragraph, qas_data, question_count, threshold, translated_context):
+    def iterate_qas(self, orig_context, paragraph, translated_context):
+        qas_data = []
         for qa in paragraph['qas']:
             question = self.translate_text(qa['question'])
-            question_count += 1
-            self.translated_characters += len(question)
             answers = qa['answers']
+            self.question_count += 1
+            self.translated_characters += len(question)
 
-            answer_texts = self.iterate_answers(answer_texts, answers, orig_context, threshold, translated_context)
-
+            answer_texts = self.iterate_answers(answers, orig_context, translated_context)
             qas_data.append({'answers': answer_texts, 'question': question, 'id': qa['id']})
 
-        return question_count
+        return qas_data
 
-    def iterate_answers(self, answers, orig_context, threshold, translated_context):
+    def iterate_answers(self, answers, orig_context, translated_context):
         answer_texts = []
         for answer in answers:
             translated_answer = self.translate_text(answer['text'])
+            if self.mock:
+                answer_texts.append({'answer_start': answer['answer_start'], 'text': answer['text']})
+                return answer_texts
+
             answer_start, translated_answer = self.answer_start_probability(answer,
                                                                             orig_context,
-                                                                            threshold,
                                                                             translated_answer,
                                                                             translated_context)
             self.translated_characters += len(translated_answer)
@@ -236,17 +235,16 @@ class SquadTranslation:
 
         return answer_texts
 
-    def answer_start_probability(self, answer, orig_context, threshold, translated_answer, translated_context):
+    def answer_start_probability(self, answer, orig_context, translated_answer, translated_context):
         """
         Use 'answer_start' and the answer found in the translated context if word embedding matching probability is
         higher than 0.5 - otherwise use original answer_start
         """
         answer_pos, p_result, sentence_number, substring = self.search_answer_in_translated_context(answer,
                                                                                                     orig_context,
-                                                                                                    threshold,
                                                                                                     translated_answer,
                                                                                                     translated_context)
-        if p_result > threshold:
+        if p_result > self.threshold:
             answer_start = self.get_answer_start_in_context(sentence_number=sentence_number,
                                                             answer_start_in_sentence=answer_pos,
                                                             context=translated_context)
@@ -257,7 +255,7 @@ class SquadTranslation:
         else:
             self.answer_start_not_found_count += 1
             logger.warning(f'answer_start for "{translated_answer}" not found, probability '
-                           f'{p_result} lower than threshold {threshold} - using original '
+                           f'{p_result} lower than threshold {self.threshold} - using original '
                            f'answer_start')
             # TODO otherwise delete the whole question and answer as it is not helpful for training a neural net
             # answer_start = answer['answer_start']
@@ -266,35 +264,33 @@ class SquadTranslation:
 
         return answer_start, translated_answer
 
-    def search_answer_in_translated_context(self, orig_answer, orig_context, threshold, translated_answer,
-                                            translated_context):
+    def search_answer_in_translated_context(self, orig_answer, orig_context, translated_answer, translated_context):
         """
         find in which sentence of the context the original answer is and search only in the same sentence as in the
         original context. If the sentence array of the translated context is longer than in of the original context,
         searches in whole context. This mostly comes from a different sentence splitting in original and translated
         context.
         """
-        sentence_number_orig_context = self.find_sentence_number(answer_start=orig_answer['answer_start'],
-                                                                 context=orig_context)
-        sentence_tokenized_translated_context = self.tokenizer.tokenize_sentence(translated_context)
+        sentence_number = self.find_sentence_number(answer_start=orig_answer['answer_start'], context=orig_context)
+        sent_tokenized_translated_context = self.tokenizer.tokenize_sentence(translated_context)
 
-        if sentence_number_orig_context >= len(sentence_tokenized_translated_context):
+        if sentence_number is None or (sentence_number >= len(sent_tokenized_translated_context)):
             logger.warning("could not find sentence of answer - using whole context for search")
             answer_pos, p_result, substring = self.answer_finder.find_answer_in_context(translated_answer,
                                                                                         translated_context)
         else:
-            sentence_to_search = sentence_tokenized_translated_context[sentence_number_orig_context]
+            sentence_to_search = sent_tokenized_translated_context[sentence_number]
             logger.debug(f'Sentence to search: "{sentence_to_search}"')
             answer_pos, p_result, substring = self.answer_finder.find_answer_in_context(translated_answer,
                                                                                         sentence_to_search)
 
             # Search again in whole context if the answer was not found in the specific sentence
             # This is because the sentence tokenizing does not split always properly
-            if p_result < threshold:
+            if p_result < self.threshold:
                 logger.warning("could not find answer in sentence   - using whole context for search")
                 answer_pos, p_result, substring = self.answer_finder.find_answer_in_context(translated_answer,
                                                                                             translated_context)
-        return answer_pos, p_result, sentence_number_orig_context, substring
+        return answer_pos, p_result, sentence_number, substring
 
     def proceed_existing_chkp_file(self, count_paragraphs, output_filepath, squad_dataset):
         """
