@@ -20,7 +20,7 @@ class Paragraphs(object):
 
 
 class Qas(object):
-    def __init__(self, answers, question, id):
+    def __init__(self, answers: object, question: str, id: str):
         self.answers = answers
         self.question = question
         self.id = id
