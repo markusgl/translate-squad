@@ -2,19 +2,19 @@ from marshmallow import Schema, fields, post_load
 
 
 class TrainSet:  # model
-    def __init__(self, data, version):
+    def __init__(self, data: object, version: str):
         self.data = data
         self.version = version
 
 
 class Data:
-    def __init__(self, title, paragraphs):
+    def __init__(self, title: str, paragraphs: object):
         self.title = title
         self.paragraphs = paragraphs
 
 
 class Paragraphs(object):
-    def __init__(self, context, qas):
+    def __init__(self, context: str, qas: object):
         self.context = context
         self.qas = qas
 
@@ -27,7 +27,7 @@ class Qas(object):
 
 
 class Answers(object):
-    def __init__(self, answer_start, text):
+    def __init__(self, answer_start: int, text: str):
         self.answer_start = answer_start
         self.text = text
 

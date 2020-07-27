@@ -41,4 +41,3 @@ class AnswerFinder:
         char_to_word_offset = context.find(substring)
 
         return char_to_word_offset, p_result, substring
-
