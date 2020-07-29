@@ -250,7 +250,7 @@ class SquadTranslation:
                                                             context=translated_context)
             logger.debug(f'answer_start found - probability {p_result} \n translated answer "{translated_answer}" '
                          f'- most similar substring in translated context "{substring}"')
-            # use tje substring from translated context as answer
+            # use substring from translated context as answer
             translated_answer = substring
         else:
             self.answer_start_not_found_count += 1

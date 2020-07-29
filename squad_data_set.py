@@ -1,7 +1,7 @@
 from marshmallow import Schema, fields, post_load
 
 
-class TrainSet:  # model
+class SquadDataSet:  # model
     def __init__(self, data: object, version: str):
         self.data = data
         self.version = version
@@ -69,10 +69,10 @@ class DataSchema(Schema):
         return Data(**data)
 
 
-class TrainSetSchema(Schema):
+class SquadSetSchema(Schema):
     data = fields.List(fields.Nested(DataSchema))
     version = fields.Str()
 
     @post_load
     def make_user(self, data, **kwargs):
-        return TrainSet(**data)
+        return SquadDataSet(**data)

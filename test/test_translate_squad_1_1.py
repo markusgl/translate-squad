@@ -20,25 +20,22 @@ class TestSquadTranslation(TestCase):
                   "answer_start": 188,
                   "text": "eine Kupferstatue von Christus"
                 }]
+        self.squad_translation = SquadTranslation()
 
     def test_find_sentence_number(self):
-        squad_translation = SquadTranslation()
         answer_start = 70
-        result = squad_translation.find_sentence_number(answer_start, self.context_de)
+        result = self.squad_translation.find_sentence_number(answer_start, self.context_de)
         self.assertEqual(result, 1)
 
     def test_find_sentence_number_bad_case(self):
-        squad_translation = SquadTranslation()
         answer_start = 400
-        result = squad_translation.find_sentence_number(answer_start, self.context_de)
+        result = self.squad_translation.find_sentence_number(answer_start, self.context_de)
         self.assertEqual(result, None)
 
     def test_search_answer_in_translated_context(self):
-        squad_translation = SquadTranslation()
-        squad_translation.search_answer_in_translated_context()
+        self.squad_translation.search_answer_in_translated_context()
 
     def test_iterate_qas(self):
-        squad_translation = SquadTranslation()
         paragraph = {
           "context": "Architecturally, the school has a Catholic character. Atop the Main Building's gold dome is a golden statue of the Virgin Mary. Immediately in front of the Main Building and facing it, is a copper statue of Christ with arms upraised with the legend \"Venite Ad Me Omnes\". Next to the Main Building is the Basilica of the Sacred Heart. Immediately behind the basilica is the Grotto, a Marian place of prayer and reflection. It is a replica of the grotto at Lourdes, France where the Virgin Mary reputedly appeared to Saint Bernadette Soubirous in 1858. At the end of the main drive (and in a direct line that connects through 3 statues and the Gold Dome), is a simple, modern stone statue of Mary.",
           "qas": [
@@ -54,13 +51,12 @@ class TestSquadTranslation(TestCase):
             }
           ]
         }
-        result = squad_translation.iterate_qas(orig_context=self.context_en, paragraph=paragraph, translated_context=self.context_de)
-        print(result)
+        result = self.squad_translation.iterate_qas(orig_context=self.context_en, paragraph=paragraph, translated_context=self.context_de)
+
         self.assertEquals(result, paragraph['qas'])
 
     def test_iterate_answers(self):
-        squad_translation = SquadTranslation()
-        result = squad_translation.iterate_answers(answers=self.translated_answer, orig_context=self.context_en,
+        result = self.squad_translation.iterate_answers(answers=self.translated_answer, orig_context=self.context_en,
                                                    translated_context=self.context_de)
 
         self.assertEquals(result, [{'answer_start': 214, 'text': 'sich eine kupferne Christusstatue'}])
