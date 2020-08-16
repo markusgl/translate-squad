@@ -1,3 +1,4 @@
+import json
 from unittest import TestCase
 from translate_squad_1_1 import SquadTranslation
 
@@ -13,13 +14,13 @@ class TestSquadTranslation(TestCase):
                           "facing it, is a copper statue of Christ with arms upraised with the legend \"Venite Ad " \
                           "Me Omnes\"."
         self.orig_answers = [{
-                  "answer_start": 188,
-                  "text": "a copper statue of Christ"
-                }]
+            "answer_start": 188,
+            "text": "a copper statue of Christ"
+        }]
         self.translated_answer = [{
-                  "answer_start": 188,
-                  "text": "eine Kupferstatue von Christus"
-                }]
+            "answer_start": 188,
+            "text": "eine Kupferstatue von Christus"
+        }]
         self.squad_translation = SquadTranslation()
 
     def test_find_sentence_number(self):
@@ -37,26 +38,48 @@ class TestSquadTranslation(TestCase):
 
     def test_iterate_qas(self):
         paragraph = {
-          "context": "Architecturally, the school has a Catholic character. Atop the Main Building's gold dome is a golden statue of the Virgin Mary. Immediately in front of the Main Building and facing it, is a copper statue of Christ with arms upraised with the legend \"Venite Ad Me Omnes\". Next to the Main Building is the Basilica of the Sacred Heart. Immediately behind the basilica is the Grotto, a Marian place of prayer and reflection. It is a replica of the grotto at Lourdes, France where the Virgin Mary reputedly appeared to Saint Bernadette Soubirous in 1858. At the end of the main drive (and in a direct line that connects through 3 statues and the Gold Dome), is a simple, modern stone statue of Mary.",
-          "qas": [
-            {
-              "answers": [
+            "context": "Architecturally, the school has a Catholic character. Atop the Main Building's gold dome is a golden statue of the Virgin Mary. Immediately in front of the Main Building and facing it, is a copper statue of Christ with arms upraised with the legend \"Venite Ad Me Omnes\". Next to the Main Building is the Basilica of the Sacred Heart. Immediately behind the basilica is the Grotto, a Marian place of prayer and reflection. It is a replica of the grotto at Lourdes, France where the Virgin Mary reputedly appeared to Saint Bernadette Soubirous in 1858. At the end of the main drive (and in a direct line that connects through 3 statues and the Gold Dome), is a simple, modern stone statue of Mary.",
+            "qas": [
                 {
-                  "answer_start": 515,
-                  "text": "Saint Bernadette Soubirous"
+                    "answers": [
+                        {
+                            "answer_start": 515,
+                            "text": "Saint Bernadette Soubirous"
+                        }
+                    ],
+                    "question": "To whom did the Virgin Mary allegedly appear in 1858 in Lourdes France?",
+                    "id": "5733be284776f41900661182"
                 }
-              ],
-              "question": "To whom did the Virgin Mary allegedly appear in 1858 in Lourdes France?",
-              "id": "5733be284776f41900661182"
-            }
-          ]
+            ]
         }
-        result = self.squad_translation.iterate_qas(orig_context=self.context_en, paragraph=paragraph, translated_context=self.context_de)
+        result = self.squad_translation.iterate_qas(orig_context=self.context_en, paragraph=paragraph,
+                                                    translated_context=self.context_de)
 
         self.assertEquals(result, paragraph['qas'])
 
     def test_iterate_answers(self):
         result = self.squad_translation.iterate_answers(answers=self.translated_answer, orig_context=self.context_en,
-                                                   translated_context=self.context_de)
+                                                        translated_context=self.context_de)
 
         self.assertEquals(result, [{'answer_start': 214, 'text': 'sich eine kupferne Christusstatue'}])
+
+    def test_search_existing_chkp_file(self):
+        input_file_path = 'data/train-v1.1_one_paragraph.json'
+        output_file_path = 'data/train-v1.1_translated.json'
+
+        with open(input_file_path, 'r', encoding='utf-8') as f:
+            json_data = json.loads(f.read())
+
+        squad_dataset = json_data['data']
+        result = self.squad_translation.search_existing_chkp_file(squad_dataset, output_file_path)
+        assert result == 'data/train-v1.1_translated.json_chkp0'
+
+    def test_chkp_file_length(self):
+        input_file_path = 'data/train-v1.1_translated.json_chkp1'
+        with open(input_file_path, 'r', encoding='utf-8') as f:
+            json_data = json.loads(f.read())
+
+        result = len(json_data['data'])
+        assert result == 2
+
+

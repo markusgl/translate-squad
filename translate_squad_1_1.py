@@ -5,6 +5,8 @@ import logging
 import argparse
 from typing import Text
 
+from squad_data_set import SquadSetSchema
+
 if __package__ is None or __package__ == '':
     from answer_start.answer_finder import AnswerFinder
     from sentence_tokenizer import SentenceTokenizer
@@ -149,45 +151,47 @@ class SquadTranslation:
 
         if character_limit > 1:
             logger.info(f'Character limit set to {character_limit}. '
-                        f'After limit is reached the current paragraph will be finished.')
+                        f'After limit is reached the current paragraph will be finished and translation stops.')
 
         with open(input_file_path, 'r', encoding='utf-8') as f:
             raw_data = json.loads(f.read())
-            squad_dataset = raw_data['data']
-            count_paragraphs = 0
-            count_paragraphs, squad_dataset = self.proceed_existing_chkp_file(count_paragraphs, output_filepath,
-                                                                              squad_dataset)
+        count_paragraphs = 0
+        squad_set_schema = SquadSetSchema()
+        squad = squad_set_schema.load(raw_data)
+        # squad_dataset = raw_data['data']
+        squad_dataset = squad.data
+        squad_dataset = self.proceed_existing_chkp_file(squad_dataset, output_filepath)
 
-            logger.info('Starting translation...')
-            for squad_data in squad_dataset:
-                if self.translated_characters >= character_limit > 0:
-                    logger.info(f'Character limit of {character_limit} exceeded.')
-                    break
+        logger.info('Starting translation...')
+        for squad_data in squad.data:
+            if self.translated_characters >= character_limit > 0:
+                logger.info(f'Character limit of {character_limit} exceeded.')
+                break
 
-                # take title as is without translation
-                translated_data = {'title': squad_data['title']}
-                translated_paragraphs = []
+            # take title as is without translation
+            translated_data = {'title': squad_data['title']}
+            translated_paragraphs = []
 
-                qas_count, question_count = self.iterate_paragraphs(character_limit,
-                                                                   qas_count,
-                                                                   question_count,
-                                                                   squad_data,
-                                                                   translated_paragraphs)
-                translated_data['paragraphs'] = translated_paragraphs
-                self.store_paragraph_to_file(out_file=f'{output_filepath}_chkp{count_paragraphs}',
-                                             chkp_file=f'{output_filepath}_chkp{count_paragraphs-1}',
-                                             translated_paragraphs=translated_data)
-                count_paragraphs += 1
-                logger.info(f'translated characters {self.translated_characters}')
+            qas_count, question_count = self.iterate_paragraphs(character_limit,
+                                                               qas_count,
+                                                               question_count,
+                                                               squad_data,
+                                                               translated_paragraphs)
+            translated_data['paragraphs'] = translated_paragraphs
+            self.store_paragraph_to_file(out_file=f'{output_filepath}_chkp{count_paragraphs}',
+                                         chkp_file=f'{output_filepath}_chkp{count_paragraphs-1}',
+                                         translated_paragraphs=translated_data)
+            count_paragraphs += 1
+            logger.info(f'translated characters {self.translated_characters}')
 
-            logger.info(f'Translation finished. \n\n**** Summary **** \n'
-                        f'Translated_characters: {self.translated_characters} \n'
-                        f'answer_starts not found: {self.answer_start_not_found_count}\n'
-                        f'Pargraphs: {count_paragraphs} \n'
-                        f'QAS: {qas_count} \n'
-                        f'Questions: {question_count}\n'
-                        f'Final chkp-file: {output_filepath}_chkp{count_paragraphs-1}\n'
-                        f'Out file: {output_filepath}\n')
+        logger.info(f'Translation finished. \n\n**** Summary **** \n'
+                    f'Translated_characters: {self.translated_characters} \n'
+                    f'answer_starts not found: {self.answer_start_not_found_count}\n'
+                    f'Pargraphs: {count_paragraphs} \n'
+                    f'QAS: {qas_count} \n'
+                    f'Questions: {question_count}\n'
+                    f'Final chkp-file: {output_filepath}_chkp{count_paragraphs-1}\n'
+                    f'Out file: {output_filepath}\n')
 
     def iterate_paragraphs(self, character_limit, qas_count, question_count, squad_data, translated_paragraphs):
         for paragraph in squad_data['paragraphs']:
@@ -292,19 +296,39 @@ class SquadTranslation:
                                                                                             translated_context)
         return answer_pos, p_result, sentence_number, substring
 
-    def proceed_existing_chkp_file(self, count_paragraphs, output_filepath, squad_dataset):
+    @staticmethod
+    def search_existing_chkp_file(squad_dataset, output_filepath):
+        for j in reversed(range(len(squad_dataset))):
+            if os.path.exists(f'{output_filepath}_chkp{j}'):
+                return f'{output_filepath}_chkp{j}'
+
+    def proceed_existing_chkp_file2(self, squad_dataset, output_filepath):
         """
         check if checkpoint file from previous translation exists and use it
         """
-        for j in reversed(range(len(squad_dataset))):
-            if os.path.exists(f'{output_filepath}_chkp{j}'):
-                logger.info(f'checkpoint file found at "{output_filepath}_chkp{j}" - restoring file..."')
-                json_data = self.read_stored_dataset(f'{output_filepath}_chkp{j}')
-                len_stored_data = len(json_data['data'])
-                squad_dataset = squad_dataset[len_stored_data:]
-                count_paragraphs = len_stored_data
-                break
+        chkp_filepath = self.search_existing_chkp_file(squad_dataset, output_filepath)
+        logger.info(f'checkpoint file found at "{chkp_filepath}" - restoring file..."')
+        json_data = self.read_stored_dataset(f'{chkp_filepath}')
+        len_stored_data = len(json_data['data'])
+        squad_dataset = squad_dataset[len_stored_data:]
+        count_paragraphs = len_stored_data
+
         return count_paragraphs, squad_dataset
+
+    # def proceed_existing_chkp_file(self, output_filepath, squad_dataset):
+    #     """
+    #     check if checkpoint file from previous translation exists and use it
+    #     """
+    #     count_paragraphs = 0
+    #     for j in reversed(range(len(squad_dataset))):
+    #         if os.path.exists(f'{output_filepath}_chkp{j}'):
+    #             logger.info(f'checkpoint file found at "{output_filepath}_chkp{j}" - restoring file..."')
+    #             json_data = self.read_stored_dataset(f'{output_filepath}_chkp{j}')
+    #             len_stored_data = len(json_data['data'])
+    #             squad_dataset = squad_dataset[len_stored_data:]
+    #             count_paragraphs = len_stored_data
+    #             break
+    #     return count_paragraphs, squad_dataset
 
     @staticmethod
     def concatenate_datasets():
