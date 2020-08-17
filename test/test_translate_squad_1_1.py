@@ -65,7 +65,7 @@ class TestSquadTranslation(TestCase):
 
     def test_search_existing_chkp_file(self):
         input_file_path = 'data/train-v1.1_one_paragraph.json'
-        output_file_path = 'data/train-v1.1_translated.json'
+        output_file_path = 'data/train-v1.1_translated.json_chkp1'
 
         with open(input_file_path, 'r', encoding='utf-8') as f:
             json_data = json.loads(f.read())
@@ -73,6 +73,17 @@ class TestSquadTranslation(TestCase):
         squad_dataset = json_data['data']
         result = self.squad_translation.search_existing_chkp_file(squad_dataset, output_file_path)
         assert result == 'data/train-v1.1_translated.json_chkp0'
+
+    def test_search_existing_chkp_file_bad_case(self):
+        input_file_path = 'data/train-v1.1_one_paragraph.json'
+        output_file_path = 'data/train-v1.1.json'
+
+        with open(input_file_path, 'r', encoding='utf-8') as f:
+            json_data = json.loads(f.read())
+
+        squad_dataset = json_data['data']
+        result = self.squad_translation.search_existing_chkp_file(squad_dataset, output_file_path)
+        assert result is None
 
     def test_chkp_file_length(self):
         input_file_path = 'data/train-v1.1_translated.json_chkp1'
@@ -82,4 +93,14 @@ class TestSquadTranslation(TestCase):
         result = len(json_data['data'])
         assert result == 2
 
+    def test_proceed_existing_chkp_file(self):
+        input_file_path = 'data/train-v1.1_mock.json'
+        output_file_path = 'data/train-v1.1_translated.json_chkp0'
 
+        with open(input_file_path, 'r', encoding='utf-8') as f:
+            json_data = json.loads(f.read())
+
+        squad_dataset = json_data['data']
+        result = self.squad_translation.strip_data_section_to_chkp_length(squad_dataset, output_file_path)
+
+        assert len(result) == 2

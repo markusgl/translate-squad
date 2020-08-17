@@ -33,6 +33,7 @@ class SquadTranslation:
         self.translated_characters = 0
         self.question_count = 0
         self.threshold = 0.5
+        self.count_paragraphs = 0
 
     def safe_json_to_file(self, file_path, json_data):
         self.create_directory_for_file(file_path)
@@ -155,12 +156,11 @@ class SquadTranslation:
 
         with open(input_file_path, 'r', encoding='utf-8') as f:
             raw_data = json.loads(f.read())
-        count_paragraphs = 0
+        # count_paragraphs = 0
         squad_set_schema = SquadSetSchema()
         squad = squad_set_schema.load(raw_data)
         # squad_dataset = raw_data['data']
-        squad_dataset = squad.data
-        squad_dataset = self.proceed_existing_chkp_file(squad_dataset, output_filepath)
+        squad_dataset = self.strip_data_section_to_chkp_length(squad.data, output_filepath)
 
         logger.info('Starting translation...')
         for squad_data in squad.data:
@@ -178,19 +178,19 @@ class SquadTranslation:
                                                                squad_data,
                                                                translated_paragraphs)
             translated_data['paragraphs'] = translated_paragraphs
-            self.store_paragraph_to_file(out_file=f'{output_filepath}_chkp{count_paragraphs}',
-                                         chkp_file=f'{output_filepath}_chkp{count_paragraphs-1}',
+            self.store_paragraph_to_file(out_file=f'{output_filepath}_chkp{self.count_paragraphs}',
+                                         chkp_file=f'{output_filepath}_chkp{self.count_paragraphs-1}',
                                          translated_paragraphs=translated_data)
-            count_paragraphs += 1
+            self.count_paragraphs += 1
             logger.info(f'translated characters {self.translated_characters}')
 
         logger.info(f'Translation finished. \n\n**** Summary **** \n'
                     f'Translated_characters: {self.translated_characters} \n'
                     f'answer_starts not found: {self.answer_start_not_found_count}\n'
-                    f'Pargraphs: {count_paragraphs} \n'
+                    f'Pargraphs: {self.count_paragraphs} \n'
                     f'QAS: {qas_count} \n'
                     f'Questions: {question_count}\n'
-                    f'Final chkp-file: {output_filepath}_chkp{count_paragraphs-1}\n'
+                    f'Final chkp-file: {output_filepath}_chkp{self.count_paragraphs-1}\n'
                     f'Out file: {output_filepath}\n')
 
     def iterate_paragraphs(self, character_limit, qas_count, question_count, squad_data, translated_paragraphs):
@@ -302,18 +302,19 @@ class SquadTranslation:
             if os.path.exists(f'{output_filepath}_chkp{j}'):
                 return f'{output_filepath}_chkp{j}'
 
-    def proceed_existing_chkp_file2(self, squad_dataset, output_filepath):
+    def strip_data_section_to_chkp_length(self, full_data_section, output_filepath):
         """
         check if checkpoint file from previous translation exists and use it
         """
-        chkp_filepath = self.search_existing_chkp_file(squad_dataset, output_filepath)
-        logger.info(f'checkpoint file found at "{chkp_filepath}" - restoring file..."')
-        json_data = self.read_stored_dataset(f'{chkp_filepath}')
-        len_stored_data = len(json_data['data'])
-        squad_dataset = squad_dataset[len_stored_data:]
-        count_paragraphs = len_stored_data
-
-        return count_paragraphs, squad_dataset
+        chkp_filepath = self.search_existing_chkp_file(full_data_section, output_filepath)
+        if chkp_filepath:
+            logger.info(f'checkpoint file found at "{chkp_filepath}" - restoring file..."')
+            chkp_json_data = self.read_stored_dataset(f'{chkp_filepath}')
+            chkp_data_sec_length = len(chkp_json_data['data'])
+            self.count_paragraphs = chkp_data_sec_length
+            return full_data_section[chkp_data_sec_length:]
+        else:
+            return full_data_section
 
     # def proceed_existing_chkp_file(self, output_filepath, squad_dataset):
     #     """
