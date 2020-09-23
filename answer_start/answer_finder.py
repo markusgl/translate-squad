@@ -8,15 +8,15 @@ class AnswerFinder:
     def __init__(self):
         self.fem = FlairEmbeddingModels().de_lang()
 
-    def find_answer_in_context(self, answer_text: Text, context: Text):
+    def find_most_common_substring(self, substring: Text, whole_text: Text):
         """
         Finds a string inside a context using word embeddings
-        :param answer_text:
-        :param context:
+        :param substring:
+        :param whole_text:
         :return:
         """
-        tokenized_answer = word_tokenize(answer_text)
-        tokenized_context = word_tokenize(context)
+        tokenized_answer = word_tokenize(substring)
+        tokenized_context = word_tokenize(whole_text)
 
         window_size = len(tokenized_answer)
         context_range = len(tokenized_context) - window_size
@@ -38,6 +38,6 @@ class AnswerFinder:
             substring += word + " "
         substring = substring.rstrip()
 
-        char_to_word_offset = context.find(substring)
+        char_to_word_offset = whole_text.find(substring)
 
         return char_to_word_offset, p_result, substring

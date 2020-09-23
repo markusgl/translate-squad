@@ -1,19 +1,20 @@
 import json
 from unittest import TestCase
+
 from translate_squad_1_1 import SquadTranslation
 
 
 class TestSquadTranslation(TestCase):
     def setUp(self) -> None:
-        self.context_de = 'Architektonisch hat die Schule einen katholischen Charakter. Über der goldenen Kuppel des ' \
-                          'Hauptgebäudes befindet sich eine goldene Statue der Jungfrau Maria. Unmittelbar vor dem ' \
-                          'Hauptgebäude und gegenüber befindet sich eine kupferne Christusstatue mit Waffen, die mit ' \
-                          'der Legende "Venite Ad Me Omnes" emporgehoben sind.'
-        self.context_en = "Architecturally, the school has a Catholic character. Atop the Main Building's gold dome " \
-                          "is a golden statue of the Virgin Mary. Immediately in front of the Main Building and " \
-                          "facing it, is a copper statue of Christ with arms upraised with the legend \"Venite Ad " \
-                          "Me Omnes\"."
-        self.orig_answers = [{
+        self.orig_context = "Architecturally, the school has a Catholic character. Atop the Main Building's gold dome " \
+                            "is a golden statue of the Virgin Mary. Immediately in front of the Main Building and " \
+                            "facing it, is a copper statue of Christ with arms upraised with the legend \"Venite Ad " \
+                            "Me Omnes\"."
+        self.translated_context = 'Architektonisch hat die Schule einen katholischen Charakter. Über der goldenen Kuppel des ' \
+                                  'Hauptgebäudes befindet sich eine goldene Statue der Jungfrau Maria. Unmittelbar vor dem ' \
+                                  'Hauptgebäude und gegenüber befindet sich eine kupferne Christusstatue mit Waffen, die mit ' \
+                                  'der Legende "Venite Ad Me Omnes" emporgehoben sind.'
+        self.orig_answer = [{
             "answer_start": 188,
             "text": "a copper statue of Christ"
         }]
@@ -25,16 +26,13 @@ class TestSquadTranslation(TestCase):
 
     def test_find_sentence_number(self):
         answer_start = 70
-        result = self.squad_translation.find_sentence_number(answer_start, self.context_de)
+        result = self.squad_translation.find_sentence_number(answer_start, self.translated_context)
         self.assertEqual(result, 1)
 
     def test_find_sentence_number_bad_case(self):
         answer_start = 400
-        result = self.squad_translation.find_sentence_number(answer_start, self.context_de)
+        result = self.squad_translation.find_sentence_number(answer_start, self.translated_context)
         self.assertEqual(result, None)
-
-    def test_search_answer_in_translated_context(self):
-        self.squad_translation.search_answer_in_translated_context()
 
     def test_iterate_qas(self):
         paragraph = {
@@ -52,16 +50,25 @@ class TestSquadTranslation(TestCase):
                 }
             ]
         }
-        result = self.squad_translation.iterate_qas(orig_context=self.context_en, paragraph=paragraph,
-                                                    translated_context=self.context_de)
+        result = self.squad_translation.iterate_qas(orig_context=self.orig_context, paragraph=paragraph,
+                                                    translated_context=self.translated_context)
 
         self.assertEquals(result, paragraph['qas'])
 
     def test_iterate_answers(self):
-        result = self.squad_translation.iterate_answers(answers=self.translated_answer, orig_context=self.context_en,
-                                                        translated_context=self.context_de)
+        result = self.squad_translation.iterate_answers(answers=self.translated_answer,
+                                                        orig_context=self.orig_context,
+                                                        translated_context=self.translated_context)
 
         self.assertEquals(result, [{'answer_start': 214, 'text': 'sich eine kupferne Christusstatue'}])
+
+    def test_iterate_answers_bad_case(self):
+        answers = [{"answer_start": 123, "text": "bla bla bla"}]
+        result = self.squad_translation.iterate_answers(answers=answers,
+                                                        orig_context=self.orig_context,
+                                                        translated_context=self.translated_context)
+
+        self.assertEquals(result, [])
 
     def test_search_existing_chkp_file(self):
         input_file_path = 'data/train-v1.1_one_paragraph.json'
@@ -104,3 +111,38 @@ class TestSquadTranslation(TestCase):
         result = self.squad_translation.strip_data_section_to_chkp_length(squad_dataset, output_file_path)
 
         assert len(result) == 2
+
+    def test_search_answer_in_translated_context(self):  # TODO
+        sentence_number = self.squad_translation.find_sentence_number(answer_start=self.orig_answer[0]['answer_start'],
+                                                                      context=self.orig_context)
+        answer_pos, p_result, sentence_number, substring = self.squad_translation \
+            .find_sentence_with_answer_in_translated_context(sentence_number=sentence_number,
+                                                             translated_answer_text=self.translated_answer[0]['text'],
+                                                             translated_context=self.translated_context)
+
+        self.assertEqual(answer_pos, 56)
+        self.assertEqual(sentence_number, 2)
+        self.assertEqual(substring, 'sich eine kupferne Christusstatue')
+
+    def test_return_answer_start_good_case(self):
+        sentence_number = self.squad_translation.find_sentence_number(answer_start=self.orig_answer[0]['answer_start'],
+                                                                      context=self.orig_context)
+        answer_start, translated_answer_text = self.squad_translation.find_answer_start_in_translated_context(
+            sentence_number=sentence_number,
+            translated_answer_text=self.translated_answer[0]['text'],
+            translated_context=self.translated_context)
+
+        self.assertEqual(answer_start, 214)
+        self.assertEqual(translated_answer_text, 'sich eine kupferne Christusstatue')
+
+    def test_return_answer_start_bad_case(self):
+        sentence_number = self.squad_translation.find_sentence_number(self.orig_answer[0]['answer_start'],
+                                                                      self.orig_context)
+
+        answer_start, translated_answer_text = self.squad_translation.find_answer_start_in_translated_context(
+            sentence_number=sentence_number,
+            translated_answer_text='bla bla bla',
+            translated_context=self.translated_context)
+
+        self.assertEqual(answer_start, -1)
+        self.assertEqual(translated_answer_text, 'bla bla bla')

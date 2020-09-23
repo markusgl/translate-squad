@@ -16,7 +16,6 @@ else:
 
 from google.cloud import translate
 
-
 logger = logging.getLogger('translate_squad')
 fh = logging.FileHandler('translate_squad.log')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -113,14 +112,12 @@ class SquadTranslation:
             if char_count >= answer_start:
                 return i
 
-    def get_answer_start_in_context(self, sentence_number, answer_start_in_sentence, context):
+    def convert_answer_start_in_sentence_to_answer_start_in_context(self, sentence_number, answer_start_in_sentence,
+                                                                    context):
         """
         determines the final answer_start inside the translated context based on the sentence number, answer start
         inside the sentence and translated context
-        :param context: translated context
-        :param sentence_number:
-        :param answer_start_in_sentence:
-        :return: answer_start number in translated context
+        :return: answer_start number in whole context
         """
         sentenized_context = self.tokenizer.tokenize_sentence(context)
 
@@ -173,13 +170,13 @@ class SquadTranslation:
             translated_paragraphs = []
 
             qas_count, question_count = self.iterate_paragraphs(character_limit,
-                                                               qas_count,
-                                                               question_count,
-                                                               squad_data,
-                                                               translated_paragraphs)
+                                                                qas_count,
+                                                                question_count,
+                                                                squad_data,
+                                                                translated_paragraphs)
             translated_data['paragraphs'] = translated_paragraphs
             self.store_paragraph_to_file(out_file=f'{output_filepath}_chkp{self.count_paragraphs}',
-                                         chkp_file=f'{output_filepath}_chkp{self.count_paragraphs-1}',
+                                         chkp_file=f'{output_filepath}_chkp{self.count_paragraphs - 1}',
                                          translated_paragraphs=translated_data)
             self.count_paragraphs += 1
             logger.info(f'translated characters {self.translated_characters}')
@@ -190,7 +187,7 @@ class SquadTranslation:
                     f'Pargraphs: {self.count_paragraphs} \n'
                     f'QAS: {qas_count} \n'
                     f'Questions: {question_count}\n'
-                    f'Final chkp-file: {output_filepath}_chkp{self.count_paragraphs-1}\n'
+                    f'Final chkp-file: {output_filepath}_chkp{self.count_paragraphs - 1}\n'
                     f'Out file: {output_filepath}\n')
 
     def iterate_paragraphs(self, character_limit, qas_count, question_count, squad_data, translated_paragraphs):
@@ -229,36 +226,39 @@ class SquadTranslation:
                 answer_texts.append({'answer_start': answer['answer_start'], 'text': answer['text']})
                 return answer_texts
 
-            answer_start, translated_answer = self.answer_start_probability(answer,
-                                                                            orig_context,
-                                                                            translated_answer,
-                                                                            translated_context)
+            orig_answer_start = answer['answer_start']
+            sentence_number = self.find_sentence_number(orig_answer_start, orig_context)
+            answer_start, translated_answer = self.find_answer_start_in_translated_context(sentence_number,
+                                                                                           translated_answer,
+                                                                                           translated_context)
             self.translated_characters += len(translated_answer)
             if not answer_start == -1:
                 answer_texts.append({'answer_start': answer_start, 'text': translated_answer})
 
         return answer_texts
 
-    def answer_start_probability(self, answer, orig_context, translated_answer, translated_context):
+    def find_answer_start_in_translated_context(self, sentence_number, translated_answer_text, translated_context):
         """
-        Use 'answer_start' and the answer found in the translated context if word embedding matching probability is
-        higher than 0.5 - otherwise use original answer_start
+        Compare original answer and the answer found in the translated context using word embeddings.
+        If probability is higher than 0.5 use answer found in translated context otherwise discard answer
         """
-        answer_pos, p_result, sentence_number, substring = self.search_answer_in_translated_context(answer,
-                                                                                                    orig_context,
-                                                                                                    translated_answer,
-                                                                                                    translated_context)
+        answer_start_in_sentence, p_result, substring = \
+            self.find_sentence_with_answer_in_translated_context(sentence_number=sentence_number,
+                                                                 translated_answer_text=translated_answer_text,
+                                                                 translated_context=translated_context)
         if p_result > self.threshold:
-            answer_start = self.get_answer_start_in_context(sentence_number=sentence_number,
-                                                            answer_start_in_sentence=answer_pos,
-                                                            context=translated_context)
-            logger.debug(f'answer_start found - probability {p_result} \n translated answer "{translated_answer}" '
+            answer_start = self \
+                .convert_answer_start_in_sentence_to_answer_start_in_context(sentence_number=sentence_number,
+                                                                             answer_start_in_sentence=answer_start_in_sentence,
+                                                                             context=translated_context)
+
+            logger.debug(f'answer_start found - probability {p_result} \n translated answer "{translated_answer_text}" '
                          f'- most similar substring in translated context "{substring}"')
             # use substring from translated context as answer
-            translated_answer = substring
+            translated_answer_text = substring
         else:
             self.answer_start_not_found_count += 1
-            logger.warning(f'answer_start for "{translated_answer}" not found, probability '
+            logger.warning(f'answer_start for "{translated_answer_text}" not found, probability '
                            f'{p_result} lower than threshold {self.threshold} - using original '
                            f'answer_start')
             # TODO otherwise delete the whole question and answer as it is not helpful for training a neural net
@@ -266,35 +266,40 @@ class SquadTranslation:
             # set to negative number to indicate that this answer should be deleted from translated data set
             answer_start = -1
 
-        return answer_start, translated_answer
+        return answer_start, translated_answer_text
 
-    def search_answer_in_translated_context(self, orig_answer, orig_context, translated_answer, translated_context):
+    def find_sentence_with_answer_in_translated_context(self, sentence_number, translated_answer_text,
+                                                        translated_context):
         """
         find in which sentence of the context the original answer is and search only in the same sentence as in the
         original context. If the sentence array of the translated context is longer than in of the original context,
         searches in whole context. This mostly comes from a different sentence splitting in original and translated
         context.
         """
-        sentence_number = self.find_sentence_number(answer_start=orig_answer['answer_start'], context=orig_context)
         sent_tokenized_translated_context = self.tokenizer.tokenize_sentence(translated_context)
 
+        # search in whole context
         if sentence_number is None or (sentence_number >= len(sent_tokenized_translated_context)):
             logger.warning("could not find sentence of answer - using whole context for search")
-            answer_pos, p_result, substring = self.answer_finder.find_answer_in_context(translated_answer,
-                                                                                        translated_context)
-        else:
+            answer_start_in_sentence, probability, substring = self.answer_finder.find_most_common_substring(
+                substring=translated_answer_text,
+                whole_text=translated_context)
+        else:  # search only in specific sentence
             sentence_to_search = sent_tokenized_translated_context[sentence_number]
             logger.debug(f'Sentence to search: "{sentence_to_search}"')
-            answer_pos, p_result, substring = self.answer_finder.find_answer_in_context(translated_answer,
-                                                                                        sentence_to_search)
+            answer_start_in_sentence, probability, substring = self.answer_finder.find_most_common_substring(
+                substring=translated_answer_text,
+                whole_text=sentence_to_search)
 
             # Search again in whole context if the answer was not found in the specific sentence
-            # This is because the sentence tokenizing does not split always properly
-            if p_result < self.threshold:
+            # This is because the sentence tokenizing does not always split properly
+            if probability < self.threshold:
                 logger.warning("could not find answer in sentence   - using whole context for search")
-                answer_pos, p_result, substring = self.answer_finder.find_answer_in_context(translated_answer,
-                                                                                            translated_context)
-        return answer_pos, p_result, sentence_number, substring
+                answer_start_in_sentence, probability, substring = self.answer_finder.find_most_common_substring(
+                    translated_answer_text,
+                    translated_context)
+
+        return answer_start_in_sentence, probability, substring
 
     @staticmethod
     def search_existing_chkp_file(squad_dataset, output_filepath):
