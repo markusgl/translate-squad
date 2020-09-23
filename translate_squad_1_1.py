@@ -145,7 +145,7 @@ class SquadTranslation:
         self.threshold = threshold
 
         if mock:
-            logger.info('Mocking translation... Text will not be send to Translate API')
+            logger.info('Mocking translation... Text will not be sent to Translate API')
 
         if character_limit > 1:
             logger.info(f'Character limit set to {character_limit}. '
@@ -158,15 +158,16 @@ class SquadTranslation:
         squad = squad_set_schema.load(raw_data)
         # squad_dataset = raw_data['data']
         squad_dataset = self.strip_data_section_to_chkp_length(squad.data, output_filepath)
-
+        # TODO use object
         logger.info('Starting translation...')
-        for squad_data in squad.data:
+
+        for squad_data in squad_dataset:
             if self.translated_characters >= character_limit > 0:
                 logger.info(f'Character limit of {character_limit} exceeded.')
                 break
 
             # take title as is without translation
-            translated_data = {'title': squad_data['title']}
+            translated_data = {'title': squad_data.title}
             translated_paragraphs = []
 
             qas_count, question_count = self.iterate_paragraphs(character_limit,
@@ -175,6 +176,7 @@ class SquadTranslation:
                                                                 squad_data,
                                                                 translated_paragraphs)
             translated_data['paragraphs'] = translated_paragraphs
+
             self.store_paragraph_to_file(out_file=f'{output_filepath}_chkp{self.count_paragraphs}',
                                          chkp_file=f'{output_filepath}_chkp{self.count_paragraphs - 1}',
                                          translated_paragraphs=translated_data)
@@ -188,16 +190,17 @@ class SquadTranslation:
                     f'QAS: {qas_count} \n'
                     f'Questions: {question_count}\n'
                     f'Final chkp-file: {output_filepath}_chkp{self.count_paragraphs - 1}\n'
-                    f'Out file: {output_filepath}\n')
+                    #f'Out file: {output_filepath}\n'
+                    )
 
     def iterate_paragraphs(self, character_limit, qas_count, question_count, squad_data, translated_paragraphs):
-        for paragraph in squad_data['paragraphs']:
+        for paragraph in squad_data.paragraphs:
             if self.translated_characters >= character_limit > 0:
                 logger.info(f'Character limit of {self.translated_characters} exceeced ')
                 break
 
-            orig_context = paragraph['context']
-            translated_context = self.translate_text(paragraph['context'])
+            orig_context = paragraph.context
+            translated_context = self.translate_text(paragraph.context)
             self.translated_characters += len(translated_context)
             qas_count += 1
             qas_data = self.iterate_qas(orig_context, paragraph, translated_context)
@@ -207,33 +210,33 @@ class SquadTranslation:
 
     def iterate_qas(self, orig_context, paragraph, translated_context):
         qas_data = []
-        for qa in paragraph['qas']:
-            question = self.translate_text(qa['question'])
-            answers = qa['answers']
+        for qa in paragraph.qas:
+            question = self.translate_text(qa.question)
+            answers = qa.answers
             self.question_count += 1
             self.translated_characters += len(question)
 
             answer_texts = self.iterate_answers(answers, orig_context, translated_context)
-            qas_data.append({'answers': answer_texts, 'question': question, 'id': qa['id']})
+            qas_data.append({'answers': answer_texts, 'question': question, 'id': qa.id})
 
         return qas_data
 
     def iterate_answers(self, answers, orig_context, translated_context):
         answer_texts = []
         for answer in answers:
-            translated_answer = self.translate_text(answer['text'])
+            translated_answer = self.translate_text(answer.text)
             if self.mock:
-                answer_texts.append({'answer_start': answer['answer_start'], 'text': answer['text']})
-                return answer_texts
+                answer_texts.append({'answer_start': answer.answer_start, 'text': answer.text})
 
-            orig_answer_start = answer['answer_start']
-            sentence_number = self.find_sentence_number(orig_answer_start, orig_context)
-            answer_start, translated_answer = self.find_answer_start_in_translated_context(sentence_number,
-                                                                                           translated_answer,
-                                                                                           translated_context)
-            self.translated_characters += len(translated_answer)
-            if not answer_start == -1:
-                answer_texts.append({'answer_start': answer_start, 'text': translated_answer})
+            else:
+                orig_answer_start = answer.answer_start
+                sentence_number = self.find_sentence_number(orig_answer_start, orig_context)
+                answer_start, translated_answer = self.find_answer_start_in_translated_context(sentence_number,
+                                                                                               translated_answer,
+                                                                                               translated_context)
+                self.translated_characters += len(translated_answer)
+                if not answer_start == -1:
+                    answer_texts.append({'answer_start': answer_start, 'text': translated_answer})
 
         return answer_texts
 
