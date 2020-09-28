@@ -145,7 +145,7 @@ class SquadTranslation:
         self.threshold = threshold
 
         if mock:
-            logger.info('Mocking translation... Text will not be sent to Translate API')
+            logger.info('Mocking translation... Text will NOT be sent to Translate API')
 
         if character_limit > 1:
             logger.info(f'Character limit set to {character_limit}. '
@@ -158,7 +158,6 @@ class SquadTranslation:
         squad = squad_set_schema.load(raw_data)
         # squad_dataset = raw_data['data']
         squad_dataset = self.strip_data_section_to_chkp_length(squad.data, output_filepath)
-        # TODO use object
         logger.info('Starting translation...')
 
         for squad_data in squad_dataset:
