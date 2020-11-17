@@ -28,11 +28,17 @@ class SquadTranslation:
         self.tokenizer = SentenceTokenizer()
         self.answer_finder = AnswerFinder()
         self.answer_start_not_found_count = 0
-        self.mock = True
+        self.answer_match_probability_threshold = 0.5
+
+        # internal counters
         self.translated_characters = 0
         self.question_count = 0
-        self.threshold = 0.5
         self.count_paragraphs = 0
+
+        # Google Cloud Translation
+        self.source_lang = 'en'
+        self.target_lang = 'de'
+        self.mock = True
 
     def safe_json_to_file(self, file_path, json_data):
         self.create_directory_for_file(file_path)
@@ -45,19 +51,28 @@ class SquadTranslation:
         with open(filename, 'r', encoding='utf-8') as f:
             return json.loads(f.read())
 
-    def translate_text(self, text, target_lang="de") -> Text:
+    def translate_text(self, text) -> Text:
+        """
+        !! WARNING: causes costs !!
+        Sends a text to Google Translation API (Cloud Translation)
+
+        Make sure you have a properly set up project in GCP as described here:
+        https://cloud.google.com/translate/docs/setup
+        and your have stored your auth credentials on the machine running this script as described here:
+        https://cloud.google.com/translate/docs/setup#using_the_service_account_key_file_in_your_environment
+
+        :param text: text to translate in english
+        :return: translated text in 'target_lang' or original text if 'mock' is set to true
+        """
         if self.mock:
             logger.debug('mocking translation...')
             return text
 
         logger.debug('sending text to Translation API ...')
         client = translate.TranslationServiceClient()
-        # TODO project id
-        project_id = '1234'
         translation = client.translate_text(contents=[text],
-                                            parent=client.location_path(project_id, 'us-central1'),
-                                            source_language_code='en',
-                                            target_language_code=target_lang)
+                                            source_language_code=self.source_lang,
+                                            target_language_code=self.target_lang)
 
         return translation['translatedText']
 
@@ -142,7 +157,7 @@ class SquadTranslation:
         input_file_name = ntpath.basename(input_file_path)
         output_filename = input_file_name.replace('.json', '_translated.json')
         output_filepath = f'{output_dir}/{output_filename}'
-        self.threshold = threshold
+        self.answer_match_probability_threshold = threshold
 
         if mock:
             logger.info('Mocking translation... Text will NOT be sent to Translate API')
@@ -248,7 +263,7 @@ class SquadTranslation:
             self.find_sentence_with_answer_in_translated_context(sentence_number=sentence_number,
                                                                  translated_answer_text=translated_answer_text,
                                                                  translated_context=translated_context)
-        if p_result > self.threshold:
+        if p_result > self.answer_match_probability_threshold:
             answer_start = self \
                 .convert_answer_start_in_sentence_to_answer_start_in_context(sentence_number=sentence_number,
                                                                              answer_start_in_sentence=answer_start_in_sentence,
@@ -261,7 +276,7 @@ class SquadTranslation:
         else:
             self.answer_start_not_found_count += 1
             logger.warning(f'answer_start for "{translated_answer_text}" not found, probability '
-                           f'{p_result} lower than threshold {self.threshold} - using original '
+                           f'{p_result} lower than threshold {self.answer_match_probability_threshold} - using original '
                            f'answer_start')
             # TODO otherwise delete the whole question and answer as it is not helpful for training a neural net
             # answer_start = answer['answer_start']
@@ -295,7 +310,7 @@ class SquadTranslation:
 
             # Search again in whole context if the answer was not found in the specific sentence
             # This is because the sentence tokenizing does not always split properly
-            if probability < self.threshold:
+            if probability < self.answer_match_probability_threshold:
                 logger.warning("could not find answer in sentence   - using whole context for search")
                 answer_start_in_sentence, probability, substring = self.answer_finder.find_most_common_substring(
                     translated_answer_text,
