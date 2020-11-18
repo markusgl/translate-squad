@@ -14,7 +14,7 @@ else:
     from .answer_start.answer_finder import AnswerFinder
     from .sentence_tokenizer import SentenceTokenizer
 
-from google.cloud import translate
+# from google.cloud import translate
 
 logger = logging.getLogger('translate_squad')
 fh = logging.FileHandler('translate_squad.log')
@@ -24,8 +24,8 @@ logger.addHandler(fh)
 
 
 class SquadTranslation:
-    def __init__(self):
-        self.tokenizer = SentenceTokenizer()
+    def __init__(self, mock=True):
+        # self.tokenizer = SentenceTokenizer()
         self.answer_finder = AnswerFinder()
         self.answer_start_not_found_count = 0
         self.answer_match_probability_threshold = 0.5
@@ -38,7 +38,7 @@ class SquadTranslation:
         # Google Cloud Translation
         self.source_lang = 'en'
         self.target_lang = 'de'
-        self.mock = True
+        self.mock = mock
 
     def safe_json_to_file(self, file_path, json_data):
         self.create_directory_for_file(file_path)
@@ -61,6 +61,8 @@ class SquadTranslation:
         and your have stored your auth credentials on the machine running this script as described here:
         https://cloud.google.com/translate/docs/setup#using_the_service_account_key_file_in_your_environment
 
+        You can verify the access with the unit test
+
         :param text: text to translate in english
         :return: translated text in 'target_lang' or original text if 'mock' is set to true
         """
@@ -69,12 +71,16 @@ class SquadTranslation:
             return text
 
         logger.debug('sending text to Translation API ...')
-        client = translate.TranslationServiceClient()
-        translation = client.translate_text(contents=[text],
-                                            source_language_code=self.source_lang,
-                                            target_language_code=self.target_lang)
+        # client = translate.TranslationServiceClient()
+        # translation = client.translate_text(contents=[text],
+        #                                     source_language_code=self.source_lang,
+        #                                     target_language_code=self.target_lang)
+        from google.cloud import translate_v2 as translate
+        client = translate.Client()
+        translation = client.translate(values=text, source_language=self.source_lang,
+                                       target_language=self.target_lang)
 
-        return translation['translatedText']
+        return translation["translatedText"]
 
     @staticmethod
     def strip_filename_from_path(file_path):
@@ -119,7 +125,7 @@ class SquadTranslation:
         :param context: original context (english)
         :return: sentence number of the sentenized context
         """
-        sentences = self.tokenizer.tokenize_sentence(context)
+        sentences = SentenceTokenizer().tokenize_sentence(context)
 
         char_count = 0
         for i, sent in enumerate(sentences):
@@ -134,7 +140,7 @@ class SquadTranslation:
         inside the sentence and translated context
         :return: answer_start number in whole context
         """
-        sentenized_context = self.tokenizer.tokenize_sentence(context)
+        sentenized_context = SentenceTokenizer().tokenize_sentence(context)
 
         context_len_bef_answer = 0
         for sent in sentenized_context[:sentence_number]:
@@ -204,7 +210,7 @@ class SquadTranslation:
                     f'QAS: {qas_count} \n'
                     f'Questions: {question_count}\n'
                     f'Final chkp-file: {output_filepath}_chkp{self.count_paragraphs - 1}\n'
-                    #f'Out file: {output_filepath}\n'
+                    # f'Out file: {output_filepath}\n'
                     )
 
     def iterate_paragraphs(self, character_limit, qas_count, question_count, squad_data, translated_paragraphs):
@@ -293,7 +299,7 @@ class SquadTranslation:
         searches in whole context. This mostly comes from a different sentence splitting in original and translated
         context.
         """
-        sent_tokenized_translated_context = self.tokenizer.tokenize_sentence(translated_context)
+        sent_tokenized_translated_context = SentenceTokenizer().tokenize_sentence(translated_context)
 
         # search in whole context
         if sentence_number is None or (sentence_number >= len(sent_tokenized_translated_context)):

@@ -1,5 +1,5 @@
 import json
-from unittest import TestCase
+from unittest import TestCase, skip
 
 from translate_squad_1_1 import SquadTranslation
 
@@ -146,3 +146,10 @@ class TestSquadTranslation(TestCase):
 
         self.assertEqual(answer_start, -1)
         self.assertEqual(translated_answer_text, 'bla bla bla')
+
+    @skip("causes costs - run this test exclusively for checking Google Cloud Translation API access")
+    def test_translate_text(self):
+        some_text = "dog"
+
+        response = SquadTranslation(mock=False).translate_text(some_text)
+        self.assertEqual(response, "Hund")
