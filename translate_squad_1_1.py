@@ -6,6 +6,7 @@ import argparse
 from typing import Text
 
 from squad_data_set import SquadSetSchema
+from google.cloud import translate_v2 as translate
 
 if __package__ is None or __package__ == '':
     from answer_start.answer_finder import AnswerFinder
@@ -14,7 +15,6 @@ else:
     from .answer_start.answer_finder import AnswerFinder
     from .sentence_tokenizer import SentenceTokenizer
 
-# from google.cloud import translate
 
 logger = logging.getLogger('translate_squad')
 fh = logging.FileHandler('translate_squad.log')
@@ -71,11 +71,6 @@ class SquadTranslation:
             return text
 
         logger.debug('sending text to Translation API ...')
-        # client = translate.TranslationServiceClient()
-        # translation = client.translate_text(contents=[text],
-        #                                     source_language_code=self.source_lang,
-        #                                     target_language_code=self.target_lang)
-        from google.cloud import translate_v2 as translate
         client = translate.Client()
         translation = client.translate(values=text, source_language=self.source_lang,
                                        target_language=self.target_lang)
