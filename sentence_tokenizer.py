@@ -1,5 +1,4 @@
 import logging
-import nltk
 
 from nltk.tokenize.punkt import PunktSentenceTokenizer, PunktTrainer
 from nltk.corpus import gutenberg
