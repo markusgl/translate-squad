@@ -15,7 +15,6 @@ else:
     from .answer_start.answer_finder import AnswerFinder
     from .sentence_tokenizer import SentenceTokenizer
 
-
 logger = logging.getLogger('translate_squad')
 fh = logging.FileHandler('translate_squad.log')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -113,7 +112,7 @@ class SquadTranslation:
 
         self.safe_json_to_file(f'{out_file}', current_squad)
 
-    def find_sentence_number(self, answer_start, context):
+    def find_sentence_number_in_context(self, answer_start, context):
         """
         find in which sentence the original answer was
         :param answer_start: original answer start number
@@ -239,16 +238,14 @@ class SquadTranslation:
     def iterate_answers(self, answers, orig_context, translated_context):
         answer_texts = []
         for answer in answers:
-            translated_answer = self.translate_text(answer.text)
+            translated_answer = self.translate_text(answer.get('text'))
             if self.mock:
-                answer_texts.append({'answer_start': answer.answer_start, 'text': answer.text})
-
+                answer_texts.append({'answer_start': answer.get('answer_start'), 'text': answer.get('text')})
             else:
-                orig_answer_start = answer.answer_start
-                sentence_number = self.find_sentence_number(orig_answer_start, orig_context)
-                answer_start, translated_answer = self.find_answer_start_in_translated_context(sentence_number,
-                                                                                               translated_answer,
-                                                                                               translated_context)
+                sentence_number = self.find_sentence_number_in_context(answer.get('answer_start'), orig_context)
+                answer_start = self.find_answer_start_in_translated_context(sentence_number,
+                                                                            translated_answer,
+                                                                            translated_context)
                 self.translated_characters += len(translated_answer)
                 if not answer_start == -1:
                     answer_texts.append({'answer_start': answer_start, 'text': translated_answer})
@@ -265,10 +262,10 @@ class SquadTranslation:
                                                                  translated_answer_text=translated_answer_text,
                                                                  translated_context=translated_context)
         if p_result > self.answer_match_probability_threshold:
-            answer_start = self \
-                .convert_answer_start_in_sentence_to_answer_start_in_context(sentence_number=sentence_number,
-                                                                             answer_start_in_sentence=answer_start_in_sentence,
-                                                                             context=translated_context)
+            answer_start = self.convert_answer_start_in_sentence_to_answer_start_in_context(
+                sentence_number=sentence_number,
+                answer_start_in_sentence=answer_start_in_sentence,
+                context=translated_context)
 
             logger.debug(f'answer_start found - probability {p_result} \n translated answer "{translated_answer_text}" '
                          f'- most similar substring in translated context "{substring}"')
@@ -284,7 +281,7 @@ class SquadTranslation:
             # set to negative number to indicate that this answer should be deleted from translated data set
             answer_start = -1
 
-        return answer_start, translated_answer_text
+        return answer_start
 
     def find_sentence_with_answer_in_translated_context(self, sentence_number, translated_answer_text,
                                                         translated_context):

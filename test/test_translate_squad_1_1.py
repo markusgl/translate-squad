@@ -1,5 +1,6 @@
 import json
 from unittest import TestCase, skip
+from unittest.mock import MagicMock
 
 from translate_squad_1_1 import SquadTranslation
 
@@ -10,28 +11,29 @@ class TestSquadTranslation(TestCase):
                             "is a golden statue of the Virgin Mary. Immediately in front of the Main Building and " \
                             "facing it, is a copper statue of Christ with arms upraised with the legend \"Venite Ad " \
                             "Me Omnes\"."
-        self.translated_context = 'Architektonisch hat die Schule einen katholischen Charakter. Über der goldenen Kuppel des ' \
-                                  'Hauptgebäudes befindet sich eine goldene Statue der Jungfrau Maria. Unmittelbar vor dem ' \
-                                  'Hauptgebäude und gegenüber befindet sich eine kupferne Christusstatue mit Waffen, die mit ' \
-                                  'der Legende "Venite Ad Me Omnes" emporgehoben sind.'
+        self.translated_context = 'Architektonisch hat die Schule einen katholischen Charakter. Über der goldenen ' \
+                                  'Kuppel des Hauptgebäudes befindet sich eine goldene Statue der Jungfrau Maria. ' \
+                                  'Unmittelbar vor dem Hauptgebäude und gegenüber befindet sich eine kupferne ' \
+                                  'Christusstatue mit Waffen, die mit der Legende "Venite Ad Me Omnes" emporgehoben ' \
+                                  'sind.'
         self.orig_answer = [{
             "answer_start": 188,
             "text": "a copper statue of Christ"
         }]
         self.translated_answer = [{
-            "answer_start": 188,
+            "answer_start": 224,
             "text": "eine Kupferstatue von Christus"
         }]
         self.squad_translation = SquadTranslation()
 
     def test_find_sentence_number(self):
         answer_start = 70
-        result = self.squad_translation.find_sentence_number(answer_start, self.translated_context)
+        result = self.squad_translation.find_sentence_number_in_context(answer_start, self.translated_context)
         self.assertEqual(result, 1)
 
     def test_find_sentence_number_bad_case(self):
         answer_start = 400
-        result = self.squad_translation.find_sentence_number(answer_start, self.translated_context)
+        result = self.squad_translation.find_sentence_number_in_context(answer_start, self.translated_context)
         self.assertEqual(result, None)
 
     def test_iterate_qas(self):
@@ -56,17 +58,27 @@ class TestSquadTranslation(TestCase):
         self.assertEquals(result, paragraph['qas'])
 
     def test_iterate_answers(self):
-        result = self.squad_translation.iterate_answers(answers=self.translated_answer,
-                                                        orig_context=self.orig_context,
-                                                        translated_context=self.translated_context)
+        mocked_squad_translation = SquadTranslation(mock=False)
+        mocked_squad_translation.translate_text = MagicMock(return_value='sich eine kupferne Christusstatue')
+        mocked_squad_translation.find_sentence_number_in_context = MagicMock(return_value=3)
+        mocked_squad_translation.find_answer_start_in_translated_context = MagicMock(return_value=224)
 
-        self.assertEquals(result, [{'answer_start': 214, 'text': 'sich eine kupferne Christusstatue'}])
+        result = mocked_squad_translation.iterate_answers(answers=self.translated_answer,
+                                                          orig_context=self.orig_context,
+                                                          translated_context=self.translated_context)
+
+        self.assertEquals(result, [{'answer_start': 224, 'text': 'sich eine kupferne Christusstatue'}])
 
     def test_iterate_answers_bad_case(self):
-        answers = [{"answer_start": 123, "text": "bla bla bla"}]
-        result = self.squad_translation.iterate_answers(answers=answers,
-                                                        orig_context=self.orig_context,
-                                                        translated_context=self.translated_context)
+        mocked_squad_translation = SquadTranslation(mock=False)
+        mocked_squad_translation.translate_text = MagicMock(return_value='bla bla bla')
+        mocked_squad_translation.find_sentence_number_in_context = MagicMock(return_value=3)
+        mocked_squad_translation.find_answer_start_in_translated_context = MagicMock(return_value=-1)
+
+        answers = [{"answer_start": 123, "text": "not findable text in translated context bla bla bla"}]
+        result = mocked_squad_translation.iterate_answers(answers=answers,
+                                                          orig_context=self.orig_context,
+                                                          translated_context=self.translated_context)
 
         self.assertEquals(result, [])
 
@@ -113,8 +125,9 @@ class TestSquadTranslation(TestCase):
         assert len(result) == 2
 
     def test_search_answer_in_translated_context(self):  # TODO
-        sentence_number = self.squad_translation.find_sentence_number(answer_start=self.orig_answer[0]['answer_start'],
-                                                                      context=self.orig_context)
+        sentence_number = self.squad_translation.find_sentence_number_in_context(
+            answer_start=self.orig_answer[0]['answer_start'],
+            context=self.orig_context)
         answer_pos, p_result, sentence_number, substring = self.squad_translation \
             .find_sentence_with_answer_in_translated_context(sentence_number=sentence_number,
                                                              translated_answer_text=self.translated_answer[0]['text'],
@@ -125,8 +138,9 @@ class TestSquadTranslation(TestCase):
         self.assertEqual(substring, 'sich eine kupferne Christusstatue')
 
     def test_return_answer_start_good_case(self):
-        sentence_number = self.squad_translation.find_sentence_number(answer_start=self.orig_answer[0]['answer_start'],
-                                                                      context=self.orig_context)
+        sentence_number = self.squad_translation.find_sentence_number_in_context(
+            answer_start=self.orig_answer[0]['answer_start'],
+            context=self.orig_context)
         answer_start, translated_answer_text = self.squad_translation.find_answer_start_in_translated_context(
             sentence_number=sentence_number,
             translated_answer_text=self.translated_answer[0]['text'],
@@ -136,8 +150,8 @@ class TestSquadTranslation(TestCase):
         self.assertEqual(translated_answer_text, 'sich eine kupferne Christusstatue')
 
     def test_return_answer_start_bad_case(self):
-        sentence_number = self.squad_translation.find_sentence_number(self.orig_answer[0]['answer_start'],
-                                                                      self.orig_context)
+        sentence_number = self.squad_translation.find_sentence_number_in_context(self.orig_answer[0]['answer_start'],
+                                                                                 self.orig_context)
 
         answer_start, translated_answer_text = self.squad_translation.find_answer_start_in_translated_context(
             sentence_number=sentence_number,
@@ -146,6 +160,12 @@ class TestSquadTranslation(TestCase):
 
         self.assertEqual(answer_start, -1)
         self.assertEqual(translated_answer_text, 'bla bla bla')
+
+    def test_mock_translate_text(self):
+        some_text = "dog"
+
+        response = SquadTranslation(mock=True).translate_text(some_text)
+        self.assertEqual(response, "dog")
 
     @skip("causes costs - run this test exclusively for checking Google Cloud Translation API access")
     def test_translate_text(self):
