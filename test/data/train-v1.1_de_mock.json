@@ -1,0 +1,2975 @@
+{
+  "data": [
+    {
+      "title": "University_of_Notre_Dame",
+      "paragraphs": [
+        {
+          "context": "Architektonisch hat die Schule einen katholischen Charakter. Auf der goldenen Kuppel des Hauptgebäudes befindet sich eine goldene Statue der Jungfrau Maria. Unmittelbar vor dem Hauptgebäude und gegenüber befindet sich eine kupferne Christusstatue mit Waffen, die mit der Legende &quot;Venite Ad Me Omnes&quot; emporgehoben sind. Neben dem Hauptgebäude befindet sich die Basilika des Heiligen Herzens. Unmittelbar hinter der Basilika befindet sich die Grotte, ein marianischer Ort des Gebets und der Besinnung. Es ist eine Replik der Grotte in Lourdes, Frankreich, wo die Jungfrau Maria angeblich der Heiligen Bernadette Soubirous im Jahr 1858 erschien einfache, moderne steinerne Marienstatue.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 600,
+                  "text": "Heilige Bernadette Soubirous"
+                }
+              ],
+              "question": "Wem ist die Jungfrau Maria angeblich 1858 in Lourdes Frankreich erschienen?",
+              "id": "5733be284776f41900661182"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 188,
+                  "text": "eine Kupferstatue von Christus"
+                }
+              ],
+              "question": "Was ist vor dem Notre Dame-Hauptgebäude?",
+              "id": "5733be284776f4190066117f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 335,
+                  "text": "das Hauptgebäude"
+                }
+              ],
+              "question": "Neben welchem Bauwerk befindet sich die Basilika des Heiligen Herzens in Notre Dame?",
+              "id": "5733be284776f41900661180"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 459,
+                  "text": "ein marianischer Ort des Gebets und der Besinnung"
+                }
+              ],
+              "question": "Was ist die Grotte in Notre Dame?",
+              "id": "5733be284776f41900661181"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 117,
+                  "text": "eine goldene Statue der Jungfrau Maria"
+                }
+              ],
+              "question": "Was steht auf dem Hauptgebäude in Notre Dame?",
+              "id": "5733be284776f4190066117e"
+            }
+          ]
+        },
+        {
+          "context": "Wie an den meisten anderen Universitäten betreiben die Studenten von Notre Dame eine Reihe von Nachrichtenmedien. Zu den neun von Studenten betriebenen Verkaufsstellen gehören drei Zeitungen, ein Radio- und ein Fernsehsender sowie mehrere Zeitschriften und Journale. Das im September 1876 als einseitige Zeitschrift begonnene Scholastic-Magazin erscheint zweimal monatlich und gilt als die älteste fortlaufende College-Veröffentlichung in den Vereinigten Staaten. Die andere Zeitschrift, The Juggler, erscheint zweimal im Jahr und konzentriert sich auf studentische Literatur und Kunstwerke. Das Dome-Jahrbuch erscheint jährlich. Die Zeitungen haben unterschiedliche Publikationsinteressen. The Observer wird täglich veröffentlicht und berichtet hauptsächlich über Neuigkeiten aus der Universität und anderen Bereichen. Das Team besteht aus Studenten von Notre Dame und dem Saint Mary&#39;s College. Im Gegensatz zu Scholastic und The Dome ist The Observer eine unabhängige Veröffentlichung und verfügt weder über einen Fakultätsberater noch über eine redaktionelle Aufsicht der Universität. 1987, als einige Studenten glaubten, dass The Observer eine konservative Tendenz zeigte, wurde eine liberale Zeitung namens Common Sense veröffentlicht. Ebenfalls im Jahr 2003, als andere Studenten glaubten, dass das Papier eine liberale Tendenz aufweist, ging das konservative Papier Irish Rover in Produktion. Kein Artikel wird so oft veröffentlicht wie The Observer; Alle drei werden jedoch an alle Schüler verteilt. Im Frühjahr 2008 gab Beyond Politics, eine Zeitschrift für Politikwissenschaftler, ihr Debüt.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 274,
+                  "text": "September 1876"
+                }
+              ],
+              "question": "Wann begann die Veröffentlichung des Scholastic Magazine of Notre Dame?",
+              "id": "5733bf84d058e614000b61be"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 355,
+                  "text": "zweimal"
+                }
+              ],
+              "question": "Wie oft erscheint Notre Dame&#39;s the Juggler?",
+              "id": "5733bf84d058e614000b61bf"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 598,
+                  "text": "Der Beobachter"
+                }
+              ],
+              "question": "Wie heißt die tägliche Schülerzeitung in Notre Dame?",
+              "id": "5733bf84d058e614000b61c0"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 176,
+                  "text": "drei"
+                }
+              ],
+              "question": "Wie viele studentische Zeitungen gibt es in Notre Dame?",
+              "id": "5733bf84d058e614000b61bd"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1092,
+                  "text": "1987"
+                }
+              ],
+              "question": "In welchem Jahr begann die Studentenzeitung Common Sense mit der Veröffentlichung bei Notre Dame?",
+              "id": "5733bf84d058e614000b61c1"
+            }
+          ]
+        },
+        {
+          "context": "Die Universität ist der Hauptsitz der Kongregation vom Heiligen Kreuz (wenn auch nicht ihr offizieller Sitz in Rom). Das Hauptseminar, Moreau Seminary, befindet sich auf dem Campus gegenüber dem St. Joseph See vom Hauptgebäude entfernt. Das Old College, das älteste Gebäude auf dem Campus und in der Nähe des Ufers des St. Mary Lake gelegen, beherbergt Seminaristen. Priester und Brüder im Ruhestand wohnen im Fatima House (einem ehemaligen Exerzitienhaus), im Holy Cross House sowie in der Columba Hall in der Nähe der Grotte. Die Universität ist über das Priesterseminar Moreau mit dem Theologen Frederick Büchner verbunden. Büchner ist zwar nicht katholisch, lobte jedoch die Autoren von Notre Dame und Moreau Seminary, die einen Büchner-Preis für Predigten verliehen haben.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 111,
+                  "text": "Rom"
+                }
+              ],
+              "question": "Wo ist der Sitz der Kongregation vom Heiligen Kreuz?",
+              "id": "5733bed24776f41900661188"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 145,
+                  "text": "Priesterseminar von Moreau"
+                }
+              ],
+              "question": "Was ist das Hauptseminar der Kongregation vom Heiligen Kreuz?",
+              "id": "5733bed24776f41900661189"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 234,
+                  "text": "Altes College"
+                }
+              ],
+              "question": "Was ist das älteste Bauwerk in Notre Dame?",
+              "id": "5733bed24776f4190066118a"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 367,
+                  "text": "Priester und Brüder im Ruhestand"
+                }
+              ],
+              "question": "Welche Personen leben im Fatima House in Notre Dame?",
+              "id": "5733bed24776f4190066118b"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 733,
+                  "text": "Büchner-Preis für Predigt"
+                }
+              ],
+              "question": "Welchen Preis hat Friedrich Büchner kreiert?",
+              "id": "5733bed24776f4190066118c"
+            }
+          ]
+        },
+        {
+          "context": "Die Hochschule für Ingenieurwissenschaften wurde 1920 gegründet, jedoch waren frühe Kurse in Bau- und Maschinenbau seit den 1870er Jahren Teil der Hochschule für Naturwissenschaften. Heute umfasst das College, das sich in den Hallen Fitzpatrick, Cushing und Stinson-Remick Engineering befindet, fünf Fachbereiche: Luft- und Raumfahrttechnik und Maschinenbau, Chemieingenieurwesen und Biomolekulartechnik, Bauingenieurwesen und Geowissenschaften, Informatik und Ingenieurwesen sowie Elektrotechnik. mit acht angebotenen BS-Abschlüssen. Darüber hinaus bietet das College fünfjährige duale Studiengänge an, an denen die Colleges of Arts and Letters und of Business zusätzliche BA- bzw. Master of Business Administration (MBA) -Diplome vergeben.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 502,
+                  "text": "acht"
+                }
+              ],
+              "question": "Wie viele BS-Abschlüsse werden am College of Engineering in Notre Dame angeboten?",
+              "id": "5733a6424776f41900660f51"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 49,
+                  "text": "1920"
+                }
+              ],
+              "question": "In welchem Jahr wurde das College of Engineering in Notre Dame gegründet?",
+              "id": "5733a6424776f41900660f4e"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 126,
+                  "text": "das College of Science"
+                }
+              ],
+              "question": "Vor der Gründung des College of Engineering wurden ähnliche Studien an welchem Notre Dame College durchgeführt?",
+              "id": "5733a6424776f41900660f4f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 295,
+                  "text": "fünf"
+                }
+              ],
+              "question": "Wie viele Abteilungen hat die Stinson-Remick Hall of Engineering?",
+              "id": "5733a6424776f41900660f50"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 120,
+                  "text": "die 1870er Jahre"
+                }
+              ],
+              "question": "Ab wann bietet das College of Science in Notre Dame Bauingenieurkurse an?",
+              "id": "5733a6424776f41900660f52"
+            }
+          ]
+        },
+        {
+          "context": "Alle Studenten von Notre Dame sind Teil eines der fünf Graduiertenkollegs der Schule oder befinden sich im ersten Studienjahr. Das Programm für das erste Studienjahr wurde 1962 ins Leben gerufen, um angehende Studienanfänger in ihrem ersten Jahr an der Schule zu begleiten, bevor sie zum Major erklärt wurden. Jeder Student erhält einen akademischen Berater aus dem Programm, der ihm bei der Auswahl von Kursen hilft, die ihm die Möglichkeit geben, sich mit einem Major vertraut zu machen, an dem er interessiert ist. Das Programm umfasst auch ein Lernressourcenzentrum, das Zeitmanagement, gemeinsames Lernen und Nachhilfeunterricht bietet. Dieses Programm wurde bereits von US News &amp; World Report als herausragend eingestuft.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 548,
+                  "text": "Lernressourcenzentrum"
+                }
+              ],
+              "question": "Welche Stelle bietet Hilfe beim Zeitmanagement für neue Studenten bei Notre Dame?",
+              "id": "5733a70c4776f41900660f64"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 50,
+                  "text": "fünf"
+                }
+              ],
+              "question": "Wie viele Hochschulen für Studenten gibt es in Notre Dame?",
+              "id": "5733a70c4776f41900660f62"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 144,
+                  "text": "Das erste Studienjahr"
+                }
+              ],
+              "question": "Was wurde 1962 in Notre Dame geschaffen, um Studienanfänger zu unterstützen?",
+              "id": "5733a70c4776f41900660f63"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 676,
+                  "text": "US News &amp; World Report"
+                }
+              ],
+              "question": "Welche Organisation hat das Studienprogramm für das erste Studienjahr in Notre Dame als &quot;herausragend&quot; eingestuft?",
+              "id": "5733a70c4776f41900660f65"
+            }
+          ]
+        },
+        {
+          "context": "Die Universität bot erstmals in den Studienjahren 1854 bis 1855 Abschlüsse in Form eines Master of Arts (MA) an. Das Programm wurde in den frühen Wachstumsphasen um den Master of Laws (LL.M.) und den Master of Civil Engineering erweitert, bevor eine formelle Graduiertenausbildung mit einer Abschlussarbeit entwickelt wurde, die für den Erhalt der Abschlüsse nicht erforderlich war. Dies änderte sich 1924 mit formalen Anforderungen, die für Graduiertenabschlüsse, einschließlich der Promotion (PhD), festgelegt wurden. Heute bietet jedes der fünf Colleges eine Graduiertenausbildung an. Die meisten Abteilungen des College of Arts and Letters bieten Doktorandenprogramme an, und es gibt auch ein professionelles Master of Divinity-Programm (M.Div.). Alle Abteilungen des College of Science bieten Doktorandenprogramme an, mit Ausnahme der Abteilung für vorberufliche Studien. Die School of Architecture bietet einen Master of Architecture an, während alle Abteilungen des College of Engineering Promotionsprogramme anbieten. Das College of Business bietet mehrere professionelle Programme an, darunter MBA- und Master of Science-Programme für Rechnungswesen. Es betreibt auch Einrichtungen in Chicago und Cincinnati für sein Executive MBA-Programm. Darüber hinaus bietet das Alliance for Catholic Education-Programm ein Master of Education-Programm an, in dem Studenten während des Sommers an der Universität studieren und zwei Schuljahre lang an katholischen Grundschulen, Mittelschulen und Gymnasien im Süden der USA unterrichten.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 401,
+                  "text": "1924"
+                }
+              ],
+              "question": "Die Verleihung der Promotion erfolgte erstmals in welchem Jahr bei Notre Dame?",
+              "id": "5733a7bd4776f41900660f6b"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 624,
+                  "text": "Meister der Göttlichkeit"
+                }
+              ],
+              "question": "Welche Art von Abschluss ist ein M.Div.?",
+              "id": "5733a7bd4776f41900660f6c"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1163,
+                  "text": "Bündnis für katholische Erziehung"
+                }
+              ],
+              "question": "Welches Programm bei Notre Dame bietet einen Master of Education an?",
+              "id": "5733a7bd4776f41900660f6e"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 50,
+                  "text": "1854"
+                }
+              ],
+              "question": "In welchem Jahr wurde ein Master of Arts-Kurs erstmals bei Notre Dame angeboten?",
+              "id": "5733a7bd4776f41900660f6a"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 840,
+                  "text": "Abteilung für vorberufliche Studien"
+                }
+              ],
+              "question": "Welche Abteilung bei Notre Dame bietet als einzige kein Doktorandenprogramm an?",
+              "id": "5733a7bd4776f41900660f6d"
+            }
+          ]
+        },
+        {
+          "context": "Das Joan B. Kroc-Institut für internationale Friedensforschung an der Universität Notre Dame widmet sich der Erforschung, Aufklärung und Öffentlichkeitsarbeit der Ursachen gewaltsamer Konflikte und der Bedingungen für einen nachhaltigen Frieden. Es bietet Doktor-, Master- und Bachelor-Studiengänge in Friedenswissenschaften an. Es wurde 1986 durch Spenden von Joan B. Kroc, der Witwe von McDonalds-Besitzer Ray Kroc, gegründet. Das Institut wurde von der Vision von Rev. Theodore M. Hesburgh CSC, emeritierter Präsident der University of Notre Dame, inspiriert. Das Institut hat zu internationalen politischen Diskussionen über friedensschaffende Praktiken beigetragen.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 4,
+                  "text": "Joan B. Kroc-Institut für internationale Friedensforschung"
+                }
+              ],
+              "question": "Welches Institut in Notre Dame untersucht die Gründe für gewaltsame Konflikte?",
+              "id": "5733ac31d058e614000b5ff3"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 466,
+                  "text": "Emeritierter Präsident der Universität Notre Dame"
+                }
+              ],
+              "question": "Wie lautet der Titel von Notre Dame&#39;s Theodore Hesburgh?",
+              "id": "5733ac31d058e614000b5ff6"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 338,
+                  "text": "1986"
+                }
+              ],
+              "question": "In welchem Jahr wurde das Joan B. Kroc-Institut für internationale Friedensforschung gegründet?",
+              "id": "5733ac31d058e614000b5ff4"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 408,
+                  "text": "Ray Kroc"
+                }
+              ],
+              "question": "Mit wem war John B. Kroc verheiratet?",
+              "id": "5733ac31d058e614000b5ff5"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 389,
+                  "text": "McDonalds"
+                }
+              ],
+              "question": "Welche Firma besaß Ray Kroc?",
+              "id": "5733ac31d058e614000b5ff7"
+            }
+          ]
+        },
+        {
+          "context": "Das Bibliothekssystem der Universität ist zwischen der Hauptbibliothek und den einzelnen Hochschulen und Schulen aufgeteilt. Das Hauptgebäude ist die 14-stöckige Theodore M. Hesburgh Library, die 1963 fertiggestellt wurde. Es ist das dritte Gebäude, in dem die Hauptbüchersammlung untergebracht ist. Die Vorderseite der Bibliothek ist mit dem Wandbild Word of Life des Künstlers Millard Sheets verziert. Dieses Wandbild ist im Volksmund als &quot;Touchdown Jesus&quot; bekannt, da es in der Nähe des Notre Dame-Stadions liegt und die Arme Jesu das Signal für eine Landung zu geben scheinen.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 150,
+                  "text": "14"
+                }
+              ],
+              "question": "Wie viele Stockwerke hat die Hauptbibliothek in Notre Dame?",
+              "id": "5733ad384776f41900660fec"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 145,
+                  "text": "Theodore M. Hesburgh Bibliothek"
+                }
+              ],
+              "question": "Wie heißt die Hauptbibliothek in Notre Dame?",
+              "id": "5733ad384776f41900660fed"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 196,
+                  "text": "1963"
+                }
+              ],
+              "question": "In welchem Jahr wurde die Theodore M. Hesburgh Library in Notre Dame fertiggestellt?",
+              "id": "5733ad384776f41900660fee"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 379,
+                  "text": "Millard Sheets"
+                }
+              ],
+              "question": "Welcher Künstler hat das Wandgemälde in der Theodore M. Hesburgh Library erstellt?",
+              "id": "5733ad384776f41900660fef"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 447,
+                  "text": "Touchdown Jesus"
+                }
+              ],
+              "question": "Was ist ein gebräuchlicher Name für das Wandgemälde von Millard Sheets in Notre Dame?",
+              "id": "5733ad384776f41900660ff0"
+            }
+          ]
+        },
+        {
+          "context": "Notre Dame ist bekannt für seine wettbewerbsfähigen Zulassungen. Die ankommende Klasse, die sich im Herbst 2015 anmeldet, nimmt 3.577 aus einem Pool von 18.156 Personen (19,7%) auf. Das akademische Profil der eingeschriebenen Klasse liegt weiterhin unter den Top 10 bis 15 der nationalen Forschungsuniversitäten. Die Universität verfolgt eine nicht einschränkende Frühförderungsrichtlinie, die es zugelassenen Studenten ermöglicht, die Zulassung zu Notre Dame sowie zu anderen Hochschulen, an denen sie zugelassen wurden, in Betracht zu ziehen. 1.400 der 3.577 (39,1%) wurden im Rahmen des Frühförderungsplans zugelassen. Zugelassene Studenten kamen von 1.311 Gymnasien, und der durchschnittliche Student reiste mehr als 750 Meilen nach Notre Dame, was es wohl zur repräsentativsten Universität in den Vereinigten Staaten macht. Während alle Studienanfänger am College des ersten Studienjahres beginnen, haben 25% angegeben, dass sie ein Studium in den Geistes- oder Sozialwissenschaften planen, 24% in den Ingenieurwissenschaften, 24% in der Wirtschaft, 24% in den Naturwissenschaften und 3% in den Naturwissenschaften die Architektur.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 555,
+                  "text": "3,577"
+                }
+              ],
+              "question": "Wie viele Incoming-Studenten hat Notre Dame im Herbst 2015 aufgenommen?",
+              "id": "5733ae924776f41900661014"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 170,
+                  "text": "19,7%"
+                }
+              ],
+              "question": "Wie viel Prozent der Studierenden wurden im Herbst 2015 in Notre Dame aufgenommen?",
+              "id": "5733ae924776f41900661013"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 213,
+                  "text": "die Top 10 bis 15 in der Nation"
+                }
+              ],
+              "question": "Wo steht Notre Dame in Bezug auf das akademische Profil unter den Forschungsuniversitäten in den USA?",
+              "id": "5733ae924776f41900661015"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 562,
+                  "text": "39,1%"
+                }
+              ],
+              "question": "Wie viel Prozent der Schüler von Notre Dame haben am Frühförderprogramm teilgenommen?",
+              "id": "5733ae924776f41900661016"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 712,
+                  "text": "mehr als 750 Meilen"
+                }
+              ],
+              "question": "Wie viele Kilometer fährt ein durchschnittlicher Student in Notre Dame, um dort zu studieren?",
+              "id": "5733ae924776f41900661017"
+            }
+          ]
+        },
+        {
+          "context": "In den Jahren 2015-2016 belegte Notre Dame bei den US News &amp; World Report&#39;s Best Colleges 2016 den 18. Gesamtrang unter den &quot;Nationalen Universitäten&quot; in den USA. Im Jahr 2014 belegte USA Today den 10. Gesamtrang für amerikanische Universitäten, basierend auf Daten von College Factual. Forbes.coms America&#39;s Best Colleges rangiert 2015 an 13. Stelle unter den Colleges in den USA, an 8. Stelle unter den Forschungsuniversitäten und an 1. Stelle im Mittleren Westen. US News &amp; World Report führt auch die Notre Dame Law School als 22. in der Gesamtwertung an. BusinessWeek belegt am Mendoza College of Business den 1. Platz in der Gesamtwertung. Insgesamt belegt das MBA-Programm den 20. Platz. Der Philosophical Gourmet Report bewertet Notre Dames Philosophieprogramm auf nationaler Ebene als 15., während das ARCHITECT Magazine das Architekturprogramm für Studenten auf nationaler Ebene als 12. bewertet. Darüber hinaus belegt das Auslandsstudienprogramm landesweit den sechsten Platz bei der höchsten Teilnahmequote. 57,6% der Studierenden entscheiden sich für ein Auslandsstudium in 17 Ländern. Laut payscale.com haben Absolventen der University of Notre Dame in der Mitte der Karriere ein Durchschnittsgehalt von 110.000 USD, womit es das 24. höchste unter den Colleges und Universitäten in den USA ist. Das mittlere Anfangsgehalt von 55.300 USD belegte in derselben Vergleichsgruppe den 58. Platz.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 669,
+                  "text": "18. insgesamt"
+                }
+              ],
+              "question": "Wo hat US News &amp; World Report Notre Dame in der Hochschulrangliste 2015-2016 eingestuft?",
+              "id": "5733afd3d058e614000b6045"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1429,
+                  "text": "8th"
+                }
+              ],
+              "question": "Forbes.com hat Notre Dame an welcher Position im Vergleich zu anderen US-amerikanischen Forschungsuniversitäten platziert?",
+              "id": "5733afd3d058e614000b6047"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 675,
+                  "text": "1. gesamt"
+                }
+              ],
+              "question": "Die Grundschule am Mendoza College of Business wurde nach BusinessWeek?",
+              "id": "5733afd3d058e614000b6048"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 155,
+                  "text": "USA heute"
+                }
+              ],
+              "question": "Welches Unternehmen hat 2014 Notre Dame als 10. beste aller amerikanischen Universitäten ausgezeichnet?",
+              "id": "5733afd3d058e614000b6046"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1046,
+                  "text": "57,6%"
+                }
+              ],
+              "question": "Wie viel Prozent der Notre Dame-Studenten entscheiden sich für ein Auslandsstudium?",
+              "id": "5733afd3d058e614000b6049"
+            }
+          ]
+        },
+        {
+          "context": "Pater Joseph Carrier, CSC, war bis 1874 Direktor des Wissenschaftsmuseums und der Bibliothek und Professor für Chemie und Physik. Carrier lehrte, dass die wissenschaftliche Forschung und ihr Versprechen auf Fortschritt nicht den Idealen der von der Kirche befürworteten intellektuellen und moralischen Kultur zuwiderlaufen. Einer von Carriers Schülern war Pater John Augustine Zahm (1851–1921), der im Alter von 23 Jahren zum Professor und Co-Direktor des Wissenschaftsministeriums ernannt wurde und 1900 ein national bekannter Wissenschaftler und Naturforscher war. Zahm war in der katholischen Summer School-Bewegung aktiv, die katholische Laien mit zeitgenössischen intellektuellen Themen bekannt machte. Sein Buch Evolution and Dogma (1896) verteidigte bestimmte Aspekte der Evolutionstheorie als wahr und argumentierte darüber hinaus, dass selbst die großen Kirchenlehrer Thomas von Aquin und Augustinus so etwas lehrten. Die Intervention der irisch-amerikanischen Katholiken in Rom verhinderte Zahms Tadel durch den Vatikan. 1913 begaben sich Zahm und der frühere Präsident Theodore Roosevelt auf eine große Expedition durch den Amazonas.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 0,
+                  "text": "Pater Joseph Carrier, CSC"
+                }
+              ],
+              "question": "Welche Person war der Direktor des Wissenschaftsmuseums in Notre Dame im späten 19. Jahrhundert?",
+              "id": "5733b0fb4776f41900661041"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 383,
+                  "text": "1851–1921"
+                }
+              ],
+              "question": "Was war die Lebensdauer von John Augustine Zahm?",
+              "id": "5733b0fb4776f41900661043"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 406,
+                  "text": "die Wissenschaftsabteilung"
+                }
+              ],
+              "question": "Welches Programm übernahm John Augustine Zahm als Co-Regisseur bei Nore Dame?",
+              "id": "5733b0fb4776f41900661044"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 718,
+                  "text": "Evolution und Dogma"
+                }
+              ],
+              "question": "Welches Buch schrieb John Zahm 1896?",
+              "id": "5733b0fb4776f41900661045"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 97,
+                  "text": "Professor für Chemie und Physik"
+                }
+              ],
+              "question": "Welche Professur hatte Pater Josh Carrier bei Notre Dame inne?",
+              "id": "5733b0fb4776f41900661042"
+            }
+          ]
+        },
+        {
+          "context": "1882 baute Albert Zahm (der Bruder von John Zahm) einen frühen Windkanal, in dem der Auftrieb mit dem Luftwiderstand von Luftfahrzeugmodellen verglichen wurde. Um 1899 war Professor Jerome Green der erste Amerikaner, der eine drahtlose Nachricht sendete. Im Jahr 1931 arbeitete Pater Julius Nieuwland früh an grundlegenden Reaktionen, aus denen Neopren hergestellt wurde. Das Studium der Kernphysik an der Universität begann 1936 mit dem Bau eines Kernbeschleunigers und wird nun teilweise durch eine Partnerschaft im Joint Institute for Nuclear Astrophysics fortgesetzt.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 0,
+                  "text": "1882"
+                }
+              ],
+              "question": "In welchem Jahr hat Albert Zahm begonnen, Luftfahrzeugmodelle in Notre Dame zu vergleichen?",
+              "id": "5733b1da4776f41900661068"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 172,
+                  "text": "Professor Jerome Green"
+                }
+              ],
+              "question": "Welcher Professor hat die erste Funknachricht in den USA gesendet?",
+              "id": "5733b1da4776f41900661069"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 160,
+                  "text": "Um 1899"
+                }
+              ],
+              "question": "In welchem Jahr hat Jerome Green seine erste drahtlose Nachricht gesendet?",
+              "id": "5733b1da4776f4190066106a"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 278,
+                  "text": "Pater Julius Nieuwland"
+                }
+              ],
+              "question": "Welche Person hat an Projekten bei Notre Dame gearbeitet, die letztendlich Neopren hervorgebracht haben?",
+              "id": "5733b1da4776f4190066106b"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 53,
+                  "text": "ein früher Windkanal"
+                }
+              ],
+              "question": "Was hat der Bruder von John Zahm in Notre Dame gebaut?",
+              "id": "5733b1da4776f41900661067"
+            }
+          ]
+        },
+        {
+          "context": "Das Lobund-Institut ist aus der bahnbrechenden Erforschung des keimfreien Lebens hervorgegangen, die 1928 begann. Dieses Forschungsgebiet entstand aus der Frage von Pasteur, ob Tierleben ohne Bakterien möglich sei. Obwohl andere diese Idee aufgegriffen hatten, waren ihre Forschungen von kurzer Dauer und nicht schlüssig. Lobund war die erste Forschungsorganisation, die definitiv antwortete, dass ein solches Leben möglich ist und über Generationen verlängert werden kann. Ziel war es jedoch nicht nur, Pasteurs Frage zu beantworten, sondern das keimfreie Tier als neues Werkzeug für die biologische und medizinische Forschung zu produzieren. Dieses Ziel wurde erreicht und Lobund war jahrelang ein einzigartiges Zentrum für die Erforschung und Produktion keimfreier Tiere und für deren Einsatz in biologischen und medizinischen Untersuchungen. Heute hat sich die Arbeit auf andere Universitäten ausgeweitet. Anfangs unterstand es dem Department of Biology und ein Programm, das zum Master führte, begleitete das Forschungsprogramm. In den 1940er Jahren erlangte Lobund den Status eines unabhängigen Forschungsinstituts und wurde 1950 zum Institut erhoben. 1958 wurde es als Teil dieser Abteilung wieder in die Abteilung für Biologie aufgenommen, jedoch mit einem eigenen Programm, das zum Doktorgrad in Gnotobiotik führte.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 0,
+                  "text": "Das Lobund-Institut"
+                }
+              ],
+              "question": "Aus der Arbeit an einem keimfreien Leben ist welches Notre Dame-Institut hervorgegangen?",
+              "id": "5733b2fe4776f4190066108f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1037,
+                  "text": "die 1940er Jahre"
+                }
+              ],
+              "question": "Zu welcher Zeit wurde Lobund von Notre Dame unabhängig?",
+              "id": "5733b2fe4776f41900661091"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1131,
+                  "text": "1950"
+                }
+              ],
+              "question": "In welchem Jahr wurde Lobund in Notre Dame ein Institut?",
+              "id": "5733b2fe4776f41900661092"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1158,
+                  "text": "1958"
+                }
+              ],
+              "question": "In welchem Jahr wurde das Lobund-Institut in die Abteilung für Biologie von Notre Dame eingegliedert?",
+              "id": "5733b2fe4776f41900661093"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 101,
+                  "text": "1928"
+                }
+              ],
+              "question": "Wann begann das Studium eines keimfreien Lebens in Notre Dame?",
+              "id": "5733b2fe4776f41900661090"
+            }
+          ]
+        },
+        {
+          "context": "The Review of Politics wurde 1939 von Gurian nach dem Vorbild deutscher katholischer Zeitschriften gegründet. Es entstand schnell als Teil einer internationalen katholischen intellektuellen Wiederbelebung und bot eine alternative Vision zur positivistischen Philosophie an. 44 Jahre lang wurde die Rezension von Gurian, Matthew Fitzsimons, Frederick Crosson und Thomas Stritch herausgegeben. Zu den intellektuellen Führern gehörten Gurian, Jacques Maritain, Frank O&#39;Malley, Leo Richard Ward, FA Hermens und John U. Nef. Es wurde ein wichtiges Forum für politische Ideen und moderne politische Anliegen, insbesondere aus einer katholischen und schulischen Tradition.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 0,
+                  "text": "Die Überprüfung der Politik"
+                }
+              ],
+              "question": "Was schuf Gurian 1939 in Notre Dame?",
+              "id": "5733b3d64776f419006610a3"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 68,
+                  "text": "Deutsch-katholische Zeitschriften"
+                }
+              ],
+              "question": "Wovon war die Überprüfung der Politik inspiriert?",
+              "id": "5733b3d64776f419006610a4"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 274,
+                  "text": "44"
+                }
+              ],
+              "question": "In wie vielen Jahren hat Gurian das Review of Politics bei Notre Dame herausgegeben?",
+              "id": "5733b3d64776f419006610a5"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 4,
+                  "text": "Rückblick auf die Politik"
+                }
+              ],
+              "question": "Thomas Stritch war ein Redakteur von welchem Zöllner aus Notre Dame?",
+              "id": "5733b3d64776f419006610a6"
+            }
+          ]
+        },
+        {
+          "context": "Ab 2012 wurde die Forschung in vielen Bereichen fortgesetzt. Der Präsident der Universität, John Jenkins, beschrieb in seiner Antrittsrede seine Hoffnung, dass Notre Dame &quot;eine der bedeutendsten Forschungseinrichtungen der Welt&quot; wird. Die Universität hat viele multidisziplinäre Institute, die sich der Forschung auf verschiedenen Gebieten widmen, darunter das Mittelalterinstitut, das Kellogg-Institut für internationale Studien, das Kroc-Institut für internationale Friedensstudien und das Zentrum für soziale Belange. Jüngste Forschungsergebnisse umfassen Arbeiten zu familiären Konflikten und zur Entwicklung von Kindern, zur Genomkartierung, zum zunehmenden Handelsdefizit der USA mit China, Studien zur Strömungsmechanik, zu Informatik und Ingenieurwissenschaften sowie zu Marketingtrends im Internet. Ab 2013 ist die Universität Sitz des Notre Dame Global Adaptation Index, der die Länder jährlich danach bewertet, wie anfällig sie für den Klimawandel sind und wie bereit sie zur Anpassung sind.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 92,
+                  "text": "John Jenkins"
+                }
+              ],
+              "question": "Wer war der Präsident von Notre Dame im Jahr 2012?",
+              "id": "5733b5344776f419006610dd"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 160,
+                  "text": "Notre Dame"
+                }
+              ],
+              "question": "Das Kellogg Institute for International Studies ist Teil welcher Universität?",
+              "id": "5733b5344776f419006610de"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 463,
+                  "text": "Internationale Friedensstudien"
+                }
+              ],
+              "question": "Worauf konzentriert sich das Kroc-Institut in Notre Dame?",
+              "id": "5733b5344776f419006610df"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 821,
+                  "text": "2013"
+                }
+              ],
+              "question": "In welchem Jahr hat Notre Dame mit der Ausrichtung des Global Adaptation Index begonnen?",
+              "id": "5733b5344776f419006610e0"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 957,
+                  "text": "Klimawandel"
+                }
+              ],
+              "question": "Welche Bedrohung untersucht der Global Adaptation Index?",
+              "id": "5733b5344776f419006610e1"
+            }
+          ]
+        },
+        {
+          "context": "Im Jahr 2014 bestand die Notre-Dame-Studentenschaft aus 12.179 Studenten mit 8.448 Studenten, 2.138 Studenten mit akademischen Abschlüssen und 1.593 Studenten mit akademischen Abschlüssen (Jura, M.Div., Wirtschaft, M.Ed.). Rund 21 bis 24% der Studenten sind Kinder von Alumni, und obwohl 37% der Studenten aus dem Mittleren Westen der USA stammen, repräsentiert die Studentenschaft alle 50 Bundesstaaten und 100 Länder. Ab März 2007 [Update] Die Princeton Review stufte die Schule als fünfthöchste „Traumschule“ ein, in die Eltern ihre Kinder schicken können. Stand März 2015 [Update] Die Princeton Review stufte Notre Dame als neunthöchste ein. Die Schule wurde bereits für ihre mangelnde Vielfalt kritisiert, und die Princeton Review zählt die Universität zu den Schulen, an denen &quot;Alternative Lebensstile keine Alternative sind&quot;. Es wurde auch von einigen diversitätsorientierten Veröffentlichungen gelobt. Das Hispanic Magazine belegte 2004 den neunten Platz auf der Liste der 25 besten Hochschulen für Latinos, und das Journal of Blacks in Higher Education würdigte die Universität 2006 für die Erhöhung der Einschreibung afroamerikanischer Studenten. Mit 6.000 Teilnehmern wurde das intramurale Sportprogramm der Universität im Jahr 2004 von Sports Illustrated zum besten Programm des Landes gekürt, während es im Jahr 2007 von der Princeton Review zur Top-Schule gekürt wurde, in der &quot;Jeder intramurale Sportarten ausübt&quot;. Das jährliche Bookstore-Basketballturnier ist mit über 700 teilnehmenden Teams im Freien das größte Fünf-gegen-Fünf-Turnier der Welt. Der Notre Dame-Herren-Boxclub veranstaltet das jährliche Bengal Bouts-Turnier, bei dem Geld für die Holy Cross-Missionen in Bangladesch gesammelt wird.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 77,
+                  "text": "8.448"
+                }
+              ],
+              "question": "Wie viele Studenten besuchten 2014 Notre Dame?",
+              "id": "5733b5df4776f41900661105"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 235,
+                  "text": "21–24%"
+                }
+              ],
+              "question": "Wie viel Prozent der Studenten in Notre Dame sind Kinder ehemaliger Notre Dame-Studenten?",
+              "id": "5733b5df4776f41900661106"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1500,
+                  "text": "über 700"
+                }
+              ],
+              "question": "Wie viele Teams nehmen am Notre Dame Bookstore-Basketballturnier teil?",
+              "id": "5733b5df4776f41900661107"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1680,
+                  "text": "die Holy Cross-Missionen in Bangladesch"
+                }
+              ],
+              "question": "Aus welchem Grund wird beim Bengal Bouts-Turnier in Notre Dame Geld gesammelt?",
+              "id": "5733b5df4776f41900661108"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 56,
+                  "text": "12,179"
+                }
+              ],
+              "question": "Wie viele Studenten waren 2014 insgesamt in Notre Dame?",
+              "id": "5733b5df4776f41900661109"
+            }
+          ]
+        },
+        {
+          "context": "Ungefähr 80% der Studenten und 20% der Doktoranden leben auf dem Campus. Die Mehrheit der Studenten auf dem Campus lebt in einer von vier Studentenwohnanlagen auf dem Campus, während alle Studenten auf dem Campus in einem der 29 Studentenwohnheime wohnen. Aufgrund der religiösen Zugehörigkeit der Universität sind alle Wohnheime gleichgeschlechtlich, mit 15 Schlafsälen für Männer und 14 Schlafsälen für Frauen. Die Universität unterhält eine Besuchsrichtlinie (sogenannte parietale Zeiten) für Studenten, die in Schlafsälen leben. Sie legt die Zeiten fest, zu denen Mitglieder des anderen Geschlechts die Schlafsäle anderer Studenten besuchen dürfen. Alle Wohnheime verfügen jedoch über 24-Stunden-Sozialräume für Studierende unabhängig vom Geschlecht. In vielen Wohnheimen ist mindestens eine Nonne und / oder ein Priester ansässig. Es gibt keine traditionellen sozialen Gemeinschaften oder Schwesternschaften an der Universität, aber die Mehrheit der Studenten lebt alle vier Jahre im selben Wohnheim. Einige intramurale Sportarten basieren auf Wohnheimteams, wo die Universität das einzige nichtmilitärische Akademieprogramm für intramuralen American Football mit vollem Kontakt anbietet. Am Ende der Intramural-Saison wird das Meisterschaftsspiel im Notre Dame-Stadion auf dem Spielfeld ausgetragen.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 9,
+                  "text": "80%"
+                }
+              ],
+              "question": "Wie viel Prozent der Studenten leben auf dem Campus von Notre Dame?",
+              "id": "5733b699d058e614000b6118"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 133,
+                  "text": "vier"
+                }
+              ],
+              "question": "Wie viele Studentenwohnungen sind für die Doktoranden von Notre Dame reserviert?",
+              "id": "5733b699d058e614000b6119"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 350,
+                  "text": "fünfzehn"
+                }
+              ],
+              "question": "Wie viele Schlafsäle für Männer gibt es auf dem Campus von Notre Dame?",
+              "id": "5733b699d058e614000b611a"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 31,
+                  "text": "20%"
+                }
+              ],
+              "question": "Wie viel Studentenschaft von Notre Dame lebt auf dem Campus?",
+              "id": "5733b699d058e614000b611b"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 386,
+                  "text": "14"
+                }
+              ],
+              "question": "Wie viele Schlafsäle für Frauen gibt es in Notre Dame?",
+              "id": "5733b699d058e614000b611c"
+            }
+          ]
+        },
+        {
+          "context": "Die Universität ist der Kongregation des Heiligen Kreuzes angeschlossen (lateinisch: Congregatio a Sancta Cruce, abgekürzt: &quot;CSC&quot;). Während die Religionszugehörigkeit kein Zulassungskriterium ist, identifizieren sich mehr als 93% der Studierenden als Christen, wobei über 80% der Studierenden katholisch sind. Insgesamt wird die katholische Messe mehr als 100 Mal pro Woche auf dem Campus gefeiert, und ein umfangreiches Programm für den Campus-Dienst sorgt für die Glaubensbedürfnisse der Gemeinde. Rund um den Campus gibt es eine Vielzahl von religiösen Statuen und Kunstwerken, von denen die Marienstatue am Hauptgebäude, die Notre-Dame-Grotte und das Wandbild „Wort des Lebens“ in der Hesburgh-Bibliothek, in dem Christus als Lehrer dargestellt wird, die bekanntesten sind. Zusätzlich zeigt jedes Klassenzimmer ein Kruzifix. Es gibt viele religiöse Vereine (katholisch und nicht katholisch) in der Schule, einschließlich des Rates Nr. 1477 der Ritter von Columbus (KOC), des Baptist Collegiate Ministry (BCM), des Jewish Club, der Muslim Student Association, des Orthodox Christian Fellowship und des Mormon Club , und viele mehr. Die Notre Dame KofC sind als erster Kollegialrat der KofC bekannt, der bei jedem Heimfußballspiel einen wohltätigen Konzessionsstand betreibt und ein eigenes Gebäude auf dem Campus besitzt, das als Zigarrenlounge genutzt werden kann. Siebenundfünfzig Kapellen befinden sich auf dem gesamten Campus.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 85,
+                  "text": "Congregatio a Sancta Cruce"
+                }
+              ],
+              "question": "Was ist die Kongregation vom Heiligen Kreuz auf Latein?",
+              "id": "5733b7f74776f4190066112d"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 227,
+                  "text": "mehr als 93%"
+                }
+              ],
+              "question": "Wie viel Prozent der Notre Dame-Studenten fühlen sich als Christen?",
+              "id": "5733b7f74776f4190066112e"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 331,
+                  "text": "über 100 mal"
+                }
+              ],
+              "question": "Wie oft findet in einer Woche eine katholische Messe in Notre Dame statt?",
+              "id": "5733b7f74776f4190066112f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1379,
+                  "text": "Siebenundfünfzig"
+                }
+              ],
+              "question": "Wie viele Kapellen gibt es auf dem Campus Notre Dame?",
+              "id": "5733b7f74776f41900661130"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 277,
+                  "text": "über 80%"
+                }
+              ],
+              "question": "Wie viele Studenten von Notre Dame sind katholisch?",
+              "id": "5733b7f74776f41900661131"
+            }
+          ]
+        },
+        {
+          "context": "Dieses Hauptgebäude und die Bibliothekssammlung wurden im April 1879 durch einen Brand vollständig zerstört. Die Schule wurde sofort geschlossen und die Schüler wurden nach Hause geschickt. Der Gründer der Universität, Fr. Sorin und der damalige Präsident, Rev. William Corby, planten sofort den Wiederaufbau der Struktur, in der praktisch die gesamte Universität untergebracht war. Die Bauarbeiten begannen am 17. Mai und durch den unglaublichen Eifer von Verwaltern und Arbeitern wurde das Gebäude vor dem Herbstsemester 1879 fertiggestellt. Die Bibliothekssammlung wurde ebenfalls umgebaut und befand sich noch Jahre später im neuen Hauptgebäude. Um die Zeit des Feuers wurde eine Musikhalle eröffnet. Schließlich wurde es als Washington Hall bekannt und veranstaltete Theaterstücke und musikalische Darbietungen der Schule. 1880 wurde an der Universität ein Wissenschaftsprogramm eingerichtet und 1883 eine Wissenschaftshalle (heute LaFortune Student Center) errichtet. In der Halle befanden sich mehrere Klassenzimmer und Wissenschaftslabors, die für die frühe Forschung an der Universität benötigt wurden.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 730,
+                  "text": "Washington Hall"
+                }
+              ],
+              "question": "Wie hieß der Musiksaal von Notre Dame?",
+              "id": "57338653d058e614000b5c84"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 64,
+                  "text": "1879"
+                }
+              ],
+              "question": "In welchem Jahr wurde das Hauptgebäude von Notre Dame in Brand gesteckt?",
+              "id": "57338653d058e614000b5c81"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 257,
+                  "text": "Rev. William Corby"
+                }
+              ],
+              "question": "Wer war der Präsident von Notre Dame im Jahr 1879?",
+              "id": "57338653d058e614000b5c82"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 411,
+                  "text": "17. Mai"
+                }
+              ],
+              "question": "An welchem Datum wurde der Wiederaufbau des Hauptgebäudes in Notre Dame nach dem Brand begonnen, der das vorherige forderte?",
+              "id": "57338653d058e614000b5c83"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 937,
+                  "text": "LaFortune Student Center"
+                }
+              ],
+              "question": "Wie wurde die Science Hall in Notre Dame bekannt?",
+              "id": "57338653d058e614000b5c85"
+            }
+          ]
+        },
+        {
+          "context": "1919 wurde Pater James Burns Präsident von Notre Dame, und in drei Jahren brachte er eine akademische Revolution hervor, die die Schule auf nationale Standards brachte, indem er das Wahlsystem übernahm und sich von den traditionellen schulischen und klassischen Schwerpunkten der Universität entfernte. Im Gegensatz dazu zögerten die Jesuitenkollegien, Bastionen des akademischen Konservativismus,, zu einem Wahlsystem überzugehen. Ihre Absolventen wurden aus diesem Grund von der Harvard Law School ausgeschlossen. Notre Dame wuchs im Laufe der Jahre weiter und fügte weitere Colleges, Programme und Sportmannschaften hinzu. Bis 1921 hatte sich Notre Dame durch das Hinzufügen des College of Commerce von einem kleinen College zu einer Universität mit fünf Colleges und einer professionellen juristischen Fakultät entwickelt. Die Universität expandierte weiter und fügte mit jedem nachfolgenden Präsidenten neue Wohnheime und Gebäude hinzu.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 234,
+                  "text": "schulisch und klassisch"
+                }
+              ],
+              "question": "Welche Art von Bildung wurde in Notre Dame vorangetrieben, bevor nationale Standards angenommen wurden?",
+              "id": "57338724d058e614000b5c9f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 595,
+                  "text": "Hochschule für Handel"
+                }
+              ],
+              "question": "Welches College hat Notre Dame 1921 hinzugefügt?",
+              "id": "57338724d058e614000b5ca1"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 11,
+                  "text": "Pater James Burns"
+                }
+              ],
+              "question": "1919 wurde ein neuer Präsident von Notre Dame ernannt, wer war das?",
+              "id": "57338724d058e614000b5c9d"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 545,
+                  "text": "3 Jahre"
+                }
+              ],
+              "question": "In wie vielen Jahren fand die Änderung der nationalen Standards in Notre Dame zu Beginn des 20. Jahrhunderts statt?",
+              "id": "57338724d058e614000b5c9e"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 481,
+                  "text": "Harvard Law School"
+                }
+              ],
+              "question": "Diejenigen, die ein Jesuitenkolleg besucht haben, haben möglicherweise aufgrund der Lehrpläne an der Jesuiteneinrichtung keinen Zugang zu welcher juristischen Fakultät erhalten?",
+              "id": "57338724d058e614000b5ca0"
+            }
+          ]
+        },
+        {
+          "context": "Eine der Haupttriebkräfte für das Wachstum der Universität war ihre Fußballmannschaft, die Notre Dame Fighting Irish. Knute Rockne wurde 1918 Cheftrainer. Unter Rockne verbuchten die Iren einen Rekord von 105 Siegen, 12 Niederlagen und fünf Unentschieden. Während seiner 13 Jahre gewannen die Iren drei nationale Meisterschaften, hatten fünf ungeschlagene Spielzeiten, gewannen 1925 den Rose Bowl und brachten Spieler wie George Gipp und die &quot;Four Horsemen&quot; hervor. Knute Rockne hat den höchsten Gewinnanteil (881) in der Geschichte der NCAA Division I / FBS. Bei Rocknes Straftaten wurde die Notre Dame Box eingesetzt, und bei seinen Verteidigungen wurde ein 7-2-2-System angewendet. Das letzte Spiel, das Rockne trainierte, war am 14. Dezember 1930, als er eine Gruppe von Notre Dame-All-Stars gegen die New York Giants in New York City anführte.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 118,
+                  "text": "Knute Rockne"
+                }
+              ],
+              "question": "Die Notre Dame-Fußballmannschaft bekam 1918 einen neuen Cheftrainer. Wer war das?",
+              "id": "573387acd058e614000b5cb1"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 205,
+                  "text": "105"
+                }
+              ],
+              "question": "Wie viele Siege erzielte Knute Rockne bei Notre Dame als Cheftrainer?",
+              "id": "573387acd058e614000b5cb2"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 378,
+                  "text": "1925"
+                }
+              ],
+              "question": "In welchem Jahr gewann das Team um Knute Rockne den Rose Bowl?",
+              "id": "573387acd058e614000b5cb5"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 271,
+                  "text": "13"
+                }
+              ],
+              "question": "Wie viele Jahre war Knute Rockne Cheftrainer bei Notre Dame?",
+              "id": "573387acd058e614000b5cb3"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 298,
+                  "text": "drei"
+                }
+              ],
+              "question": "Wie viele nationale Titel wurden gewonnen, als Knute Rockne bei Notre Dame trainierte?",
+              "id": "573387acd058e614000b5cb4"
+            }
+          ]
+        },
+        {
+          "context": "Der Erfolg seiner Fußballmannschaft machte Notre Dame zu einem bekannten Namen. Der Erfolg von Note Dame spiegelte den zunehmenden Status der irischen Amerikaner und Katholiken in den 1920er Jahren wider. Katholiken versammelten sich um das Team und hörten sich die Spiele im Radio an, vor allem, als die Schulen, die das protestantische Establishment in Amerika symbolisierten - Harvard, Yale, Princeton und Army -, abgeschaltet wurden. Diese Rolle als hochkarätige Flaggschiff-Institution des Katholizismus machte es jedoch zu einem einfachen Ziel des Antikatholizismus. Die auffälligste Episode von Gewalt war der Zusammenstoß zwischen Notre Dame-Studenten und dem Ku-Klux-Klan im Jahr 1924. Nativismus und Antikatholizismus, insbesondere wenn sie sich an Einwanderer richteten, waren Eckpfeiler der Rhetorik des KKK, und Notre Dame wurde als Symbol der KKK angesehen Bedrohung durch die katholische Kirche. Der Klan entschied sich für einen einwöchigen Klavern in South Bend. Die Auseinandersetzungen mit der Studentenschaft begannen am 17. März, als Studenten, die sich der antikatholischen Feindseligkeit bewusst waren, die Klansmen daran hinderten, von ihren Zügen in der South Bend Station abzusteigen, und die KKK-Kleidung und Insignien rissen. Am 19. Mai versammelten sich Tausende Studenten in der Innenstadt, um gegen die Klavern zu protestieren. Matthew Walsh verhinderte weitere Zusammenstöße. Am nächsten Tag sprach Fußballtrainer Knute Rockne auf einer Kundgebung auf dem Campus und flehte die Studenten an, dem College-Präsidenten zu gehorchen und sich weiterer Gewalt zu enthalten. Einige Tage später lösten sich die Klavern auf, aber die Feindseligkeit der Studenten war ein Omen und ein Beitrag zum Untergang der KKK in Indiana.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 318,
+                  "text": "das protestantische Establishment"
+                }
+              ],
+              "question": "Katholiken identifizierten sich mit Notre Dame. Welche religiöse Gruppe fühlten sich die Menschen in Yale vertreten?",
+              "id": "573388ce4776f41900660cc3"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 664,
+                  "text": "der Ku Klux Klan"
+                }
+              ],
+              "question": "Notre Dame-Studenten hatten 1924 einen Showdown mit welcher antikatholischen Gruppe?",
+              "id": "573388ce4776f41900660cc4"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1355,
+                  "text": "Fr. Matthew Walsh"
+                }
+              ],
+              "question": "Welchem College-Präsidenten von Notre Dame wird zugeschrieben, dass er vermehrt Konfrontationen zwischen Studenten und dem KKK verhindert?",
+              "id": "573388ce4776f41900660cc7"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 942,
+                  "text": "ein einwöchiger Klavern"
+                }
+              ],
+              "question": "Welche Art von Veranstaltung plante der Klan im März 1924 in Notre Dame?",
+              "id": "573388ce4776f41900660cc5"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 968,
+                  "text": "South Bend"
+                }
+              ],
+              "question": "Wo trafen sich Notre Dame-Studenten und das KKK?",
+              "id": "573388ce4776f41900660cc6"
+            }
+          ]
+        },
+        {
+          "context": "Pater John Francis O&#39;Hara vom Heiligen Kreuz wurde 1933 zum Vizepräsidenten und 1934 zum Präsidenten von Notre Dame gewählt. Während seiner Amtszeit bei Notre Dame brachte er zahlreiche Intellektuelle auf den Campus. er wählte Frank H. Spearman, Jeremiah DM Ford, Irvin Abell und Josephine Brownson für die 1883 ins Leben gerufene Laetare-Medaille aus. O&#39;Hara war der festen Überzeugung, dass die kämpfende irische Fußballmannschaft ein wirksames Mittel sein könne, um die Öffentlichkeit mit den Idealen bekannt zu machen das dominiert &quot;Notre Dame. Er schrieb: &quot;Notre Dame Fußball ist ein geistlicher Dienst, weil er zur Ehre und Ehre Gottes und seiner Gottesmutter gespielt wird. Als der hl die Herrlichkeit Gottes &quot;, schloss er Fußball.&quot;",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 0,
+                  "text": "Pater John Francis O&#39;Hara"
+                }
+              ],
+              "question": "Welche Person wurde 1933 Vizepräsident von Notre Dame?",
+              "id": "57338a51d058e614000b5cf0"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 0,
+                  "text": "Pater John Francis O&#39;Hara"
+                }
+              ],
+              "question": "Wer war der Präsident von Notre Dame im Jahr 1934?",
+              "id": "57338a51d058e614000b5cf1"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 335,
+                  "text": "Laetare-Medaille"
+                }
+              ],
+              "question": "Irvin Abell wurde welche Auszeichnung von Notre Dame gegeben?",
+              "id": "57338a51d058e614000b5cf2"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 311,
+                  "text": "1883"
+                }
+              ],
+              "question": "In welchem Jahr wurde die Laetare-Medaille erstmals in Notre Dame verliehen?",
+              "id": "57338a51d058e614000b5cf3"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 653,
+                  "text": "Gott"
+                }
+              ],
+              "question": "Zu wessen Ruhm glaubte Pater O&#39;Hara, dass die Notre Dame-Fußballmannschaft spielte?",
+              "id": "57338a51d058e614000b5cf4"
+            }
+          ]
+        },
+        {
+          "context": "Rev. John J. Cavanaugh, CSC, war von 1946 bis 1952 Präsident. Cavanaughs Vermächtnis in Notre Dame in den Nachkriegsjahren widmete sich der Verbesserung des akademischen Standards und der Umgestaltung der Universitätsverwaltung, um sie an eine erweiterte Bildungsmission und eine Erweiterung anzupassen Studentenschaft und Betonung fortgeschrittener Studien und Forschung zu einer Zeit, als sich Notre Dame in der Studentenzählung vervierfachte, die Einschulung von Studenten um mehr als die Hälfte anstieg und die Einschulung von Studenten sich verfünffachte. Cavanaugh gründete auch das Lobund Institute for Animal Studies und das Notre Dame&#39;s Medieval Institute. Cavanaugh leitete auch den Bau der Nieuwland Science Hall, der Fisher Hall und des Morris Inn sowie der Hall of Liberal Arts (jetzt O&#39;Shaughnessy Hall), die zu dieser Zeit durch eine Spende von IA O&#39;Shaughnessy ermöglicht wurden die größte, die jemals an einer amerikanischen katholischen Universität gemacht wurde. Cavanaugh richtete auch ein System von Beiräten an der Universität ein, die bis heute bestehen und für die Leitung und Entwicklung der Universität von entscheidender Bedeutung sind",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 479,
+                  "text": "mehr als die Hälfte"
+                }
+              ],
+              "question": "Ungefähr zu der Zeit, als Rev. Cavanaugh Präsident von Notre Dame wurde, um wie viel hat sich die Studentenschaft von Notre Dame während des Studiums vergrößert?",
+              "id": "5733926d4776f41900660d8e"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 522,
+                  "text": "Lobund-Institut für Tierversuche"
+                }
+              ],
+              "question": "Welches Institut für Tierwelt hat Cavanaugh in Notre Dame gegründet?",
+              "id": "5733926d4776f41900660d8f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 720,
+                  "text": "Halle der freien Künste"
+                }
+              ],
+              "question": "Wie heißt die O&#39;Shaughnessy Hall of Notre Dame?",
+              "id": "5733926d4776f41900660d91"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 0,
+                  "text": "Rev. John J. Cavanaugh, CSC"
+                }
+              ],
+              "question": "Welchen Präsidenten hatte Notre Dame 1947?",
+              "id": "5733926d4776f41900660d8d"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 575,
+                  "text": "Mittelalterliches Institut"
+                }
+              ],
+              "question": "Welches andere Institut hat Cavanugh außerhalb eines Instituts für Tierkunde in Notre Dame gegründet?",
+              "id": "5733926d4776f41900660d90"
+            }
+          ]
+        },
+        {
+          "context": "Rev. Theodore Hesburgh, CSC (1917–2015), war 35 Jahre (1952–87) lang Präsident dramatischer Transformationen. In dieser Zeit stieg das jährliche Betriebsbudget um den Faktor 18 von 9,7 Mio. USD auf 176,6 Mio. USD, die Dotierung um den Faktor 40 von 9 Mio. USD auf 350 Mio. USD und die Forschungsfinanzierung um den Faktor 20 von 735.000 USD auf 15 Mio. USD. Die Einschreibung hat sich von 4.979 auf 9.600 fast verdoppelt, die Fakultät von 389 auf 950 mehr als verdoppelt und die jährlichen Abschlüsse von 1.212 auf 2.500 verdoppelt.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 29,
+                  "text": "1917–2015"
+                }
+              ],
+              "question": "Was war die Lebensdauer von Theodore Hesburgh?",
+              "id": "573393184776f41900660da6"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 174,
+                  "text": "18"
+                }
+              ],
+              "question": "In der Zeit, als Hesburgh Präsident von Notre Dame war, um welchen Faktor erhöhte sich das Betriebsbudget?",
+              "id": "573393184776f41900660da8"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 262,
+                  "text": "9 Millionen Dollar"
+                }
+              ],
+              "question": "Wie groß war die Notre-Dame-Stiftung, als Theodore Hesburgh Präsident wurde?",
+              "id": "573393184776f41900660da9"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 55,
+                  "text": "1952–87"
+                }
+              ],
+              "question": "In welchen Jahren war Theodor Hesburgh Präsident von Notre Dame?",
+              "id": "573393184776f41900660da7"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 447,
+                  "text": "950"
+                }
+              ],
+              "question": "Wie viele Fakultätsmitglieder waren bei Notre Dame, als Hesburgh die Rolle des Präsidenten verließ?",
+              "id": "573393184776f41900660daa"
+            }
+          ]
+        },
+        {
+          "context": "Hesburgh wird auch zugeschrieben, das Gesicht von Notre Dame zu verändern, indem es zu einer koedukativen Institution gemacht wird. Mitte der 1960er-Jahre entwickelten Notre Dame und das Saint Mary&#39;s College ein gemeinsames Austauschprogramm, bei dem mehrere Hundert Studenten Kurse belegten, die an ihrer Heimathochschule nicht angeboten wurden. Dies führte dazu, dass auf einem Campus, auf dem sich bereits einige Frauen in den Graduiertenschulen befanden, Frauen mit einem akademischen Grad untergebracht waren. Nach ausgiebigen Debatten wurde die Fusion mit St. Mary&#39;s abgelehnt, vor allem wegen der unterschiedlichen Qualifikationen und Gehaltsstufen der Fakultäten. &quot;In der amerikanischen Hochschulausbildung&quot;, erklärte Rev. Charles E. Sheedy, CSC, Dekan für Künste und Briefe bei Notre Dame, &quot;werden bestimmte Merkmale, die früher als vorteilhaft und beneidenswert galten, jetzt als anachronistisch und unangebracht angesehen der Vielfalt ist die Integration der Geschlechter ein normaler und zu erwartender Aspekt, der den Separatismus ersetzt. &quot; Thomas Blantz, CSC, Notre Damens Vizepräsident für Studentenangelegenheiten, fügte hinzu, dass die Koedukation &quot;einen ganz anderen Pool sehr kluger Studenten eröffnete&quot;. Zwei der Wohnheime für Männer wurden im ersten Jahr für die neu aufgenommenen Schülerinnen umgebaut, während zwei andere für das nächste Schuljahr umgebaut wurden. 1971 wurde Mary Ann Proctor die erste Studentin; Sie wechselte vom St. Mary&#39;s College. 1972 schloss Angela Sienko als erste Frau ihr Studium mit einem Bachelor in Marketing ab.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 93,
+                  "text": "koedukativ"
+                }
+              ],
+              "question": "Welche Art von Bildungseinrichtung wird Hesburgh für die Gründung bei Notre Dame zugeschrieben?",
+              "id": "573393e1d058e614000b5dc2"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 773,
+                  "text": "Dekan der Künste und Briefe"
+                }
+              ],
+              "question": "Welche Rolle hatte Charles Sheedy bei Notre Dame?",
+              "id": "573393e1d058e614000b5dc4"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 921,
+                  "text": "Vizepräsident für studentische Angelegenheiten"
+                }
+              ],
+              "question": "Welchen Titel hatte Thomas Blantz bei Notre Dame?",
+              "id": "573393e1d058e614000b5dc5"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1427,
+                  "text": "1971"
+                }
+              ],
+              "question": "In welchem Jahr hatte Notre Dame seinen ersten weiblichen Grundschulabschluss?",
+              "id": "573393e1d058e614000b5dc6"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1494,
+                  "text": "St. Mary&#39;s College"
+                }
+              ],
+              "question": "Mit welchem Institut hat sich Notre Dame in den 1960er Jahren auf ein Austauschprogramm geeinigt?",
+              "id": "573393e1d058e614000b5dc3"
+            }
+          ]
+        },
+        {
+          "context": "In den 18 Jahren unter der Präsidentschaft von Edward Malloy, CSC (1987–2005), wuchsen Ruf, Fakultät und Ressourcen der Schule rapide. Er erhöhte die Fakultät um mehr als 500 Professoren; Die akademische Qualität der Studentenschaft hat sich dramatisch verbessert. Der durchschnittliche SAT-Wert stieg von 1240 auf 1360; die Zahl der Minderheitenschüler hat sich mehr als verdoppelt; Das Stiftungsvermögen stieg von 350 Mio. USD auf über 3 Mrd. USD. Das jährliche Betriebsbudget stieg von 177 Mio. USD auf über 650 Mio. USD. Die jährliche Forschungsfinanzierung verbesserte sich von 15 Mio. USD auf über 70 Mio. USD. Die jüngste Kapitalkampagne von Notre Dame brachte 1,1 Milliarden US-Dollar ein und übertraf damit bei weitem das Ziel von 767 Millionen US-Dollar. Sie ist die größte in der Geschichte der katholischen Hochschulbildung.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 67,
+                  "text": "1987–2005"
+                }
+              ],
+              "question": "In welchen Jahren war Edward Malloy Präsident von Notre Dame?",
+              "id": "573394c84776f41900660ddd"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 306,
+                  "text": "1240"
+                }
+              ],
+              "question": "Wie hoch war der durchschnittliche SAT-Wert bei Notre Dame, als Edward Malloy Präsident wurde?",
+              "id": "573394c84776f41900660ddf"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 403,
+                  "text": "350 Millionen Dollar"
+                }
+              ],
+              "question": "Als Malloy Präsident von Notre Dame wurde, wie groß war die Stiftung?",
+              "id": "573394c84776f41900660de0"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 576,
+                  "text": "mehr als 70 Millionen US-Dollar"
+                }
+              ],
+              "question": "Als Malloy das Ende seiner Amtszeit als Präsident erreichte, wie viel jährliche Forschungsgelder hatte Notre Dame?",
+              "id": "573394c84776f41900660de1"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 171,
+                  "text": "500"
+                }
+              ],
+              "question": "Die Zahl der Professoren in Notre Dame stieg unter Malloy um wie viel?",
+              "id": "573394c84776f41900660dde"
+            }
+          ]
+        },
+        {
+          "context": "Seit 2005 wird Notre Dame von John I. Jenkins, dem 17. Präsidenten der Universität, geleitet. Jenkins übernahm die Position von Malloy am 1. Juli 2005. In seiner Antrittsrede beschrieb Jenkins seine Ziele, die Universität zu einem Forschungsführer zu machen, der Ethik anerkennt und die Verbindung zwischen Glauben und Studium herstellt. Während seiner Amtszeit hat Notre Dame sein Stiftungsvermögen aufgestockt, seine Studentenschaft erweitert und zahlreiche Bauprojekte auf dem Campus durchgeführt, darunter die Compton Family Ice Arena, eine neue Architekturhalle, zusätzliche Wohnheime und die Campus Crossroads, eine Erweiterung und Erweiterung im Wert von 400 Mio. USD von Notre Dame Stadium.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 5,
+                  "text": "2005"
+                }
+              ],
+              "question": "Wann wurde John Jenkins Präsident von Notre Dame?",
+              "id": "5733974d4776f41900660e17"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 51,
+                  "text": "17."
+                }
+              ],
+              "question": "In Bezug auf die Anzahl der Präsidenten, die Notre Dame hatte, wo steht John Jenkins auf der Liste?",
+              "id": "5733974d4776f41900660e18"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 128,
+                  "text": "Malloy"
+                }
+              ],
+              "question": "Wer war der Präsident von Notre Dame, der John Jenkins vorausging?",
+              "id": "5733974d4776f41900660e19"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 514,
+                  "text": "Compton Family Ice Arena"
+                }
+              ],
+              "question": "Welche Arena wurde unter Jenkins in Notre Dame gebaut?",
+              "id": "5733974d4776f41900660e1a"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 596,
+                  "text": "400 Millionen US-Dollar"
+                }
+              ],
+              "question": "Wie viel Geld wurde für die Verbesserung des Notre Dame-Stadions unter John Jenkins ausgegeben?",
+              "id": "5733974d4776f41900660e1b"
+            }
+          ]
+        },
+        {
+          "context": "Aufgrund seiner katholischen Identität stehen einige religiöse Gebäude auf dem Campus. Das Gebäude des Old College ist eines von zwei Seminaren auf dem Campus der Kongregation vom Heiligen Kreuz. Die heutige Basilika des Heiligen Herzens befindet sich an der Stelle von P. Sorins ursprüngliche Kirche, die für das wachsende College zu klein wurde. Es ist im französischen Revival-Stil erbaut und mit direkt aus Frankreich importierten Buntglasfenstern dekoriert. Das Innere wurde von Luigi Gregori bemalt, einem italienischen Maler, der von Pater Gregori eingeladen wurde. Sorin als Artist in Residence. Die Basilika verfügt auch über einen Glockenturm mit einem Glockenspiel. In der Kirche befinden sich auch Skulpturen von Ivan Mestrovic. Die 1896 erbaute Grotte Unserer Lieben Frau von Lourdes ist eine Nachbildung des Originals in Lourdes, Frankreich. Es ist bei Studenten und Alumni als Ort des Gebets und der Meditation sehr beliebt und gilt als einer der beliebtesten Orte auf dem Campus.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 163,
+                  "text": "Kongregation vom Heiligen Kreuz"
+                }
+              ],
+              "question": "Welche Gemeinde leitet das Alte Kolleg in Notre Dame?",
+              "id": "573398164776f41900660e21"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 208,
+                  "text": "Basilika des Heiligen Herzens"
+                }
+              ],
+              "question": "Welche Struktur befindet sich an der Stelle der ursprünglichen Kirche von Pater Sorin in Notre Dame?",
+              "id": "573398164776f41900660e22"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 349,
+                  "text": "Französische Wiederbelebung"
+                }
+              ],
+              "question": "In welchem architektonischen Stil ist die Basilika des Heiligen Herzens in Notre Dame gebaut?",
+              "id": "573398164776f41900660e23"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 484,
+                  "text": "Luigi Gregori"
+                }
+              ],
+              "question": "Welche Person hat das Innere der Basilika des Heiligen Herzens in Notre Dame gemalt?",
+              "id": "573398164776f41900660e24"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 745,
+                  "text": "1896"
+                }
+              ],
+              "question": "In welchem Jahr wurde die Grotte Unserer Lieben Frau von Lourdes in Notre Dame erbaut?",
+              "id": "573398164776f41900660e25"
+            }
+          ]
+        },
+        {
+          "context": "Eine Wissenschaftshalle wurde 1883 unter der Leitung von P. gebaut. Zahm, aber 1950 wurde es in ein Studentengewerkschaftsgebäude umgewandelt und nach Joseph LaFortune, einem Ölmanager aus Tulsa, Oklahoma, LaFortune Center genannt. Allgemein bekannt als &quot;LaFortune&quot; oder &quot;LaFun&quot;, ist es ein 4-stöckiges Gebäude von 83.000 Quadratmetern, das der Gemeinde Notre Dame einen Treffpunkt für soziale, Freizeit-, Kultur- und Bildungsaktivitäten bietet. LaFortune beschäftigt 35 Teilzeitstudenten und 29 Vollzeitstudenten und verfügt über ein Jahresbudget von 1,2 Millionen US-Dollar. Viele Geschäfte, Dienstleistungen und Abteilungen des Office of Student Affairs befinden sich in. Das Gebäude beherbergt auch Restaurants von nationalen Restaurantketten.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 66,
+                  "text": "Fr. Zahm"
+                }
+              ],
+              "question": "Welche Person beaufsichtigte 1883 die Errichtung einer Wissenschaftshalle in Notre Dame?",
+              "id": "573398ebd058e614000b5e66"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 79,
+                  "text": "1950"
+                }
+              ],
+              "question": "In welchem Jahr wurde das Gebäude der Studentenvereinigung in Notre Dame in LaFortune Center umbenannt?",
+              "id": "573398ebd058e614000b5e67"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 151,
+                  "text": "Joseph LaFortune"
+                }
+              ],
+              "question": "Nach welcher Person wurde das LaFortune Center Notre Dame benannt?",
+              "id": "573398ebd058e614000b5e68"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 335,
+                  "text": "83.000 Quadratfuß"
+                }
+              ],
+              "question": "Wie groß ist das LaFortune Center in Notre Dame?",
+              "id": "573398ebd058e614000b5e69"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 572,
+                  "text": "1,2 Millionen US-Dollar"
+                }
+              ],
+              "question": "Wie hoch ist das jährliche Budget des LaFortune Centers von Notre Dame?",
+              "id": "573398ebd058e614000b5e6a"
+            }
+          ]
+        },
+        {
+          "context": "Seit dem Bau der ältesten Gebäude ist die physikalische Anlage der Universität erheblich gewachsen. Im Laufe der Jahre wurden 29 Studentenwohnheime gebaut, von denen jedes über eine eigene Kapelle verfügt. Viele akademische Gebäude wurden zusammen mit einem System von Bibliotheken hinzugefügt, von denen das bekannteste die Theodore Hesburgh Library ist, die 1963 erbaut wurde und heute fast 4 Millionen Bücher enthält. Seit 2004 wurden mehrere Gebäude hinzugefügt, darunter das DeBartolo Performing Arts Center, der Guglielmino Complex und die Jordan Hall of Science. Darüber hinaus wurde am 8. März 2007 eine neue Residenz für Männer, Duncan Hall, eröffnet, in der Bewohner für das Herbstsemester 2008 aufgenommen wurden. Ryan Hall wurde fertiggestellt und begann im Herbst 2009 mit der Unterbringung von Studentinnen. Vor kurzem wurden ein neues Ingenieurgebäude, Stinson-Remick Hall, ein neues Kombinationszentrum für soziale Belange / Institut für kirchliches Leben, Geddes Hall und eine weitere juristische Fakultät errichtet auch abgeschlossen. Zusätzlich wurde im Herbst 2011 die neue Hockeyarena eröffnet. Das Stayer Center for Executive Education, in dem sich die Abteilung für Executive Education des Mendoza College of Business befindet, wurde im März 2013 südlich des Mendoza College of Business-Gebäudes eröffnet. Aufgrund ihrer langen sportlichen Tradition verfügt die Universität auch über viele Gebäude, die dem Sport gewidmet sind. Das berühmteste ist das Notre-Dame-Stadion, in dem die irische Fußballmannschaft Fighting spielt. Es wurde mehrmals renoviert und kann heute mehr als 80.000 Menschen aufnehmen. Prominente Veranstaltungsorte sind auch das Edmund P. Joyce Center mit Indoor-Basketball- und -Volleyballfeldern und die Compton Family Ice Arena, eine Eishockey-Anlage mit zwei Spielfeldern. Es gibt auch viele Außenfelder, wie das Frank-Eck-Stadion für Baseball.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 126,
+                  "text": "29"
+                }
+              ],
+              "question": "Wie viele Säle in Notre Dame beherbergen Studenten?",
+              "id": "57339a5bd058e614000b5e91"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 336,
+                  "text": "Theodore Hesburgh Bibliothek"
+                }
+              ],
+              "question": "Welche Bibliothek wurde 1963 in Notre Dame gebaut?",
+              "id": "57339a5bd058e614000b5e92"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 388,
+                  "text": "fast 4 Millionen"
+                }
+              ],
+              "question": "Wie viele Bücher sind in der Theodore Hesburgh Library untergebracht?",
+              "id": "57339a5bd058e614000b5e93"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 638,
+                  "text": "Duncan Hall"
+                }
+              ],
+              "question": "Für welche Halle wurde am 8. März 2007 in Notre Dame mit dem Bau begonnen?",
+              "id": "57339a5bd058e614000b5e94"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1860,
+                  "text": "Frank Eck Stadion"
+                }
+              ],
+              "question": "Welches Baseballstadion befindet sich in Notre Dame?",
+              "id": "57339a5bd058e614000b5e95"
+            }
+          ]
+        },
+        {
+          "context": "Die University of Notre Dame hat es sich zur Aufgabe gemacht, ein führendes Unternehmen im Bereich Nachhaltigkeit zu sein. 2008 wurde ein Büro für Nachhaltigkeit eingerichtet, um eine Reihe von Zielen in den Bereichen Stromerzeugung, Planung und Bau, Abfallreduzierung, Beschaffung, Lebensmitteldienstleistungen zu erreichen. transport und wasser.Ab 2012 [update] verfolgten vier Hochbauprojekte den LEED-Zertifizierungsstatus und drei den LEED-Silberstatus. Der gastronomische Service von Notre Dame bezieht 40% der Lebensmittel aus der Region und bietet nachhaltig gefangene Meeresfrüchte sowie viele biologische, fair gehandelte und vegane Optionen. Auf dem Nachhaltigkeitsbericht 2010 des Colleges des Sustainable Endowments Institute erhielt die University of Notre Dame die Note &quot;B&quot;. Die Universität beherbergt auch das Kroc-Institut für internationale Friedensforschung. Pater Gustavo Gutierrez, der Gründer der Befreiungstheologie, ist derzeit Fakultätsmitglied.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 123,
+                  "text": "2008"
+                }
+              ],
+              "question": "In welchem Jahr gründete Notre Dame das Amt für Nachhaltigkeit?",
+              "id": "57339b36d058e614000b5ea3"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 509,
+                  "text": "40%"
+                }
+              ],
+              "question": "Wie viel Prozent der im Notre Dame servierten Speisen stammen aus lokalem Anbau?",
+              "id": "57339b36d058e614000b5ea4"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 596,
+                  "text": "Institut für nachhaltige Stiftungen"
+                }
+              ],
+              "question": "Notre Dame erhielt ein &quot;B&quot; für seine Nachhaltigkeitspraktiken von welchem Unternehmen?",
+              "id": "57339b36d058e614000b5ea5"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 836,
+                  "text": "Kroc-Institut für internationale Friedensforschung"
+                }
+              ],
+              "question": "Gustavo Gutierrez ist Fakultät von welchem Institut?",
+              "id": "57339b36d058e614000b5ea6"
+            }
+          ]
+        },
+        {
+          "context": "Die Universität besitzt mehrere Zentren auf der ganzen Welt, die für internationale Studien und Forschungen, Konferenzen im Ausland und die Unterstützung von Alumni genutzt werden. Die Universität ist seit 1968 in London, England, vertreten. Seit 1998 befindet sich das Londoner Zentrum im ehemaligen United University Club in der 1 Suffolk Street am Trafalgar Square. Das Zentrum ermöglicht den Colleges of Arts &amp; Letters, der Business Administration, Science, Engineering und der Law School, ihre eigenen Programme in London zu entwickeln sowie Konferenzen und Symposien auszurichten. Weitere globale Gateways befinden sich in Peking, Chicago, Dublin, Jerusalem und Rom.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 206,
+                  "text": "1968"
+                }
+              ],
+              "question": "In welchem Jahr hatte Notre Dame zum ersten Mal eine Niederlassung in England?",
+              "id": "57339c184776f41900660ea5"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 289,
+                  "text": "1 Suffolk Street auf dem Trafalgar Square"
+                }
+              ],
+              "question": "An welchem Ort befindet sich das von Notre Dame betriebene London Centre?",
+              "id": "57339c184776f41900660ea6"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 599,
+                  "text": "Globale Gateways"
+                }
+              ],
+              "question": "Notre Dame hat ein Zentrum in Peking, wie heißt es?",
+              "id": "57339c184776f41900660ea7"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 247,
+                  "text": "1998"
+                }
+              ],
+              "question": "In welchem Jahr wurde in der Suffolk Street eine Notre Dame-Einrichtung eingerichtet?",
+              "id": "57339c184776f41900660ea8"
+            }
+          ]
+        },
+        {
+          "context": "Das College of Arts and Letters wurde als erstes College der Universität im Jahr 1842 mit den ersten Abschlüssen im Jahr 1849 gegründet. Der erste akademische Lehrplan der Universität wurde nach dem Vorbild des Jesuit Ratio Studiorum der Saint Louis University erstellt. Heute umfasst das College, das in der O&#39;Shaughnessy Hall untergebracht ist, 20 Abteilungen in den Bereichen Bildende Kunst, Geistes- und Sozialwissenschaften und verleiht den Bachelor of Arts (BA) in 33 Hauptfächern. Damit ist es das größte College der Universität. Es gibt rund 2.500 Studenten und 750 Absolventen in der Hochschule eingeschrieben.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 0,
+                  "text": "Die Hochschule für Künste und Briefe"
+                }
+              ],
+              "question": "Was war das erste College von Notre Dame?",
+              "id": "5733a3cbd058e614000b5f3f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 81,
+                  "text": "1842"
+                }
+              ],
+              "question": "In welchem Jahr wurde das College of Arts and Letters in Notre Dame gegründet?",
+              "id": "5733a3cbd058e614000b5f40"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 121,
+                  "text": "1849"
+                }
+              ],
+              "question": "In welchem Jahr hat das College of Arts and Letters in Notre Dame seinen ersten Abschluss gemacht?",
+              "id": "5733a3cbd058e614000b5f41"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 238,
+                  "text": "Saint Louis Universität"
+                }
+              ],
+              "question": "Auf welcher Universität gründete Notre Dame seinen Lehrplan?",
+              "id": "5733a3cbd058e614000b5f42"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 475,
+                  "text": "33"
+                }
+              ],
+              "question": "Wie viele BA-Studiengänge bietet das College of Arts and Letters in Notre Dame an?",
+              "id": "5733a3cbd058e614000b5f43"
+            }
+          ]
+        },
+        {
+          "context": "Das College of Science wurde 1865 von Präsident Patrick Dillon an der Universität gegründet. Dillons wissenschaftliche Kurse umfassten sechs Jahre Arbeit, einschließlich Mathematikkurse auf höherer Ebene. Heute umfasst das College, das in der neu errichteten Jordan Hall of Science untergebracht ist, über 1.200 Studenten in sechs Fachbereichen - Biologie, Chemie, Mathematik, Physik, vorberufliche Studien sowie angewandte und rechnergestützte Mathematik und Statistik (ACMS) -, die jeweils ausgezeichnet werden Bachelor of Science (BS). Laut Universitätsstatistik hat sein wissenschaftliches vorberufliches Programm eine der höchsten Akzeptanzraten für die medizinische Fakultät einer Universität in den Vereinigten Staaten.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 78,
+                  "text": "Pater Patrick Dillon"
+                }
+              ],
+              "question": "Welcher Präsident von Notre Dame hat das College of Science gegründet?",
+              "id": "5733a4c54776f41900660f2d"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 29,
+                  "text": "1865"
+                }
+              ],
+              "question": "In welchem Jahr wurde das Notre Dame College of Science gegründet?",
+              "id": "5733a4c54776f41900660f2e"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 135,
+                  "text": "sechs Jahre"
+                }
+              ],
+              "question": "Wie lange dauerte ein wissenschaftlicher Kurs unter Patrick Dillon in Notre Dame?",
+              "id": "5733a4c54776f41900660f2f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 259,
+                  "text": "Jordan Hall of Science"
+                }
+              ],
+              "question": "In welcher Halle in Notre Dame befindet sich das derzeitige College of Science?",
+              "id": "5733a4c54776f41900660f30"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 301,
+                  "text": "über 1.200"
+                }
+              ],
+              "question": "Wie viele Studenten besuchen heute das College of Science in Notre Dame?",
+              "id": "5733a4c54776f41900660f31"
+            }
+          ]
+        },
+        {
+          "context": "Die School of Architecture wurde 1899 gegründet, obwohl die Universität erstmals 1898 Architekturabschlüsse verlieh. Heute bietet die in Bond Hall untergebrachte Schule ein fünfjähriges Grundstudium an, das zum Bachelor of Architecture führt. Alle Studenten studieren das dritte Studienjahr in Rom. Die Universität ist weltweit anerkannt für ihre Notre Dame School of Architecture, eine Fakultät, die (vormoderne) traditionelle und klassische Architektur und Stadtplanung lehrt (z. B. nach den Prinzipien des New Urbanism und New Classical Architecture). Außerdem wird der renommierte jährliche Driehaus-Architekturpreis verliehen.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 4,
+                  "text": "Schule der Architektur"
+                }
+              ],
+              "question": "1899 gründete Notre Dame welches College?",
+              "id": "5733a55a4776f41900660f3a"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 137,
+                  "text": "Bond Hall"
+                }
+              ],
+              "question": "In welchem Gebäude befindet sich die derzeitige Schule für Architektur in Notre Dame?",
+              "id": "5733a55a4776f41900660f3b"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 179,
+                  "text": "fünf Jahre"
+                }
+              ],
+              "question": "Wie lange dauert das Studium an der Notre Dame School of Architecture?",
+              "id": "5733a55a4776f41900660f3c"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 294,
+                  "text": "Rom"
+                }
+              ],
+              "question": "An welchem Ort verbringen Schüler der School of Architecture von Notre Dame ihr 3. Jahr?",
+              "id": "5733a55a4776f41900660f3d"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 595,
+                  "text": "Driehaus-Architekturpreis"
+                }
+              ],
+              "question": "Welchen prestigeträchtigen Preis vergibt die School of Architecture in Notre Dame?",
+              "id": "5733a55a4776f41900660f3e"
+            }
+          ]
+        },
+        {
+          "context": "Das Bibliothekssystem umfasst auch Zweigbibliotheken für Architektur, Chemie und Physik, Ingenieurwesen, Recht und Mathematik sowie Informationszentren am Mendoza College of Business, am Kellogg Institute for International Studies und am Joan B. Kroc Institute for International Peace Studies. und eine Folienbibliothek in der O&#39;Shaughnessy Hall. Eine Theologiebibliothek wurde ebenfalls im Herbst 2015 eröffnet. Sie befindet sich im ersten Stock der Stanford Hall und ist die erste Filiale des Bibliothekssystems, die in einem Schlafsaal untergebracht ist. Das Bibliothekssystem verfügt über mehr als drei Millionen Bände, war nach seiner Fertigstellung die größte Universitätsbibliothek der Welt und ist nach wie vor eine der 100 größten Bibliotheken des Landes.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 402,
+                  "text": "2015"
+                }
+              ],
+              "question": "In welchem Jahr fand die Eröffnung einer theologischen Bibliothek in Notre Dame statt?",
+              "id": "5733adb64776f41900661001"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 405,
+                  "text": "der erste Stock der Stanford Hall"
+                }
+              ],
+              "question": "Wo ist die Theologiebibliothek in Notre Dame?",
+              "id": "5733adb64776f41900661002"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 538,
+                  "text": "über drei Millionen Bände"
+                }
+              ],
+              "question": "Wie viele Bücher befinden sich in den Bibliotheken Notre Dame?",
+              "id": "5733adb64776f41900661003"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 723,
+                  "text": "einer der 100 größten"
+                }
+              ],
+              "question": "Wo steht die Bibliothek von Notre Dame derzeit in der Nation?",
+              "id": "5733adb64776f41900661004"
+            }
+          ]
+        },
+        {
+          "context": "Der Aufstieg Hitlers und anderer Diktatoren in den 1930er Jahren zwang zahlreiche katholische Intellektuelle, aus Europa zu fliehen. Präsident John O&#39;Hara brachte viele nach Notre Dame. Aus Deutschland kamen Anton-Hermann Chroust (1907–1982) in Klassik und Jura und Waldemar Gurian, ein deutscher katholischer Intellektueller jüdischer Abstammung. Der Positivismus beherrschte das amerikanische Geistesleben ab den 1920er Jahren, aber in deutlichem Gegensatz dazu erhielt Gurian eine deutsch-katholische Ausbildung und schrieb seine Doktorarbeit bei Max Scheler. Ivan Meštrović (1883–1962), ein bekannter Bildhauer, brachte 1955–62 die kroatische Kultur auf den Campus. Yves Simon (1903–61) brachte in den 1940er Jahren die Einsichten der französischen Studien in die aristotelisch-thomistische Tradition der Philosophie zu ND; sein eigener Lehrer Jacques Maritain (1882–73) besuchte häufig den Campus.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 0,
+                  "text": "Der Aufstieg Hitlers und anderer Diktatoren"
+                }
+              ],
+              "question": "Was veranlasste viele intellektuelle Katholiken in den 1930er Jahren, Europa zu verlassen?",
+              "id": "5733b496d058e614000b60ce"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 194,
+                  "text": "Deutschland"
+                }
+              ],
+              "question": "Von wo ist Anton-Hermann Chroust nach Notre Dame gekommen?",
+              "id": "5733b496d058e614000b60cf"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 212,
+                  "text": "Klassiker und Recht"
+                }
+              ],
+              "question": "Auf welches Fach hat sich Anton-Hermann Chroust spezialisiert?",
+              "id": "5733b496d058e614000b60d0"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 554,
+                  "text": "Max Scheler"
+                }
+              ],
+              "question": "Unter wem wurde Waldemar Gurian bei seiner Promotion unterrichtet?",
+              "id": "5733b496d058e614000b60d1"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 595,
+                  "text": "ein bekannter bildhauer"
+                }
+              ],
+              "question": "Wofür war Ivan Meštrović bekannt?",
+              "id": "5733b496d058e614000b60d2"
+            }
+          ]
+        },
+        {
+          "context": "Die Universität Notre Dame du Lac (oder einfach Notre Dame / ˌnoˌtʊrədeˈm / NOH-tər-DAYM) ist eine katholische Forschungsuniversität in der Nähe von South Bend, Indiana, USA. Notre Dame du Lac bedeutet auf Französisch &quot;Unsere Liebe Frau vom See&quot; und bezieht sich auf die Schutzpatronin der Universität, die Jungfrau Maria. Der Hauptcampus erstreckt sich über 1.250 Morgen in einem Vorort und enthält eine Reihe erkennbarer Wahrzeichen wie den Goldenen Dom, das Wandgemälde &quot;Wort des Lebens&quot; (allgemein bekannt als Touchdown Jesus) und die Basilika.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 4,
+                  "text": "Universität Notre Dame du"
+                }
+              ],
+              "question": "Die als Notre Dame bekannte Schule ist unter einem längeren Namen bekannt. Was ist das?",
+              "id": "573382a14776f41900660c2d"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 99,
+                  "text": "Katholische Forschungsuniversität"
+                }
+              ],
+              "question": "Was für eine Institution ist die Notre Dame?",
+              "id": "573382a14776f41900660c2e"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 224,
+                  "text": "Unsere Liebe Frau vom See"
+                }
+              ],
+              "question": "Die französischen Wörter Notre Dame du Lac übersetzen was auf Englisch?",
+              "id": "573382a14776f41900660c2f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 313,
+                  "text": "die Jungfrau Maria"
+                }
+              ],
+              "question": "Wer ist der Schutzpatron von Notre Dame?",
+              "id": "573382a14776f41900660c30"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 369,
+                  "text": "1,250"
+                }
+              ],
+              "question": "Wie groß ist Notre Dame in Morgen?",
+              "id": "573382a14776f41900660c31"
+            }
+          ]
+        },
+        {
+          "context": "Notre Dame wurde in den frühen 1900er Jahren für seine kämpfende irische Fußballmannschaft bekannt, insbesondere unter der Leitung des legendären Trainers Knute Rockne. Die Sportmannschaften der Universität sind Mitglieder der NCAA Division I und werden zusammen als Fighting Irish bezeichnet. Die unabhängige Fußballmannschaft hat elf nationale Konsensmeisterschaften, sieben Heisman Trophy-Gewinner, 62 Mitglieder in der College Football Hall of Fame und 13 Mitglieder in der Pro Football Hall of Fame gesammelt und gilt als eine der berühmtesten und erfolgreichsten College-Fußballmannschaften Mannschaften in der Geschichte. Andere ND-Teams, hauptsächlich in der Atlantic Coast Conference, haben 16 nationale Meisterschaften gesammelt. Der Siegesmarsch Notre Dame wird oft als das bekannteste und bekannteste kollegiale Kampflied angesehen.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 49,
+                  "text": "seine kämpfende irische Fußballmannschaft"
+                }
+              ],
+              "question": "Was hat dazu geführt, dass Notre Dame im frühen 20. Jahrhundert bemerkenswert wurde?",
+              "id": "573383494776f41900660c41"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 155,
+                  "text": "Knute Rockne"
+                }
+              ],
+              "question": "Welcher Notre Dame-Fußballtrainer des 20. Jahrhunderts ist am bemerkenswertesten?",
+              "id": "573383494776f41900660c42"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 227,
+                  "text": "NCAA Division I"
+                }
+              ],
+              "question": "Zu welchem Sportverein gehören die studentischen Athleten von Notre Dame?",
+              "id": "573383494776f41900660c43"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 839,
+                  "text": "Sieben"
+                }
+              ],
+              "question": "Wie viele Studenten von Notre Dame haben die Heisman Trophy erhalten?",
+              "id": "573383494776f41900660c44"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 457,
+                  "text": "13"
+                }
+              ],
+              "question": "Es gab mehrere Studenten aus Notre Dame, die die Pro Football Hall of Fame betraten, wie viele?",
+              "id": "573383494776f41900660c45"
+            }
+          ]
+        },
+        {
+          "context": "Notre Dame ist nicht nur eine der bekanntesten Sportuniversitäten, sondern auch eine große, vierjährige Forschungsuniversität mit hohem Wohnanteil. Sie gehört nach wie vor zu den Top-20-Universitäten in den USA und ist eine der bedeutendsten Universitäten der Welt. Die Bachelor-Komponente der Universität gliedert sich in vier Hochschulen (Arts and Letters, Science, Engineering, Business) und die Architecture School. Letzteres ist bekannt für den Unterricht in New Classical Architecture und für die Verleihung des weltweit renommierten jährlichen Driehaus-Architekturpreises. Das Notre Dame-Absolventenprogramm umfasst mehr als 50 Master-, Doktor- und Berufsabschlüsse der fünf Schulen. Hinzu kommen die Notre Dame Law School und ein MD-PhD-Programm, das in Kombination mit der IU Medical School angeboten wird. Es unterhält ein System von Bibliotheken, kulturellen Einrichtungen, künstlerischen und wissenschaftlichen Museen, darunter die Hesburgh Library und das Snite Museum of Art. Über 80% der 8.000 Studenten der Universität leben auf dem Campus in einem von 29 gleichgeschlechtlichen Wohnheimen, von denen jedes seine eigenen Traditionen, Vermächtnisse, Veranstaltungen und intramuralen Sportteams hat. Die Universität zählt rund 120.000 Alumni, die zu den stärksten Alumni-Netzwerken der US-amerikanischen Hochschulen zählen.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 140,
+                  "text": "unter den Top zwanzig"
+                }
+              ],
+              "question": "Wo unter den US-Universitäten rangiert Notre Dame?",
+              "id": "573383e94776f41900660c5a"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 92,
+                  "text": "vier"
+                }
+              ],
+              "question": "Wie viele einzelne Colleges gehören zu Notre Dame?",
+              "id": "573383e94776f41900660c5b"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 551,
+                  "text": "Driehaus-Architekturpreis"
+                }
+              ],
+              "question": "Welchen Preis vergibt die Architekturschule in Notre Dame?",
+              "id": "573383e94776f41900660c5c"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 623,
+                  "text": "mehr als 50"
+                }
+              ],
+              "question": "Wie viele Doktoranden- und Masterstudiengänge gibt es bei Notre Dame?",
+              "id": "573383e94776f41900660c5d"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 887,
+                  "text": "Snite Kunstmuseum"
+                }
+              ],
+              "question": "Welches Kunstmuseum verwaltet Notre Dame?",
+              "id": "573383e94776f41900660c5e"
+            }
+          ]
+        },
+        {
+          "context": "1842 bot der Bischof von Vincennes, Célestine Guynemer de la Hailandière, Pater Edward Sorin von der Kongregation des Heiligen Kreuzes Land an, unter der Bedingung, dass er in zwei Jahren ein College errichtete. Fr. Sorin kam am 26. November 1842 mit acht Brüdern des Heiligen Kreuzes aus Frankreich und Irland an die Baustelle und eröffnete die Schule unter Verwendung der alten Holzkapelle von Pater Stephen Badin. Bald darauf errichtete er weitere Gebäude, darunter das Old College, die erste Kirche und das erste Hauptgebäude. Sie erwarben sofort zwei Studenten und begannen, den Campus zu erweitern.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 0,
+                  "text": "1842"
+                }
+              ],
+              "question": "In welchem Jahr hatte Pater Edward Sorin zwei Jahre Zeit, um ein College zu gründen?",
+              "id": "5733849bd058e614000b5c56"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 36,
+                  "text": "Célestine Guynemer de la Hailandière"
+                }
+              ],
+              "question": "Welche Person bot Pater Edward Sorin Land an?",
+              "id": "5733849bd058e614000b5c57"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 111,
+                  "text": "die Kongregation vom Heiligen Kreuz"
+                }
+              ],
+              "question": "Welche Kirche vertrat Pater Edward Sorin?",
+              "id": "5733849bd058e614000b5c58"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 229,
+                  "text": "26. November 1842"
+                }
+              ],
+              "question": "Zu welchem Datum sind Brüder vom Heiligen Kreuz am zukünftigen Standort von Notre Dame angekommen?",
+              "id": "5733849bd058e614000b5c59"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 336,
+                  "text": "Die alte Holzkapelle von Pater Stephen Badin"
+                }
+              ],
+              "question": "Welche Struktur wurde zuerst für die Zwecke der Hochschule verwendet?",
+              "id": "5733849bd058e614000b5c5a"
+            }
+          ]
+        },
+        {
+          "context": "Die ersten Hochschulabschlüsse wurden 1849 verliehen. Die Universität wurde mit neuen Gebäuden erweitert, um mehr Studenten und Lehrkräfte aufzunehmen. Mit jedem neuen Präsidenten wurden neue akademische Programme angeboten und neue Gebäude gebaut, um sie aufzunehmen. Das ursprüngliche Hauptgebäude, das Sorin kurz nach seiner Ankunft errichtete, wurde 1865 durch ein größeres &quot;Hauptgebäude&quot; ersetzt, in dem die Verwaltung, die Klassenräume und die Schlafsäle der Universität untergebracht waren. Ab 1873 wurde von Pater Lemonnier eine Bibliothek eingerichtet. Bis 1879 war es auf zehntausend Bände angewachsen, die im Hauptgebäude untergebracht waren.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 38,
+                  "text": "1849"
+                }
+              ],
+              "question": "In welchem Jahr wurden die ersten Abschlüsse bei Notre Dame verliehen?",
+              "id": "573385394776f41900660c7f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 354,
+                  "text": "1865"
+                }
+              ],
+              "question": "In welchem Jahr wurde das von Sorin gebaute Hauptgebäude ersetzt?",
+              "id": "573385394776f41900660c80"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 526,
+                  "text": "Pater Lemonnier"
+                }
+              ],
+              "question": "Welche Person hat eine Bibliothek in Notre Dame begonnen?",
+              "id": "573385394776f41900660c81"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 576,
+                  "text": "1879"
+                }
+              ],
+              "question": "In welchem Jahr hatte die Bibliothek in Notre Dame 10.000 Bücher erreicht?",
+              "id": "573385394776f41900660c82"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 511,
+                  "text": "1873"
+                }
+              ],
+              "question": "In welchem Jahr wurde die Bibliothek in Notre Dame gegründet?",
+              "id": "573385394776f41900660c83"
+            }
+          ]
+        },
+        {
+          "context": "Der Fernsehsender NDtv wuchs von einer Sendung im Jahr 2002 zu einem vollen 24-Stunden-Kanal mit ursprünglichem Programm bis September 2006. WSND-FM dient der Studentenschaft und der größeren South Bend-Community mit 88,9 FM und bietet Studenten die Möglichkeit, sich daran zu beteiligen klassische Musik, bildende Kunst, pädagogisches Programm und alternativen Rock auf die Wellen bringen. Ein weiterer Radiosender, WVFI, begann als Partner von WSND-FM. In jüngerer Zeit wird WVFI jedoch unabhängig ausgestrahlt und im Internet gestreamt.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 18,
+                  "text": "NDtv"
+                }
+              ],
+              "question": "Welcher Fernsehsender ist in Notre Dame zu Hause?",
+              "id": "5733c0064776f41900661198"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 40,
+                  "text": "eine Show"
+                }
+              ],
+              "question": "Wie viele Programme hatte NDtv im Jahr 2002?",
+              "id": "5733c0064776f41900661199"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 141,
+                  "text": "WSND-FM"
+                }
+              ],
+              "question": "Welcher Radiosender sendet Radio an die Schüler von Notre Dame mit 88,9 FM?",
+              "id": "5733c0064776f4190066119a"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 417,
+                  "text": "WVFI"
+                }
+              ],
+              "question": "Welcher Internetradiosender von Notre Dame wird als Internetstream angeboten?",
+              "id": "5733c0064776f4190066119b"
+            }
+          ]
+        },
+        {
+          "context": "Die erste Phase von Eddy Street Commons, einer Entwicklung von 215 Millionen US-Dollar, die sich neben dem Campus der University of Notre Dame befindet und von der Universität finanziert wird, begann am 3. Juni 2008. Die Eddy Street Commons lösten Proteste der Gewerkschaften aus, als Arbeiter von der Stadt Süd angeheuert wurden Biegen Sie, um das öffentliche Parkhaus zu bauen, das die private Arbeitsstelle nach einem Auftragnehmer streckte, der Nichtgewerkschaftsarbeiter anstellte. Der Entwickler Kite Realty aus Indianapolis hat Vereinbarungen mit großen nationalen Ketten getroffen und nicht mit lokalen Unternehmen. Dies hat zu Kritik von Alumni und Studenten geführt.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 63,
+                  "text": "215 Millionen US-Dollar"
+                }
+              ],
+              "question": "Wie viel kostet Eddy Street Commons in Notre Dame?",
+              "id": "5733c0e6d058e614000b61d7"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 203,
+                  "text": "3. Juni 2008"
+                }
+              ],
+              "question": "Wann war der Spatenstich für das Eddy Street Commons Project von Notre Dame?",
+              "id": "5733c0e6d058e614000b61d8"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 502,
+                  "text": "Kite Realty"
+                }
+              ],
+              "question": "Wer ist der Entwickler von Eddy Street Commons?",
+              "id": "5733c0e6d058e614000b61d9"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 249,
+                  "text": "die Stadt von South Bend"
+                }
+              ],
+              "question": "Welche Einrichtung hat Notre Dame beauftragt, ein Parkhaus außerhalb von Eddy Street Commons zu bauen?",
+              "id": "5733c0e6d058e614000b61da"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 367,
+                  "text": "gewerkschaftsfreie Arbeitnehmer"
+                }
+              ],
+              "question": "Es gab Proteste im Rahmen des Baus in der Eddy Street Commons, die wegen der Einstellung von wem kamen?",
+              "id": "5733c0e6d058e614000b61db"
+            }
+          ]
+        },
+        {
+          "context": "Notre Dame-Teams sind als Fighting Irish bekannt. Sie treten als Mitglied der Abteilung I des National Collegiate Athletic Association (NCAA) an, die seit dem Schuljahr 2013/14 hauptsächlich an der Atlantikküstenkonferenz (ACC) für alle Sportarten teilnimmt. Die Fighting Irish spielten zuvor in der Horizon League von 1982-83 bis 1985-86 und erneut von 1987-88 bis 1994-95 und dann in der Big East Conference von 2012 bis 13. Zu den Männersportarten zählen Baseball, Basketball, Crew, Cross Country, Fechten, Fußball, Golf, Eishockey, Lacrosse, Fußball, Schwimmen und Tauchen, Tennis und Leichtathletik. Zu den Sportarten der Frauen zählen Basketball, Langlauf, Fechten, Golf, Lacrosse, Rudern, Fußball, Softball, Schwimmen und Tauchen, Tennis, Leichtathletik und Volleyball. Die Fußballmannschaft tritt als Football Bowl Subdivision (FBS) an, die seit ihrer Gründung im Jahr 1887 unabhängig ist. Beide Fechtmannschaften treten bei der Midwest Fencing Conference an, und die Eishockeymannschaft der Männer tritt bei Hockey East an.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 94,
+                  "text": "National Collegiate Athletic Association"
+                }
+              ],
+              "question": "Wofür steht das Akronym NCAA?",
+              "id": "5733c1a94776f419006611a6"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 300,
+                  "text": "Horizon League"
+                }
+              ],
+              "question": "An welcher Liga nahmen 1982 die irischen Teams von Notre Dame Fighting teil?",
+              "id": "5733c1a94776f419006611a7"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 889,
+                  "text": "Fechtkonferenz im Mittleren Westen"
+                }
+              ],
+              "question": "Was ist, wenn die Fechtmannschaften von Notre Dame an einer Konferenz teilnehmen?",
+              "id": "5733c1a94776f419006611a8"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1017,
+                  "text": "Hockey Ost"
+                }
+              ],
+              "question": "Es gibt eine Konferenz, an der die männliche Hockeymannschaft von Notre Dame teilnimmt. Was ist das?",
+              "id": "5733c1a94776f419006611a9"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 390,
+                  "text": "Big East Konferenz"
+                }
+              ],
+              "question": "An welcher Konferenz haben die Fighting Irish 2012 teilgenommen?",
+              "id": "5733c1a94776f419006611aa"
+            }
+          ]
+        },
+        {
+          "context": "Die Konferenzzugehörigkeit von Notre Dame zu allen Sportarten mit Ausnahme von Fußball und Fechten änderte sich im Juli 2013 aufgrund einer umfassenden Neuausrichtung der Konferenz. Die Zugehörigkeit zu Fechten wird sich im Juli 2014 ändern. Die Iren verließen den Großen Osten für die ACC während einer längeren Zeit der Instabilität im großen Osten; Während sie ihre Fußballunabhängigkeit bewahren, haben sie sich verpflichtet, fünf Spiele pro Saison gegen ACC-Gegner zu bestreiten. Im Eishockey waren die Iren gezwungen, ein neues Konferenzhaus zu finden, nachdem die Entscheidung der Big Ten Conference, den Sport 2013/14 hinzuzufügen, zu einer Kaskade von Konferenzbewegungen führte, die in der Auflösung des ehemaligen Eishockeyhauses der Schule, dem Central Collegiate, gipfelte Hockey Association, nach der Saison 2012-2013. Notre Dame verlegte seine Eishockeymannschaft nach Hockey East. Nachdem Notre Dame dem ACC beigetreten war, kündigte die Konferenz an, dass ab dem Schuljahr 2014/15 Fechten als gesponserte Sportart eingeführt werden soll. Es gibt viele Theorien hinter der Annahme des Leichtathletik-Spitznamens, aber es ist bekannt, dass der Name Fighting Irish in den frühen 1920er Jahren in Bezug auf die Fußballmannschaft verwendet wurde und von Alumnus Francis Wallace in seinen New York Daily News-Kolumnen populär gemacht wurde. Die offiziellen Farben von Notre Dame sind Navy Blue und Gold Rush, die von den Sportteams im Wettbewerb getragen werden. Außerdem wird die Farbe Grün häufig wegen des irischen Spitznamens Fighting getragen. Der Notre Dame Leprechaun ist das Maskottchen der Sportmannschaften. Der Kobold, der 1964 von Theodore W. Drake kreiert wurde, wurde zuerst auf dem Spielplan der Fußballtaschen und später auf den Deckblättern des Fußballprogramms verwendet. Der Kobold war im November 1964 auf dem Titelblatt von Time zu sehen und wurde national bekannt.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 1590,
+                  "text": "das ACC"
+                }
+              ],
+              "question": "Zu welcher Konferenz gingen die Fighting Irish nach dem Großen Osten?",
+              "id": "5733c29c4776f419006611b8"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 430,
+                  "text": "fünf"
+                }
+              ],
+              "question": "Wie viele Mannschaften in jeder Saison verpflichten sich die Fighting Irish, gegen ACC-Gegner zu spielen?",
+              "id": "5733c29c4776f419006611b9"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 674,
+                  "text": "Zentraler Collegiate Hockey Verband"
+                }
+              ],
+              "question": "Wo war die irische Eishockeymannschaft Fighting, bevor sie nach Hockey East wechselte?",
+              "id": "5733c29c4776f419006611ba"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1223,
+                  "text": "Marineblau und Goldrausch"
+                }
+              ],
+              "question": "Welche offiziellen Farben werden von Notre Dame für Sportwettkämpfe verwendet?",
+              "id": "5733c29c4776f419006611bb"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1633,
+                  "text": "Kobold"
+                }
+              ],
+              "question": "Welche Art von Maskottchen haben die Notre Dame-Sportmannschaften?",
+              "id": "5733c29c4776f419006611bc"
+            }
+          ]
+        },
+        {
+          "context": "Am 1. Juli 2014 haben die University of Notre Dame und Under Armour eine Vereinbarung getroffen, wonach Under Armour Notre Dame für 10 Jahre Uniformen, Kleidung, Ausrüstung und eine finanzielle Entschädigung zur Verfügung stellt. Dieser Auftrag im Wert von fast 100 Millionen US-Dollar ist der lukrativste in der Geschichte der NCAA. Die Hochschul-Blaskapelle spielt für die meisten Sportarten zu Hause. Die Band, die 1846 gegründet wurde und den Anspruch hat, die älteste Universitätsband in den Vereinigten Staaten zu sein, wurde während der Zweihundertjahrfeier der Vereinigten Staaten vom National Music Council als &quot;Landmark of American Music&quot; ausgezeichnet. Die Band spielt regelmäßig das Kampflied der Schule, den Notre-Dame-Siegesmarsch, der von Professor William Studwell aus Nord-Illinois als das meistgespielte und berühmteste Kampflied bezeichnet wurde. Laut College Fight Songs: An Annotated Anthology, veröffentlicht 1998, gilt der &quot;Notre Dame Victory March&quot; als das größte Kampflied aller Zeiten.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 50,
+                  "text": "Unter Rüstung"
+                }
+              ],
+              "question": "Wer stellt derzeit Notre Dame-Sportmannschaften Uniformen zur Verfügung?",
+              "id": "5733c3184776f419006611c2"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 257,
+                  "text": "fast 100 Millionen Dollar"
+                }
+              ],
+              "question": "Was ist der Wert des Vertrags zwischen Under Armour und Notre Dame?",
+              "id": "5733c3184776f419006611c3"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 418,
+                  "text": "1846"
+                }
+              ],
+              "question": "Wann gründete sich die Blaskapelle Notre Dame?",
+              "id": "5733c3184776f419006611c4"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 420,
+                  "text": "älteste Universitätsband in den Vereinigten Staaten, die es noch gibt"
+                }
+              ],
+              "question": "Was ist an der Blaskapelle Notre Dame bemerkenswert?",
+              "id": "5733c3184776f419006611c5"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 731,
+                  "text": "Notre Dame Siegesmarsch"
+                }
+              ],
+              "question": "Was ist das Notre Dame Kampflied?",
+              "id": "5733c3184776f419006611c6"
+            }
+          ]
+        },
+        {
+          "context": "Die Notre-Dame-Fußballmannschaft hat eine lange Geschichte, die ihren Anfang nahm, als die Michigan Wolverines-Fußballmannschaft 1887 Notre Dame Fußball brachte und gegen eine Gruppe von Studenten spielte. In der langen Geschichte seitdem haben 13 kämpfende irische Teams nationale Meisterschaften im Konsens gewonnen (obwohl die Universität nur 11 behauptet), und neun weitere Teams wurden von mindestens einer Quelle zum nationalen Meister ernannt. Darüber hinaus hat das Programm die meisten Mitglieder in der College Football Hall of Fame, ist mit der Ohio State University mit den meisten gewonnenen Heisman Trophies verbunden und hat den höchsten Gewinnanteil in der Geschichte der NCAA. Mit der langen Geschichte hat Notre Dame viele Rivalen angesammelt und sein jährliches Spiel gegen die USC für die Jeweled Shillelagh wurde von einigen als eines der wichtigsten im College-Football bezeichnet und wird oft als die größte intersektionale Rivalität im College-Football des Landes bezeichnet .",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 91,
+                  "text": "Michigan Wolverines Fußballmannschaft"
+                }
+              ],
+              "question": "Von welcher Mannschaft hat sich die Fußballmannschaft Notre Dame inspirieren lassen?",
+              "id": "5733c4494776f419006611da"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 129,
+                  "text": "1887"
+                }
+              ],
+              "question": "In welchem Jahr begann Notre Dame Fußball?",
+              "id": "5733c4494776f419006611db"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 556,
+                  "text": "Ohio State Universität"
+                }
+              ],
+              "question": "Mit welcher Universität ist Notre Dame hinsichtlich der meisten Heisman Trophy-Gewinner verbunden?",
+              "id": "5733c4494776f419006611dc"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 797,
+                  "text": "USC"
+                }
+              ],
+              "question": "Gegen welches Team tritt Notre Dame beim Jeweled Shillelagh an?",
+              "id": "5733c4494776f419006611dd"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 585,
+                  "text": "am meisten"
+                }
+              ],
+              "question": "In Bezug auf Notre Dame-Studenten in der College Football Hall of Fame ist die Anzahl der genannten Studenten wie hoch?",
+              "id": "5733c4494776f419006611de"
+            }
+          ]
+        },
+        {
+          "context": "George Gipp war der legendäre Fußballspieler der Schule in den Jahren 1916-20. Er spielte semiprofessionellen Baseball und rauchte, trank und spielte, wenn er keinen Sport betrieb. Er war auch demütig, großzügig gegenüber Bedürftigen und ein Mann von Integrität. Es war im Jahr 1928, als der berühmte Trainer Knute Rockne sein letztes Gespräch mit dem sterbenden Gipp nutzte, um das Notre Dame-Team zu inspirieren, das Army-Team zu schlagen und &quot;eins für den Gipper zu gewinnen&quot;. Der Film von 1940, Knute Rockne, All American, spielte Pat O&#39;Brien als Knute Rockne und Ronald Reagan als Gipp. Heute tritt das Team im Notre Dame Stadium an, einem Stadion mit 80.795 Sitzplätzen auf dem Campus. Der derzeitige Cheftrainer ist Brian Kelly, der am 11. Dezember 2009 an der Universität von Cincinnati angestellt wurde. Kellys Rekord in der Mitte seiner sechsten Spielzeit bei Notre Dame liegt zwischen 52 und 21. Im Jahr 2012 blieb Kelly&#39;s Fighting Irish Squad ungeschlagen und spielte im BCS National Championship Game. Kelly trat die Nachfolge von Charlie Weis an, der nach fünf Spielzeiten im November 2009 entlassen wurde. Obwohl Weis sein Team zu zwei Bowl Championship Series-Bowl-Spielen führte, lag sein Gesamtrekord bei 35 bis 27, nach Notre Dame-Maßstäben mittelmäßig, und das Team von 2007 hatte die meisten Verluste in der Schulgeschichte. Die Fußballmannschaft erwirtschaftet genug Einnahmen, um unabhängig zu agieren, während 22,1 Millionen US-Dollar aus den Gewinnen der Mannschaft für akademische Zwecke einbehalten werden. Forbes nannte die Mannschaft als die wertvollste im College-Football, mit einem Gesamtwert von 101 Millionen US-Dollar im Jahr 2007.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 0,
+                  "text": "George Gipp"
+                }
+              ],
+              "question": "Welcher bedeutende Fußballspieler spielte von 1916 bis 1920 bei Notre Dame?",
+              "id": "5733c743d058e614000b622d"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 415,
+                  "text": "das Armeeteam"
+                }
+              ],
+              "question": "Gegen welchen Gegner forderte Knute Rockne sein Team auf, &quot;einen für den Gipper zu gewinnen&quot;?",
+              "id": "5733c743d058e614000b622e"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 545,
+                  "text": "Pat O&#39;Brien"
+                }
+              ],
+              "question": "Welche Person hat Knute Rockne in dem Film &quot;Knute Rockne&quot; von 1940 dargestellt?",
+              "id": "5733c743d058e614000b622f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 7,
+                  "text": "Gipp"
+                }
+              ],
+              "question": "Ronald Reagan spielte die Rolle von wem in den 1940er Jahren &quot;Knute Rockne?&quot;",
+              "id": "5733c743d058e614000b6230"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 671,
+                  "text": "80,795"
+                }
+              ],
+              "question": "Wie viele Sitzplätze hat das Notre Dame Stadium?",
+              "id": "5733c743d058e614000b6231"
+            }
+          ]
+        },
+        {
+          "context": "Fußballspieltraditionen Während der Heimspiele finden rund um den Campus Aktivitäten statt, und verschiedene Schlafsäle schmücken ihre Hallen mit einem traditionellen Gegenstand (z. B. dem zweistöckigen Banner des Zahm-Hauses). Traditionelle Aktivitäten beginnen um Mitternacht mit dem Drummers &#39;Circle. Diese Tradition beinhaltet die Schlagzeuglinie der Band of the Fighting Irish und leitet den Rest der Feierlichkeiten ein, die den Rest des Spieltags am Samstag fortsetzen werden. Später an diesem Tag wird die Trompetengruppe den Notre Dame-Siegesmarsch und die Notre Dame Alma Mater unter der Kuppel spielen. Die gesamte Band wird ein Konzert auf den Stufen der Bond Hall spielen, von wo aus sie in das Notre-Dame-Stadion marschieren, um Fans und Studenten gleichermaßen über den Campus zum Spiel zu führen.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 189,
+                  "text": "zweistöckiges Banner"
+                }
+              ],
+              "question": "Was wird im Zahm-Haus für Fußball-Heimspiele bei Notre Dame gezeigt?",
+              "id": "5733ca05d058e614000b6263"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 245,
+                  "text": "der Trommlerkreis"
+                }
+              ],
+              "question": "Was passiert um Mitternacht vor einem Fußball-Heimspiel in Notre Dame?",
+              "id": "5733ca05d058e614000b6264"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 594,
+                  "text": "die Schritte der Bond Hall"
+                }
+              ],
+              "question": "Von wo aus marschiert die Band of the Fighting Irish zum Notre-Dame-Stadion für Heimspiele?",
+              "id": "5733ca05d058e614000b6265"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 534,
+                  "text": "der Notre Dame Siegesmarsch und die Notre Dame Alma Mater"
+                }
+              ],
+              "question": "Welche Songs spielt die Trompetensektion der Band of the Fighting Irish vor den Heimfußballspielen?",
+              "id": "5733ca05d058e614000b6266"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 461,
+                  "text": "Samstag"
+                }
+              ],
+              "question": "An welchem Tag finden Notre Dame-Heimfußballspiele statt?",
+              "id": "5733ca05d058e614000b6267"
+            }
+          ]
+        },
+        {
+          "context": "Die Basketballmannschaft der Männer hat über 1.600 Siege, eine von nur 12 Schulen, die diese Marke erreicht haben und an 28 NCAA-Turnieren teilgenommen haben. Der frühere Spieler Austin Carr hält mit 61 Punkten den Rekord für die meisten Punkte, die in einem einzigen Spiel des Turniers erzielt wurden. Obwohl die Mannschaft das NCAA-Turnier noch nie gewonnen hat, wurden sie von der Helms Athletic Foundation zweimal als nationale Meister ausgezeichnet. Das Team hat eine Reihe von Überraschungen bei den bestplatzierten Teams inszeniert, von denen die bemerkenswerteste die Serie der UCLA-Rekorde mit 88 Spielen im Jahr 1974 beendete. bis zu 10 UCLA, All-Time-in gewinnt gegen das Top-Team. Das Team spielt im neu renovierten Purcell Pavillon (im Edmund P. Joyce Center), der zu Beginn der Saison 2009/2010 wiedereröffnet wurde. Das Team wird von Mike Brey trainiert, der seit der Saison 2014/15, seinem fünfzehnten bei Notre Dame, einen Rekord von 332-165 erreicht hat. 2009 wurden sie in die NIT eingeladen, wo sie bis ins Halbfinale vordrangen, aber von Penn State geschlagen wurden, der Baylor in der Meisterschaft besiegte. Das Team 2010/11 beendete seine reguläre Saison auf Platz sieben des Landes mit einem Rekord von 25 bis 5, Breys fünfter Saison in Folge mit 20 Siegen und einem zweiten Platz im Großen Osten. In der Saison 2014/15 gewann das Team mit 32: 6 das ACC-Konferenzturnier und stieg später in die Elite 8 auf, wo die Fighting Irish gegen das damals noch ungeschlagene Kentucky durch einen fehlgeschlagenen Summer-Beater verloren. Unter der Führung der NBA-Draft-Picks Jerian Grant und Pat Connaughton besiegten die Fighting Irish den späteren nationalen Meister Duke Blue Devils während der Saison zweimal. Die 32 Siege waren die größten der Fighting Irish-Mannschaft seit 1908-09.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 40,
+                  "text": "über 1.600"
+                }
+              ],
+              "question": "Wie viele Siege hat die Notre Dame-Basketballmannschaft?",
+              "id": "5733caf74776f4190066124c"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 71,
+                  "text": "12"
+                }
+              ],
+              "question": "Wie viele Schulen haben eine ähnliche Basketball-Bilanz wie Notre Dame in Bezug auf die Siege?",
+              "id": "5733caf74776f4190066124d"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 121,
+                  "text": "28"
+                }
+              ],
+              "question": "An wie vielen NCAA-Turnieren nahm die Notre Dame-Herren-Basketballmannschaft teil?",
+              "id": "5733caf74776f4190066124e"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 179,
+                  "text": "Austin Carr"
+                }
+              ],
+              "question": "Welcher Notre Dame-Basketballspieler kann in einem Spiel mehr Punkte verbuchen?",
+              "id": "5733caf74776f4190066124f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 849,
+                  "text": "Mike Brey"
+                }
+              ],
+              "question": "Wer war der Notre Dame-Basketballtrainer 2014?",
+              "id": "5733caf74776f41900661250"
+            }
+          ]
+        },
+        {
+          "context": "Der &quot;Notre Dame Victory March&quot; ist das Kampflied für die University of Notre Dame. Es wurde von zwei Brüdern geschrieben, die Notre Dame-Absolventen waren. Der Reverend Michael J. Shea, Absolvent von 1904, schrieb die Musik, und sein Bruder John F. Shea, der 1906 und 1908 Abschlüsse machte, schrieb die Originaltexte. Die Texte wurden in den 1920er Jahren überarbeitet; Es wurde erstmals 1928 von der University of Notre Dame urheberrechtlich geschützt. Der Refrain lautet: &quot;Jubeln Sie der alten Notre Dame zu, wecken Sie die Echos auf und jubeln Sie ihrem Namen zu. Schicken Sie einen Volleyball-Jubel in die Höhe, schütteln Sie den Donner vom Himmel! Ob die Chancen groß oder klein sind, die alte Notre Dame wird alle gewinnen. Während ihre treuen Söhne auf dem Weg zum Sieg sind! &quot;",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 251,
+                  "text": "John F. Shea"
+                }
+              ],
+              "question": "Wer hat die Originaltexte für den Siegesmarsch Notre Dame geschrieben?",
+              "id": "5733cbdad058e614000b628d"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 210,
+                  "text": "1904"
+                }
+              ],
+              "question": "In welchem Jahr absolvierte Michael J. Shea Notre Dame?",
+              "id": "5733cbdad058e614000b628e"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 174,
+                  "text": "Rev. Michael J. Shea"
+                }
+              ],
+              "question": "Wer ist für das Schreiben der Musik für &quot;Notre Dame Victory March&quot; verantwortlich?",
+              "id": "5733cbdad058e614000b628f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 399,
+                  "text": "1928"
+                }
+              ],
+              "question": "In welchem Jahr wurde &quot;Notre Dame Victory March&quot; urheberrechtlich geschützt?",
+              "id": "5733cbdad058e614000b6290"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 677,
+                  "text": "weiter zum Sieg"
+                }
+              ],
+              "question": "Wohin marschieren die treuen Söhne in &quot;Notre Dame Fight Song&quot;?",
+              "id": "5733cbdad058e614000b6291"
+            }
+          ]
+        },
+        {
+          "context": "In dem Film Knute Rockne, All American, hält Knute Rockne (gespielt von Pat O&#39;Brien) die berühmte Rede &quot;Win one for the Gipper&quot;, bei der die Hintergrundmusik mit dem &quot;Notre Dame Victory March&quot; anschwillt. George Gipp wurde von Ronald Reagan gespielt, dessen Spitzname &quot;The Gipper&quot; von dieser Rolle abgeleitet wurde. Diese Szene wurde im Film Flugzeug parodiert! mit der gleichen Hintergrundmusik, nur dieses Mal zu Ehren von George Zipp, einem der ehemaligen Kameraden von Ted Striker. Das Lied war auch im Film Rudy mit Sean Astin als Daniel &quot;Rudy&quot; Ruettiger prominent, der trotz erheblicher Hindernisse Träume vom Fußballspielen an der Universität Notre Dame hatte.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 300,
+                  "text": "Der Gipper"
+                }
+              ],
+              "question": "Ronald Reagan hatte einen Spitznamen, was war das?",
+              "id": "5733ccbe4776f41900661270"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 376,
+                  "text": "Flugzeug!"
+                }
+              ],
+              "question": "In welchem Film erschien eine Parodie auf die Rede &quot;Win one for the Gipper&quot;?",
+              "id": "5733ccbe4776f41900661271"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 555,
+                  "text": "Sean Astin"
+                }
+              ],
+              "question": "Wer war in dem Film Rudy als Daniel Rüttiger zu sehen?",
+              "id": "5733ccbe4776f41900661272"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 459,
+                  "text": "George Zipp"
+                }
+              ],
+              "question": "Welche Person war ein ehemaliger Kamerad von Ted Striker im Film Airplane !?",
+              "id": "5733ccbe4776f41900661273"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 12,
+                  "text": "Knute Rockne"
+                }
+              ],
+              "question": "Pat O&#39;Brien porträtierte welche Person im Film Knute Rockne?",
+              "id": "5733ccbe4776f41900661274"
+            }
+          ]
+        },
+        {
+          "context": "Notre Dame Alumni arbeiten in verschiedenen Bereichen. Zu den in politischen Bereichen tätigen Alumni zählen Gouverneure, Mitglieder des Kongresses der Vereinigten Staaten und die ehemalige Außenministerin der Vereinigten Staaten, Condoleezza Rice. Ein bemerkenswerter Absolvent des College of Science ist der Medizinnobelpreisträger Eric F. Wieschaus. Eine Reihe von Universitätsleitern sind Alumni, darunter der derzeitige Präsident von Notre Dame, Rev. John Jenkins. Darüber hinaus sind viele Alumni in den Medien, darunter die Talkshow-Moderatoren Regis Philbin und Phil Donahue sowie Fernseh- und Radio-Persönlichkeiten wie Mike Golic und Hannah Storm. Da die Universität selbst über hochkarätige Sportmannschaften verfügt, beschäftigten sich eine Reihe von Absolventen außerhalb der Universität mit Leichtathletik, darunter professionelle Baseball-, Basketball-, Fußball- und Eishockeyspieler wie Joe Theismann, Joe Montana, Tim Brown und Ross Browner, Rocket Ismail, Ruth Riley, Jeff Samardzija, Jerome Bettis, Brett Lebda, die Olympiasiegerin Mariel Zagunis, der Profiboxer Mike Lee, ehemalige Fußballtrainer wie Charlie Weis, Frank Leahy und Knute Rockne sowie die Basketball Hall of Famers Austin Carr und Adrian Dantley. Weitere bemerkenswerte Absolventen sind der bekannte Geschäftsmann Edward J. DeBartolo Jr. und der Astronaut Jim Wetherbee.",
+          "qas": [
+            {
+              "answers": [
+                {
+                  "answer_start": 231,
+                  "text": "Condoleezza Reis"
+                }
+              ],
+              "question": "Welcher Außenminister hat Notre Dame besucht?",
+              "id": "5733cd504776f4190066128e"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 334,
+                  "text": "Eric F. Wieschaus"
+                }
+              ],
+              "question": "Welcher Notre Dame Alaun vom College of Science hat einen Nobelpreis gewonnen?",
+              "id": "5733cd504776f4190066128f"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 451,
+                  "text": "Rev. John Jenkins"
+                }
+              ],
+              "question": "Wer ist der derzeitige Präsident von Notre Dame?",
+              "id": "5733cd504776f41900661290"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 937,
+                  "text": "Olympisches Gold"
+                }
+              ],
+              "question": "Mariel Zagunis ist bekannt dafür, was zu gewinnen?",
+              "id": "5733cd504776f41900661291"
+            },
+            {
+              "answers": [
+                {
+                  "answer_start": 1341,
+                  "text": "Jim Wetherbee"
+                }
+              ],
+              "question": "Welcher bemerkenswerte Astronaut hat bekanntermaßen Notre Dame besucht?",
+              "id": "5733cd504776f41900661292"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "version": "1.1"
+}

@@ -131,4 +131,3 @@ dmypy.json
 data/translated
 .idea/
 translate_squad.log
-tests/data

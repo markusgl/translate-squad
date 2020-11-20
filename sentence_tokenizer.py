@@ -1,7 +1,7 @@
 import logging
-import nltk
 
 from nltk.tokenize.punkt import PunktSentenceTokenizer, PunktTrainer
+from nltk.corpus import gutenberg
 
 
 class SentenceTokenizer:
@@ -12,8 +12,7 @@ class SentenceTokenizer:
 
     def train_tokenizer(self):
         logging.info('Training custom sentence tokenizer...')
-        nltk.download('gutenberg')
-        from nltk.corpus import gutenberg
+        #nltk.download('gutenberg')
 
         text = ""
         for file_id in gutenberg.fileids():
@@ -27,5 +26,5 @@ class SentenceTokenizer:
         for abbr in self.abbreviations:
             self.tokenizer._params.abbrev_types.add(abbr)
 
-    def sentenize_text(self, text):
+    def tokenize_sentence(self, text):
         return self.tokenizer.tokenize(text)
