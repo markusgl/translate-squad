@@ -14,7 +14,7 @@ class Data:
 
 
 class Paragraphs(object):
-    def __init__(self, context: str, qas: object):
+    def __init__(self, context: str, qas: list):
         self.context = context
         self.qas = qas
 

@@ -3,9 +3,9 @@ import os
 import ntpath
 import logging
 import argparse
-from typing import Text
+from typing import Text, List
 
-from squad_data_set import SquadSetSchema
+from squad_data_set import SquadSetSchema, Answers, Paragraphs, Qas
 from google.cloud import translate_v2 as translate
 
 if __package__ is None or __package__ == '':
@@ -156,13 +156,16 @@ class SquadTranslation:
         question_count = 0
         input_file_name = ntpath.basename(input_file_path)
         output_filename = input_file_name.replace('.json', '_translated.json')
-        output_filepath = f'{output_dir}/{output_filename}'
+        output_file = f'{output_dir}/{output_filename}'
         self.answer_match_probability_threshold = threshold
 
         if mock:
+            print('Mocking translation... Text will NOT be sent to Translate API')
             logger.info('Mocking translation... Text will NOT be sent to Translate API')
 
         if character_limit > 1:
+            print(f'Character limit set to {character_limit}. '
+                  f'After limit is reached the current paragraph will be finished and translation stops.')
             logger.info(f'Character limit set to {character_limit}. '
                         f'After limit is reached the current paragraph will be finished and translation stops.')
 
@@ -172,8 +175,9 @@ class SquadTranslation:
         squad_set_schema = SquadSetSchema()
         squad = squad_set_schema.load(raw_data)
         # squad_dataset = raw_data['data']
-        squad_dataset = self.strip_data_section_to_chkp_length(squad.data, output_filepath)
+        squad_dataset = self.strip_data_section_to_chkp_length(squad.data, output_file)
         logger.info('Starting translation...')
+        print('Starting translation...')
 
         for squad_data in squad_dataset:
             if self.translated_characters >= character_limit > 0:
@@ -191,8 +195,8 @@ class SquadTranslation:
                                                                 translated_paragraphs)
             translated_data['paragraphs'] = translated_paragraphs
 
-            self.store_paragraph_to_file(out_file=f'{output_filepath}_chkp{self.count_paragraphs}',
-                                         chkp_file=f'{output_filepath}_chkp{self.count_paragraphs - 1}',
+            self.store_paragraph_to_file(out_file=f'{output_file}_chkp{self.count_paragraphs}',
+                                         chkp_file=f'{output_file}_chkp{self.count_paragraphs - 1}',
                                          translated_paragraphs=translated_data)
             self.count_paragraphs += 1
             logger.info(f'translated characters {self.translated_characters}')
@@ -203,7 +207,7 @@ class SquadTranslation:
                     f'Pargraphs: {self.count_paragraphs} \n'
                     f'QAS: {qas_count} \n'
                     f'Questions: {question_count}\n'
-                    f'Final chkp-file: {output_filepath}_chkp{self.count_paragraphs - 1}\n'
+                    f'Final chkp-file: {output_file}_chkp{self.count_paragraphs - 1}\n'
                     # f'Out file: {output_filepath}\n'
                     )
 
@@ -222,7 +226,7 @@ class SquadTranslation:
 
         return qas_count, question_count
 
-    def iterate_qas(self, orig_context, paragraph, translated_context):
+    def iterate_qas(self, orig_context, paragraph: Paragraphs, translated_context):
         qas_data = []
         for qa in paragraph.qas:
             question = self.translate_text(qa.question)
@@ -235,14 +239,14 @@ class SquadTranslation:
 
         return qas_data
 
-    def iterate_answers(self, answers, orig_context, translated_context):
+    def iterate_answers(self, answers: List[Answers], orig_context, translated_context):
         answer_texts = []
         for answer in answers:
-            translated_answer = self.translate_text(answer.get('text'))
+            translated_answer = self.translate_text(answer.text)
             if self.mock:
-                answer_texts.append({'answer_start': answer.get('answer_start'), 'text': answer.get('text')})
+                answer_texts.append({'answer_start': answer.answer_start, 'text': answer.text})
             else:
-                sentence_number = self.find_sentence_number_in_context(answer.get('answer_start'), orig_context)
+                sentence_number = self.find_sentence_number_in_context(answer.answer_start, orig_context)
                 answer_start = self.find_answer_start_in_translated_context(sentence_number,
                                                                             translated_answer,
                                                                             translated_context)

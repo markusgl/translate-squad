@@ -56,5 +56,5 @@ translated context, to be recognized as the correct answer.
 Needs PyTorch before installing flair: https://pytorch.org/get-started/locally/  
 If you get errors while installing flair, try to install tiny-tokenizer first: `pip install tiny-tokenizer`
 
-Tested with Python 3.8
+Tested with Python 3.8 on Windows
  
