@@ -6,7 +6,7 @@ This is an application for translating the popular Question Answering Dataset
 [Google Cloud Translation API](https://cloud.google.com/translate/docs). 
 
 ## Important notes
-**WARNING CLOUD TRANSLATION CAUSES COSTS!**   
+**!! WARNING CLOUD TRANSLATION CAUSES COSTS !!**   
 You need a valid *Google Cloud Platform* (GCP) Account and an activated *Cloud Translation API* for real translation 
 (see [Google's  Setup Guide](https://cloud.google.com/translate/docs/setup)). **Note that Cloud Translation API is NOT 
 for free and will cause high costs if you translate the whole dataset** 
@@ -25,12 +25,16 @@ to continue translation later on.
   
 ## Usage
 
-### translate_squad_1_1.py
-The main file and starting point for translation. You should run the script in a VirtualEnv (`venv`) and install the 
-requirements first using `pip` or similar.
+#### Prerequisites
+Use venv and install all required dependencies before usage
 
+Needs PyTorch before installing flair: https://pytorch.org/get-started/locally/  
+If you get errors while installing flair, try to install tiny-tokenizer first: `pip install tiny-tokenizer`
 
-#### Example usages
+Tested with Python 3.8 on Windows
+
+### Example usages
+
 Getting Help:  
 `python translate_squad_1_1.py --help` 
 
@@ -51,10 +55,4 @@ Parameter `-t` allows you to change the threshold probability a answer must exce
 translated context, to be recognized as the correct answer.  
 `python translate_squad_1_1.py data/train-v1.1.json data/translated -t 0.6` 
 
-#### Prerequisites
- 
-Needs PyTorch before installing flair: https://pytorch.org/get-started/locally/  
-If you get errors while installing flair, try to install tiny-tokenizer first: `pip install tiny-tokenizer`
-
-Tested with Python 3.8 on Windows
  
