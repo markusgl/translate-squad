@@ -15,7 +15,7 @@ SQuAD training dataset (train-v1.1.json) has about 20 million characters, so tra
 You can also translate only a subset of the dataset using the *-c* parameter (see usage below) with the number of 
 characters to translate. Note that the application will not stop exactly when this number is reached and will finish 
 the current paragraph to always output a valid JSON and SQuAD structure that can be used to continue translation or for 
-training Machine Learning System like BERT. 
+training Machine Learning Systems like BERT. 
 
 #### Further notes
 If you sign up new to GCP you get a 300$ free trial for 30 days, that you can use.
@@ -55,4 +55,13 @@ Parameter `-t` allows you to change the threshold probability a answer must exce
 translated context, to be recognized as the correct answer.  
 `python translate_squad_1_1.py data/train-v1.1.json data/translated -t 0.6` 
 
+---
+### Insights: Finding the 'answer_start'
+ 
+SQuAD has for each answer an corresponding 'answer_start' to indicate where to find the answer inside the context. Since 
+the context and the answer are translated separately it may happen that the translated answer can not be found in the 
+same wording inside the translated context. Therefore some kind of fuzzy matching is needed, but edit distance turned 
+out to be too imprecise. The approach used in this application is the use of Word Embeddings (more precisely 'German 
+FastText embeddings' implemented in Flair; You can change this in the 'answer_start' package). In Addition, the search 
+for the answer in the translated context is limited to the sentence in which the original answer was.
  
