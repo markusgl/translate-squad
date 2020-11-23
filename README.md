@@ -61,7 +61,9 @@ translated context, to be recognized as the correct answer.
 SQuAD has for each answer an corresponding 'answer_start' to indicate where to find the answer inside the context. Since 
 the context and the answer are translated separately it may happen that the translated answer can not be found in the 
 same wording inside the translated context. Therefore some kind of fuzzy matching is needed, but edit distance turned 
-out to be too imprecise. The approach used in this application is the use of Word Embeddings (more precisely 'German 
-FastText embeddings' implemented in Flair; You can change this in the 'answer_start' package). In Addition, the search 
-for the answer in the translated context is limited to the sentence in which the original answer was.
+out to be too imprecise. The approach here is to use of Word Embeddings (more precisely 'German 
+FastText embeddings' implemented in Flair; You can change this in the 'answer_start' package) and to search for the Word 
+Embedding combination (vector sum of len(words in orig answer)) with the highest probability. This combination needs 
+also to exceed the given threshold (parameter *-t*, default 0.5). If no answer exceeds the threshold, the answer will be 
+discarded. The search in the translated context is also limited to the sentence in which the original answer was.
  
